@@ -13,6 +13,20 @@ const Wrapper = styled('div')`
   justify-content: space-between;
   background: ${({ theme }) => theme.colors.background};
 
+  table {
+    width: 100%;
+    border-spacing: 0;
+    display: block;
+    border-collapse: collapse;
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+  }
+
+  .table::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+  }
   .sideBarUL li a {
     color: ${({ theme }) => theme.colors.text};
   }
@@ -36,21 +50,6 @@ const Content = styled('main')`
   padding-top: 3rem;
   background: ${({ theme }) => theme.colors.background};
 
-  table {
-    width: 100%;
-    border-spacing: 0;
-    display: block;
-    border-collapse: collapse;
-    overflow: auto;
-    overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;
-  }
-
-  .table::-webkit-scrollbar {
-    width: 0 !important;
-    display: none;
-  }
-
   table tr {
     background: ${({ theme }) => theme.colors.background};
   }
@@ -59,41 +58,22 @@ const Content = styled('main')`
     padding-left: 0;
     margin: 0 10px;
     padding-top: 3rem;
-    max-width: 28rem;
 
-    .css-18pcbyo-MaxWidth {
-      width: 100%;
+    .css-1wwzulu-MaxWidth {
+      width: 400px;
     }
   }
 `;
 
 const MaxWidth = styled('div')`
-  @media only screen and (max-width: 20rem) {
+  @media only screen and (max-width: 50rem) {
     width: 100%;
     position: relative;
   }
 `;
 
 const LeftSideBarWidth = styled('div')`
-  width: 220px;
-
-  .css-nnusmx-Sidebar {
-    overflow: auto;
-    overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;
-  }
-  .css-nnusmx-Sidebar::-webkit-scrollbar {
-    width: 0 !important;
-    display: none;
-  }
-
-  @media only screen and (max-width: 1023px) {
-    width: 200px;
-  }
-
-  .sideBarUL {
-    margin-top: 0 !important;
-  }
+  width: 298px;
 `;
 
 const RightSideBarWidth = styled('div')`
