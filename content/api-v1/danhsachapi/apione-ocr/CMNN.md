@@ -1,7 +1,7 @@
 ---
 title: 'CMT/TCC/Passport'
 metaTitle: 'Chứng minh thư- Thẻ căn cước - Passport'
-id: 5
+id: 15
 ---
 
 ### 1. Trích xuất thông tin hai mặt chứng minh thư thẻ căn cước với đầu vào url ảnh

@@ -1,8 +1,7 @@
 ---
 title: 'Bằng lái xe'
 metaTitle: 'Bằng lái xe'
-
-id: 6
+id: 14
 ---
 
 ### 1. Trích xuất thông tin bằng lái xe với đầu vào url ảnh
@@ -247,5 +246,3 @@ Bảng mã lỗi:
 | 3      | Ảnh sai format                     | Upload ảnh bị lỗi khi dùng POST                      |
 | 4      | Hết số lượng request hữu dụng      | Hết số lượng request                                 |
 | 5      | Api_key hoặc api_secret không đúng | Khi api_key hoặc api_secret sai                      |
-
-                    |

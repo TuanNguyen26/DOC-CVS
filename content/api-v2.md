@@ -1,7 +1,7 @@
 ---
 title: 'API v2'
 metaTitle: 'API V2'
-metaDescription: 'This is the api v1 for this page'
+metaDescription: 'This is the api v2 for this page'
 ---
 
 # Cơ chế xác thực

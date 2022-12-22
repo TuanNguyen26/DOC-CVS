@@ -38,8 +38,8 @@ const config = {
   },
   sidebar: {
     forcedNavOrder: [
-      '/apib',
-      '/apia', // add trailing slash if enabled above
+      '/api-v1',
+      '/api-v2', // add trailing slash if enabled above
     ],
     collapsedNav: [
       '/trang chủ', // add trailing slash if enabled above
