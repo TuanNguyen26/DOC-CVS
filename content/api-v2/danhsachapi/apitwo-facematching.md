@@ -1,6 +1,6 @@
 ---
 title: 'Face Matching'
-metaTitle: 'Tài liệu hướng dẫn tích hợp API Computer Vision VietNam'
+metaTitle: 'Face Matching'
 metaDescription: 'This is the api v21 for this page'
 id: 4
 ---

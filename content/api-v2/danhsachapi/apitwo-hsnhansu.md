@@ -1,6 +1,6 @@
 ---
 title: 'Hồ sơ nhân sự'
-metaTitle: 'Tài liệu hướng dẫn tích hợp API Computer Vision VietNam'
+metaTitle: 'Hồ sơ nhân sự'
 metaDescription: 'This is the api v2 for this page'
 id: 10
 ---

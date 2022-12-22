@@ -1,6 +1,6 @@
 ---
 title: 'Bảng'
-metaTitle: 'Tài liệu hướng dẫn tích hợp API Computer Vision VietNam'
+metaTitle: 'Bảng'
 id: 16
 metaDescription: 'This is the api v2 for this page'
 ---
@@ -134,50 +134,6 @@ Phản hồi sẽ là một JSON với định dạng sau:
   "data": [xxxx],
   "errorCode": string, // mã lỗi
   "errorMessage": string // thông báo lỗi
-}
-```
-
-Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trường data sẽ có gồm các thông tin sau:
-
-```javascript
-{
-  "info": [xxxx],
-  "valid": [xxxx],
-  "invalidMessage": [xxxx],
-  "type": [xxxx]
-}
-```
-
-Chú ý: Trường hợp trích xuất thông tin từ file PDF, nhiều loại giấy tờ trong một ảnh, bằng lái xe, đăng ký xe, đăng kiểm xe, báo giá xe, giấy khai sinh không có trường valid và trường invalidMessage.
-
-Trong trường hợp trích xuất thông tin từ file PDF hoặc nhiều loại giấy tờ trong một ảnh, trường data sẽ là 1 list các phần tử có các trường ở trên.
-
-Trong trường hợp trích xuất thông tin từ văn bản scan, trường data sẽ là một list, mỗi phần tử trong list sẽ tương ứng với thông tin của 1 trang trong file pdf hoặc của 1 ảnh. Mỗi phần tử trong list này được biểu thị như sau:
-
-```javascript
-[
-  // list các block trong cùng một trang
-  [
-    // list các line trong cùng một block
-    [
-      // list các text trong cùng một line (*)
-    ],
-  ],
-];
-```
-
-Mỗi phần tử text (\*) bao gồm các trường sau:
-
-```javascript
-{
-  "text": string, // nội dung của text
-  "confidence": float, // độ tin cậy của text
-  "box": {
-    "left": int, // tọa độ bên trái của text
-    "right": int, // tọa độ bên phải của text
-    "top": int, // tọa độ bên trên của text
-    "bottom": int // tọa độ bên dưới của text
-  }
 }
 ```
 

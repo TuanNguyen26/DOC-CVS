@@ -1,6 +1,6 @@
 ---
 title: 'API v2'
-metaTitle: 'Tài liệu hướng dẫn tích hợp API Computer Vision VietNam'
+metaTitle: 'API V2'
 metaDescription: 'This is the api v1 for this page'
 ---
 

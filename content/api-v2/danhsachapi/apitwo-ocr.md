@@ -1,6 +1,6 @@
 ---
 title: 'OCR'
-metaTitle: 'Syntax Highlighting is the meta title tag for this page'
+metaTitle: 'Ocr'
 metaDescription: 'This is the api v2 for this page'
 id: 12
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'Hồ sơ claim bảo hiểm sức khỏe'
-metaTitle: 'Tài liệu hướng dẫn tích hợp API Computer Vision VietNam'
+metaTitle: 'Hồ sơ claim bảo hiểm sức khỏe'
 metaDescription: 'This is the api v2 for this page'
 id: 9
 ---

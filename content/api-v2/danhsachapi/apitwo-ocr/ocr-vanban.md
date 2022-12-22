@@ -1,6 +1,6 @@
 ---
 title: 'Văn bản'
-metaTitle: 'Tài liệu hướng dẫn tích hợp API Computer Vision VietNam'
+metaTitle: 'Văn bản'
 id: 26
 metaDescription: 'This is the api v21 for this page'
 ---
@@ -137,22 +137,7 @@ Phản hồi sẽ là một JSON với định dạng sau:
 }
 ```
 
-Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trường data sẽ có gồm các thông tin sau:
-
-```javascript
-{
-  "info": [xxxx],
-  "valid": [xxxx],
-  "invalidMessage": [xxxx],
-  "type": [xxxx]
-}
-```
-
-Chú ý: Trường hợp trích xuất thông tin từ file PDF, nhiều loại giấy tờ trong một ảnh, bằng lái xe, đăng ký xe, đăng kiểm xe, báo giá xe, giấy khai sinh không có trường valid và trường invalidMessage.
-
-Trong trường hợp trích xuất thông tin từ file PDF hoặc nhiều loại giấy tờ trong một ảnh, trường data sẽ là 1 list các phần tử có các trường ở trên.
-
-Trong trường hợp trích xuất thông tin từ văn bản scan, trường data sẽ là một list, mỗi phần tử trong list sẽ tương ứng với thông tin của 1 trang trong file pdf hoặc của 1 ảnh. Mỗi phần tử trong list này được biểu thị như sau:
+Trường hợp trích xuất thông tin từ văn bản scan, trường data sẽ là một list, mỗi phần tử trong list sẽ tương ứng với thông tin của 1 trang trong file pdf hoặc của 1 ảnh. Mỗi phần tử trong list này được biểu thị như sau:
 
 ```javascript
 [
@@ -178,35 +163,5 @@ Mỗi phần tử text (\*) bao gồm các trường sau:
     "top": int, // tọa độ bên trên của text
     "bottom": int // tọa độ bên dưới của text
   }
-}
-```
-
-Trong trường hợp trích xuất thông tin dạng bảng, trường data sẽ là một list, mỗi phần tử trong list sẽ tương ứng với thông tin của một bảng. Mỗi phần tử gồm các trường:
-
-- image: ảnh bảng đã được cắt và căn chỉnh
-- info: thông tin bảng, trường này là một list, mỗi phần tử trong list tương ứng thông tin của một hàng
-
-Ví dụ:
-
-```javascript
-{
-  "data": [
-    {
-      "info": [
-        ["3", "Liti", "Li"],
-        ["4", "Beri", "Be"],
-        ["5", "Bo", "B"]
-      ],
-      "image": "<base64_img1>"
-    },
-    {
-      "info": [
-        ["Column1", "column2"],
-        ["1", "2"],
-        ["1", "1"]
-      ],
-      "image": "<base64_img2>"
-    }
-  ]
 }
 ```

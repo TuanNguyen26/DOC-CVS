@@ -1,6 +1,6 @@
 ---
 title: 'API v1'
-description: 'Tài liệu hướng dẫn tích hợp API Computer Vision Việt Nam'
+description: 'API V1'
 ---
 
 ## Cơ Chế Xác Thực

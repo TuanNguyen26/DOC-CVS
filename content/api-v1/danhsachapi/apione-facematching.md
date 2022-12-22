@@ -1,6 +1,6 @@
 ---
 title: 'Face Matching'
-metaTitle: 'API V1 Face Matching'
+metaTitle: ' Face Matching'
 metaDescription: 'This is the api v1 for this page'
 id: 2
 ---

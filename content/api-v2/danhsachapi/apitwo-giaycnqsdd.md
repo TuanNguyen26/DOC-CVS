@@ -1,6 +1,6 @@
 ---
 title: 'Giấy chứng nhận quyền sử dụng đất'
-metaTitle: 'Tài liệu hướng dẫn tích hợp API Computer Vision VietNam'
+metaTitle: 'Giấy chứng nhận nghĩa vụ quân sự'
 metaDescription: 'This is the api v21 for this page'
 id: 6
 ---

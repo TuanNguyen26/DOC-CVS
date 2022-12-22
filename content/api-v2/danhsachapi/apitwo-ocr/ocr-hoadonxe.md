@@ -1,6 +1,6 @@
 ---
 title: 'Hóa đơn xe'
-metaTitle: 'Tài liệu hướng dẫn tích hợp API Computer Vision VietNam'
+metaTitle: 'Hóa đơn xe'
 id: 25
 metaDescription: 'This is the api v2 for this page'
 ---
@@ -148,69 +148,6 @@ Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trườn
 }
 ```
 
-Chú ý: Trường hợp trích xuất thông tin từ file PDF, nhiều loại giấy tờ trong một ảnh, bằng lái xe, đăng ký xe, đăng kiểm xe, báo giá xe, giấy khai sinh không có trường valid và trường invalidMessage.
-
-Trong trường hợp trích xuất thông tin từ file PDF hoặc nhiều loại giấy tờ trong một ảnh, trường data sẽ là 1 list các phần tử có các trường ở trên.
-
-Trong trường hợp trích xuất thông tin từ văn bản scan, trường data sẽ là một list, mỗi phần tử trong list sẽ tương ứng với thông tin của 1 trang trong file pdf hoặc của 1 ảnh. Mỗi phần tử trong list này được biểu thị như sau:
-
-```javascript
-[
-  // list các block trong cùng một trang
-  [
-    // list các line trong cùng một block
-    [
-      // list các text trong cùng một line (*)
-    ],
-  ],
-];
-```
-
-Mỗi phần tử text (\*) bao gồm các trường sau:
-
-```javascript
-{
-  "text": string, // nội dung của text
-  "confidence": float, // độ tin cậy của text
-  "box": {
-    "left": int, // tọa độ bên trái của text
-    "right": int, // tọa độ bên phải của text
-    "top": int, // tọa độ bên trên của text
-    "bottom": int // tọa độ bên dưới của text
-  }
-}
-```
-
-Trong trường hợp trích xuất thông tin dạng bảng, trường data sẽ là một list, mỗi phần tử trong list sẽ tương ứng với thông tin của một bảng. Mỗi phần tử gồm các trường:
-
-- image: ảnh bảng đã được cắt và căn chỉnh
-- info: thông tin bảng, trường này là một list, mỗi phần tử trong list tương ứng thông tin của một hàng
-
-Ví dụ:
-
-```javascript
-{
-  "data": [
-    {
-      "info": [
-        ["3", "Liti", "Li"],
-        ["4", "Beri", "Be"],
-        ["5", "Bo", "B"]
-      ],
-      "image": "<base64_img1>"
-    },
-    {
-      "info": [
-        ["Column1", "column2"],
-        ["1", "2"],
-        ["1", "1"]
-      ],
-      "image": "<base64_img2>"
-    }
-  ]
-}
-```
-
 Hóa đơn xe: Trả về một danh sách, mỗi phần từ trong danh sách gồm
 
 - date: ngày lập hóa đơn.
@@ -241,3 +178,7 @@ Hóa đơn xe: Trả về một danh sách, mỗi phần từ trong danh sách g
 - name: tên hàng hóa, dịch vụ
 - coin: giá của hàng hóa, dịch vụ
 - image: ảnh hóa đơn đã được xoay và căn chỉnh.
+
+```
+
+```

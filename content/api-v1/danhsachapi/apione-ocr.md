@@ -1,6 +1,6 @@
 ---
 title: 'OCR'
-metaTitle: 'Tài liệu hướng dẫn tích hợp API Computer Vision VietNam'
+metaTitle: 'Ocr'
 metaDescription: 'This is the api v1 for this page'
 id: 4
 ---

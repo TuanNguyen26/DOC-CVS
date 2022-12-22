@@ -1,6 +1,6 @@
 ---
 title: 'Sao kê ngân hàng'
-metaTitle: 'Tài liệu hướng dẫn tích hợp API Computer Vision VietNam'
+metaTitle: 'Sao kê ngân hàng'
 metaDescription: 'This is the api v2 for this page'
 id: 15
 ---

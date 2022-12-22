@@ -1,6 +1,6 @@
 ---
 title: 'Báo cáo tín dụng '
-metaTitle: 'Tài liệu hướng dẫn tích hợp API Computer Vision VietNam'
+metaTitle: 'Báo cáo tín dụng'
 metaDescription: 'This is the api v2 for this page'
 id: 2
 ---

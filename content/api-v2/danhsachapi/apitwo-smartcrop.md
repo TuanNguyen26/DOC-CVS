@@ -1,6 +1,6 @@
 ---
 title: 'Smart Crop'
-metaTitle: 'Tài liệu hướng dẫn tích hợp API Computer Vision VietNam'
+metaTitle: 'Smartcrop'
 metaDescription: 'This is the api v2 for this page'
 id: 14
 ---

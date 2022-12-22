@@ -49,8 +49,8 @@ export const Sidebar = styled('aside')`
     font-size: 12px;
     font-weight: 500;
     line-height: 1.5;
-    /* padding: 7px 24px 7px 16px; */
-    padding: 0 !important;
+    padding: 7px 24px 7px 16px;
+    /* padding: 0 !important; */
     color: ${(props) => props.theme.colors.text};
   }
 

@@ -1,6 +1,6 @@
 ---
 title: 'Liveness Verify'
-metaTitle: 'Tài liệu hướng dẫn tích hợp API Computer Vision VietNam'
+metaTitle: 'Livencess'
 metaDescription: 'This is the api v2 for this page'
 id: 11
 ---
