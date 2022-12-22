@@ -1,6 +1,6 @@
 ---
 title: 'Giấy chứng nhận quyền sử dụng đất'
-metaTitle: 'Giấy chứng nhận nghĩa vụ quân sự'
+metaTitle: 'Giấy chứng nhận quyền sử dụng đất'
 metaDescription: 'This is the api v21 for this page'
 id: 6
 ---
