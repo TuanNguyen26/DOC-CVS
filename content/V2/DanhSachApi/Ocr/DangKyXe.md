@@ -1,6 +1,6 @@
 ---
-title: 'Đăng kí xe'
-metaTitle: 'Đăng kí xe'
+title: 'Đăng ký xe'
+metaTitle: 'Đăng ký xe'
 id: 21
 metaDescription: 'This is the api v2 for this page'
 ---
