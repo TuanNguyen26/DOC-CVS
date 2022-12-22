@@ -456,3 +456,101 @@ response = requests.post(
     json={'image' : encode_cmt})
 print(response.json())
 ```
+
+### 14. Thông tin trả về
+
+```json
+{
+  "type": [xxxx],
+  "data": [xxxx],
+  "valid": string, // False nếu ảnh đầu vào mờ, che hoặc có dấu hiệu giả mạo, ngược lại True
+  "errorCode": string, // mã lỗi
+  "errorMessage": string // thông báo lỗi
+}
+```
+
+`type`: Loại giấy tờ tùy thân được trích xuất thông tin, trong trường hợp `get_haimat` sẽ không có trường này.
+
+- cmt: ứng với mặt trước của chứng minh nhân dân.
+- tcc: ứng với mặt trước thẻ căn cước công dân.
+- matsaucmt: ứng với mặt sau của chứng minh nhân dân.
+- matsautcc: ứng với mặt sau của thẻ căn cước.
+- pdf: ứng với upload file PDF.
+
+`data`: Bao gồm các thông tin được trích xuất từ ảnh đầu vào có giấy tờ tùy thân, với mỗi loại giấy tờ tùy thân thì sẽ có những thông tin trả về khác nhau.
+
+Mặt trước chứng minh nhân dân.
+
+- id: số chứng minh thư.
+- name: họ và tên.
+- born: ngày sinh.
+- country: quê quán.
+- address: thường trú
+
+Mặt trước thẻ căn cước công dân.
+
+- id: số thẻ.
+- name: họ và tên.
+- born: ngày sinh.
+- country: quê quán
+- sex: giới tính.
+- duedate: ngày hết hạn.
+- quoctich: quốc tịch.
+- dantoc: dân tộc.
+- address: thường trú.
+
+Mặt sau chứng minh nhân dân.
+
+- dantoc: dân tộc.
+- date: ngày cấp.
+- dauvet: dấu vết riêng và dị hình.
+- tongiao: tôn giáo.
+- noicap: nơi cấp
+
+Mặt sau thẻ căn cước công dân.
+
+- dauvet: đặc điểm nhận dạng
+- date: ngày cấp.
+
+Trong trường hợp `get_haimat`, `data` sẽ có gồm các thông tin sau:
+
+```json
+"data": {
+  "mattruoc": [xxxx], // gồm các trường đã nếu ở trên
+  "matsau": [xxxx] // gồm các trường đã nêu ở trên
+}
+```
+
+Trong trường hợp trích xuất thông tin từ file PDF, `data` gồm các thông tin sau:
+
+```json
+"data": [
+  {
+    "type": [xxxx], // loại giấy tờ nhận dạng được, đã nêu ở trên
+    "data": [xxxx], // các trường thông tin tương ứng với loại giây tờ
+  },
+  ...
+]
+```
+
+Trong trường hợp trích xuất thông tin từ văn bản scan, phản hồi gồm các thông tin sau:
+
+```json
+{
+  "result": [xxxx], // mảng các line text trong văn bản, nếu không có trả về null
+  "time": [xxxx] // thời gian xử lý
+}
+```
+
+Bảng mã lỗi:
+
+| Mã lỗi | Message                            | Mô tả                                                |
+| ------ | ---------------------------------- | ---------------------------------------------------- |
+| 0      | Thành công                         | Trích xuất thông tin thành công                      |
+| 1      | Ảnh không chứa nội dung            | Ảnh đầu vào không có giấy tờ tùy thân cần trích xuất |
+| 2      | Url của ảnh không khả dụng         | Download ảnh bị lỗi khi dùng GET                     |
+| 3      | Ảnh sai format                     | Upload ảnh bị lỗi khi dùng POST                      |
+| 4      | Hết số lượng request hữu dụng      | Hết số lượng request                                 |
+| 5      | Api_key hoặc api_secret không đúng | Khi api_key hoặc api_secret sai                      |
+
+                    |

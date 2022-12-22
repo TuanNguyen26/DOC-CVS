@@ -191,47 +191,10 @@ _Chú ý_: Trường hợp trích xuất thông tin bằng lái xe và trích xu
 
 `type`: Loại giấy tờ tùy thân được trích xuất thông tin, trong trường hợp `get_haimat` sẽ không có trường này.
 
-- cmt: ứng với mặt trước của chứng minh nhân dân.
-- tcc: ứng với mặt trước thẻ căn cước công dân.
-- matsaucmt: ứng với mặt sau của chứng minh nhân dân.
-- matsautcc: ứng với mặt sau của thẻ căn cước.
 - blx: ứng với bằng lái xe.
 - pdf: ứng với upload file PDF.
 
 `data`: Bao gồm các thông tin được trích xuất từ ảnh đầu vào có giấy tờ tùy thân, với mỗi loại giấy tờ tùy thân thì sẽ có những thông tin trả về khác nhau.
-
-Mặt trước chứng minh nhân dân.
-
-- id: số chứng minh thư.
-- name: họ và tên.
-- born: ngày sinh.
-- country: quê quán.
-- address: thường trú
-
-Mặt trước thẻ căn cước công dân.
-
-- id: số thẻ.
-- name: họ và tên.
-- born: ngày sinh.
-- country: quê quán
-- sex: giới tính.
-- duedate: ngày hết hạn.
-- quoctich: quốc tịch.
-- dantoc: dân tộc.
-- address: thường trú.
-
-Mặt sau chứng minh nhân dân.
-
-- dantoc: dân tộc.
-- date: ngày cấp.
-- dauvet: dấu vết riêng và dị hình.
-- tongiao: tôn giáo.
-- noicap: nơi cấp
-
-Mặt sau thẻ căn cước công dân.
-
-- dauvet: đặc điểm nhận dạng
-- date: ngày cấp.
 
 Bằng lái xe.
 
