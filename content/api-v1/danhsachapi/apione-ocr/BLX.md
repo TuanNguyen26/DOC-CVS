@@ -283,13 +283,4 @@ Bảng mã lỗi:
 | 4      | Hết số lượng request hữu dụng      | Hết số lượng request                                 |
 | 5      | Api_key hoặc api_secret không đúng | Khi api_key hoặc api_secret sai                      |
 
-Bảng mã cảnh báo:
-
-| Mã lỗi | Message                                                         | Mô tả                                             |
-| ------ | --------------------------------------------------------------- | ------------------------------------------------- |
-| 0      | uccessful                                                       | Thành công                                        |
-| 1      | Photo contains sign of being taken through an electronic screen | Ảnh giấy tờ tùy thân có dấu hiệu giả mạo          |
-| 2      | The picture is a photocopy version of the id card               | Ảnh giấy tờ tùy thân là bản photocopy             |
-| 3      | The id field on the document is incorrectly formatted           | Trường id trên giấy tờ tùy thân không đúng format |
-| 4      | The mrzcode on the passport is incorrectly formatted            | MRZ code trên passport không đúng format          |
-| 5      | The id card's corner has been clipped                           | Giấy tờ tùy thân bị cắt góc                       |
+                    |
