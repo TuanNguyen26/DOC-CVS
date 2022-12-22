@@ -1,7 +1,7 @@
 ---
 title: 'Bằng lái xe'
 metaTitle: 'Bằng lái xe'
-id: 14
+id: 5
 ---
 
 ### 1. Trích xuất thông tin bằng lái xe với đầu vào url ảnh

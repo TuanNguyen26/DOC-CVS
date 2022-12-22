@@ -1,6 +1,6 @@
 ---
-title: 'CMT/TCC/Passport'
-metaTitle: 'Chứng minh thư - Thẻ căn cước - Passport'
+title: 'CMND/CC/Passport'
+metaTitle: 'Chứng minh nhân dân - Căn cước - Passport'
 id: 19
 metaDescription: 'This is the api v2 for this page'
 ---

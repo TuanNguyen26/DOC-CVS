@@ -88,7 +88,7 @@ const LeftSideBarWidth = styled('div')`
   }
 
   @media only screen and (max-width: 1023px) {
-    width: 190px;
+    width: 200px;
   }
 
   .sideBarUL {

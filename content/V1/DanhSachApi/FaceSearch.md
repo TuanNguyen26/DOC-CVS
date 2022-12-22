@@ -2,7 +2,7 @@
 title: 'Face Search'
 metaTitle: 'Face Search'
 metaDescription: 'This is the api v1 for this page'
-id: 11
+id: 3
 ---
 
 #### 1. Xem toàn bộ ảnh
@@ -15,10 +15,10 @@ id: 11
 
 **Params**:
 
-| Key      | Value | Mô tả                       |
-| -------- | ----- | --------------------------- |
-| `offset` | `100` | số bản ghi sẽ bỏ qua        |
-| `limit`  | `50`  | số bản ghi tối đa sẽ trả về |
+| Key    | Value | Mô tả                       |
+| ------ | ----- | --------------------------- |
+| offset | 100   | số bản ghi sẽ bỏ qua        |
+| limit  | 50    | số bản ghi tối đa sẽ trả về |
 
 **Demo Python**:
 
@@ -148,10 +148,10 @@ print(response.json())
 }
 ```
 
-| Key        | Bắt buộc | Mô tả                                                                                                                     |
-| ---------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `image_id` | có       | id ảnh cần cập nhật metadata                                                                                              |
-| `metadata` | không    | bất kỳ metadata key-value nào để lưu cùng với ảnh, trừ những key `"user"`, `"encoding"`, `"_id"` đã được hệ thống sử dụng |
+| Key      | Bắt buộc | Mô tả                                                                                                                     |
+| -------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
+| image_id | có       | id ảnh cần cập nhật metadata                                                                                              |
+| metadata | không    | bất kỳ metadata key-value nào để lưu cùng với ảnh, trừ những key `"user"`, `"encoding"`, `"_id"` đã được hệ thống sử dụng |
 
 **Demo Python**:
 
