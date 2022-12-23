@@ -109,12 +109,6 @@ const SidebarLayout = ({ location }) => (
     render={({ allMdx }) => {
       return (
         <Sidebar>
-          {config.sidebar.title ? (
-            <div
-              className={'sidebarTitle hiddenMobile'}
-              dangerouslySetInnerHTML={{ __html: config.sidebar.title }}
-            />
-          ) : null}
           <ul className={'sideBarUL'}>
             <Tree edges={allMdx.edges} />
           </ul>
