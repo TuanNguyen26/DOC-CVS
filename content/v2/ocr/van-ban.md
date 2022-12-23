@@ -1,8 +1,7 @@
 ---
 title: 'Văn bản'
 metaTitle: 'Văn bản'
-id: 25
-metaDescription: 'This is the api v21 for this page'
+id: 24
 ---
 
 #### 1. Trích xuất thông tin văn bản với đầu vào url ảnh hoặc pdf

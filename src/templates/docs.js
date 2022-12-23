@@ -17,13 +17,7 @@ export default class MDXRuntimeTest extends Component {
     if (!data) {
       return this.props.children;
     }
-    const {
-      allMdx,
-      mdx,
-      site: {
-        siteMetadata: { docsLocation, title },
-      },
-    } = data;
+    const { allMdx, mdx } = data;
 
     const githubIcon = require('../components/images/github.svg').default;
     const navItems = allMdx.edges

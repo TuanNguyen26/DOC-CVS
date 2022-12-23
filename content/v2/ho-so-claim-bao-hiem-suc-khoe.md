@@ -2,7 +2,7 @@
 title: 'Hồ sơ claim bảo hiểm sức khỏe'
 metaTitle: 'Hồ sơ claim bảo hiểm sức khỏe'
 metaDescription: 'This is the api v2 for this page'
-id: 8
+id: 7
 ---
 
 #### 1. Trích xuất thông tin Hồ sơ claim bảo hiểm sức khỏe với đầu vào url của ảnh hoặc pdf

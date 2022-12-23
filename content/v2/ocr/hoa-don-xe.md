@@ -1,8 +1,7 @@
 ---
 title: 'Hóa đơn xe'
 metaTitle: 'Hóa đơn xe'
-id: 24
-metaDescription: 'This is the api v2 for this page'
+id: 25
 ---
 
 #### 1. Trích xuất thông tin hóa đơn xe với đầu vào url ảnh hoặc pdf

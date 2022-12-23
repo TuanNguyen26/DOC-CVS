@@ -39,10 +39,13 @@ const config = {
   sidebar: {
     forcedNavOrder: [
       '/v2',
-      '/v1', // add trailing slash if enabled above
+      '/v1',
+
+      // add trailing slash if enabled above
     ],
     collapsedNav: [
-      '/trang chủ', // add trailing slash if enabled above
+      '/web',
+      // add trailing slash if enabled above
     ],
     links: [{ text: 'Hasura', link: 'https://hasura.io' }],
     frontLine: false,
@@ -59,8 +62,8 @@ const config = {
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
     manifest: {
-      name: 'Gatsby Gitbook Starter',
-      short_name: 'GitbookStarter',
+      name: 'Document',
+      short_name: 'Document',
       start_url: '/',
       background_color: '#6b37bf',
       theme_color: '#6b37bf',

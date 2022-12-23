@@ -2,7 +2,6 @@
 title: 'Giấy khai sinh'
 metaTitle: 'Giấy khai sinh'
 id: 22
-metaDescription: 'This is the api v2 for this page'
 ---
 
 #### 1. Trích xuất thông tin giấy khai sinh với đầu vào url ảnh
@@ -173,5 +172,3 @@ Giấy khai sinh:
 - regis_date: ngày đăng ký.
 - regis_date_confidence: độ tin cậy của thông tin trích xuất ngày đăng ký.
 - image: ảnh đã cắt ra và căn chỉnh của giấy khai sinh.
-
-                      |

@@ -96,7 +96,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
         <div className={'navBarWrapper'}>
           <nav className={'navBarDefault'}>
             <div className={'navBarHeader'}>
-              <Link to={finalLogoLink} className={'navBarBrand'}>
+              <Link to="/" className={'navBarBrand'}>
                 <img
                   className={'img-responsive displayInline'}
                   src="https://demo.computervision.com.vn/Web_logo.svg"
@@ -111,17 +111,6 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                 <hr />
               </div>
               <ul className={'navBarUL navBarNav navBarULRight'}>
-                <li>
-                  <Link to="/">Trang chủ</Link>
-                </li>
-                <li>
-                  <Link to="/v2">Api v2</Link>
-                </li>
-
-                <li>
-                  <Link to="/v1">Api v1</Link>
-                </li>
-
                 <li>
                   <DarkModeSwitch
                     isDarkThemeActive={isDarkThemeActive}

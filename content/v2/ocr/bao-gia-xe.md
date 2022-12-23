@@ -2,7 +2,6 @@
 title: 'Báo giá xe'
 metaTitle: 'Báo giá xe'
 id: 16
-metaDescription: 'This is the api v2 for this page'
 ---
 
 #### 1. Trích xuất thông tin Báo giá xe với đầu vào url ảnh

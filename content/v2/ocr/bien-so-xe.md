@@ -2,7 +2,6 @@
 title: 'Biển số xe'
 metaTitle: 'Biển số xe'
 id: 17
-metaDescription: 'This is the api v2 for this page'
 ---
 
 #### 1. Trích xuất thông tin biển số xe với đầu vào url ảnh

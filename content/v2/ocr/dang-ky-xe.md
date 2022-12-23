@@ -2,7 +2,6 @@
 title: 'Đăng ký xe'
 metaTitle: 'Đăng ký xe'
 id: 20
-metaDescription: 'This is the api v2 for this page'
 ---
 
 #### 1. Trích xuất thông tin hai mặt đăng ký xe với đầu vào url ảnh

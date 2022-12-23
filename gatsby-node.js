@@ -76,7 +76,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
     let value = parent.relativePath.replace(parent.ext, '');
 
-    if (value === 'codeblock') {
+    if (value === 'web') {
       value = '';
     }
 

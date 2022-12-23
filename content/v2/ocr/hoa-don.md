@@ -2,7 +2,6 @@
 title: 'Hóa đơn'
 metaTitle: 'Hóa đơn'
 id: 23
-metaDescription: 'This is the api v2 for this page'
 ---
 
 #### 1. Trích xuất thông tin hóa đơn với đầu vào url ảnh hoặc pdf

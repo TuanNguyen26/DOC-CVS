@@ -2,7 +2,6 @@
 title: 'Bảng'
 metaTitle: 'Bảng'
 id: 15
-metaDescription: 'This is the api v2 for this page'
 ---
 
 #### 1. Trích xuất thông tin dạng bảng với đầu vào url ảnh hoặc pdf

@@ -2,7 +2,7 @@
 title: 'Hóa đơn'
 metaTitle: 'Hóa đơn'
 metaDescription: 'This is the api v2 for this page'
-id: 7
+id: 9
 ---
 
 #### 1. Trích xuất thông tin Hóa đơn với đầu vào file pdf

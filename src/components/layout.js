@@ -36,6 +36,20 @@ const Content = styled('main')`
   padding-top: 3rem;
   background: ${({ theme }) => theme.colors.background};
 
+  table {
+    width: 100%;
+    border-spacing: 0;
+    display: block;
+    border-collapse: collapse;
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+  }
+
+  .table::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+  }
   table tr {
     background: ${({ theme }) => theme.colors.background};
   }
