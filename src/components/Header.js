@@ -53,6 +53,10 @@ const StyledBgDiv = styled('div')`
   }
 `;
 
+const BgNavDefault = styled('nav')`
+  background: ${(props) => (props.isDarkThemeActive ? '#001932' : undefined)};
+`;
+
 const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
   <StaticQuery
     query={graphql`
@@ -94,7 +98,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
 
       return (
         <div className={'navBarWrapper'}>
-          <nav className={'navBarDefault'}>
+          <BgNavDefault className={'navBarDefault'} isDarkThemeActive={isDarkThemeActive}>
             <div className={'navBarHeader'}>
               <Link to="/" className={'navBarBrand'}>
                 <img
@@ -119,7 +123,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                 </li>
               </ul>
             </div>
-          </nav>
+          </BgNavDefault>
           <StyledBgDiv isDarkThemeActive={isDarkThemeActive}>
             <div className={'navBarDefault removePadd'}>
               <span
