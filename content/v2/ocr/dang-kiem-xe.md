@@ -1,7 +1,7 @@
 ---
 title: 'Đăng kiểm xe'
 metaTitle: 'Đăng kiểm xe'
-id: 19
+stt: 7
 ---
 
 #### 1. Trích xuất thông tin đăng kiểm xe với đầu vào url ảnh

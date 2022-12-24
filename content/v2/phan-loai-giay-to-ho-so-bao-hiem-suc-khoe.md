@@ -2,7 +2,7 @@
 title: 'Phân loại giấy tờ, hồ sơ bảo hiểm sức khỏe'
 metaTitle: 'Phân loại giấy tờ, hồ sơ bảo hiểm sức khỏe'
 metaDescription: 'This is the api v2 for this page'
-id: 12
+stt: 24
 ---
 
 #### 1. Phân loại giấy tờ hồ sơ bảo hiểm sức khỏe với đầu vào url của ảnh hoặc pdf

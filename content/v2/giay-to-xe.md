@@ -2,7 +2,7 @@
 title: 'Giấy tờ xe'
 metaTitle: 'Giấy tờ xe'
 metaDescription: 'This is the api v21 for this page'
-id: 6
+stt: 19
 ---
 
 #### 1. Trích xuất thông tin Giấy tờ xe với đầu vào url của ảnh hoặc pdf

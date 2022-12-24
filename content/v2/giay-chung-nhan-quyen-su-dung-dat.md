@@ -2,7 +2,7 @@
 title: 'Giấy chứng nhận quyền sử dụng đất'
 metaTitle: 'Giấy chứng nhận quyền sử dụng đất'
 metaDescription: 'This is the api v21 for this page'
-id: 5
+stt: 18
 ---
 
 #### 1. Trích xuất thông tin Giấy chứng nhận quyền sử dụng đất với đầu vào url của ảnh hoặc pdf

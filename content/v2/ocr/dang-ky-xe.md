@@ -1,7 +1,7 @@
 ---
 title: 'Đăng ký xe'
 metaTitle: 'Đăng ký xe'
-id: 20
+stt: 8
 ---
 
 #### 1. Trích xuất thông tin hai mặt đăng ký xe với đầu vào url ảnh

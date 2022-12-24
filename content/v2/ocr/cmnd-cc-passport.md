@@ -1,7 +1,7 @@
 ---
 title: 'CMND/CC/Passport'
 metaTitle: 'Chứng minh nhân dân - Căn cước - Passport'
-id: 18
+stt: 6
 ---
 
 #### 1. Trích xuất thông tin hai mặt chứng minh thư thẻ căn cước với đầu vào url ảnh

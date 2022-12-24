@@ -2,7 +2,7 @@
 title: 'Liveness Verify'
 metaTitle: 'Livencess Verify'
 metaDescription: 'This is the api v2 for this page'
-id: 10
+stt: 23
 ---
 
 #### 1. Thực hiện eKYC sử dụng ảnh chụp chân dung người dùng ở 3 góc độ

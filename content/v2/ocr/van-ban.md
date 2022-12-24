@@ -1,7 +1,7 @@
 ---
 title: 'Văn bản'
 metaTitle: 'Văn bản'
-id: 24
+stt: 13
 ---
 
 #### 1. Trích xuất thông tin văn bản với đầu vào url ảnh hoặc pdf

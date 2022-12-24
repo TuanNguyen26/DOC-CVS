@@ -1,7 +1,7 @@
 ---
 title: 'Giấy chứng nhận đăng kí doanh nghiệp'
 metaTitle: 'Giấy chứng nhận đăng kí doanh nghiệp'
-id: 21
+stt: 9
 ---
 
 #### 1. Trích xuất thông tin Giấy chứng nhận đăng ký doanh nghiệp với đầu vào url ảnh hoặc pdf

@@ -2,7 +2,7 @@
 title: 'Sao kê ngân hàng'
 metaTitle: 'Sao kê ngân hàng'
 metaDescription: 'This is the api v2 for this page'
-id: 13
+stt: 25
 ---
 
 #### 1. Trích xuất thông tin Sao kê ngân hàng với đầu vào url của ảnh hoặc pdf

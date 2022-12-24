@@ -2,7 +2,7 @@
 title: 'Face Matching'
 metaTitle: ' Face Matching'
 metaDescription: 'This is the api v1 for this page'
-id: 1
+stt: 31
 ---
 
 Matching service là hệ thống AI cho phép so sánh độ tương đồng giữa khuôn mặt có trong chứng minh nhân dân, thẻ căn cước của người chủ sở hữu với khuôn mặt được chụp trực tiếp của cùng một người đó.

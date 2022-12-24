@@ -430,7 +430,7 @@ export const baseStyles = css`
   .sideBarUL li a {
     /* color: #fff; */
     font-size: 14px;
-    font-weight: 500;
+    /* font-weight: 100; */
     line-height: 1.5;
     padding: 7px 24px 7px 16px;
     padding-left: 10px;
@@ -450,10 +450,6 @@ export const baseStyles = css`
     cursor: pointer;
   }
 
-  .hideFrontLine .active > a {
-    background-color: #1ed3c6;
-    color: #fff !important;
-  }
   .firstLevel ul li .collapser svg path {
     fill: #fff !important;
   }
@@ -462,7 +458,7 @@ export const baseStyles = css`
   }
 
   .firstLevel ul .item ul .item {
-    border-left: 1px solid #e6ecf1;
+    /* border-left: 1px solid #e6ecf1; */
   }
 
   .sideBarUL .item {
@@ -490,8 +486,15 @@ export const baseStyles = css`
     background-color: #001933;
   }
 
-  .sideBarUL .item .item {
-    margin-left: 16px;
+  .sideBarUL .item .item ul li a {
+    /* margin-left: 16px; */
+    padding-left: 24px;
+  }
+
+  .sideBarUL .item .item ul li {
+    ul li a {
+      padding-left: 40px;
+    }
   }
 
   .firstLevel > ul > .item {

@@ -1,7 +1,7 @@
 ---
 title: 'Biển số xe'
 metaTitle: 'Biển số xe'
-id: 17
+stt: 5
 ---
 
 #### 1. Trích xuất thông tin biển số xe với đầu vào url ảnh

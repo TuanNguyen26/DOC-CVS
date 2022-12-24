@@ -1,7 +1,7 @@
 ---
 title: 'Hóa đơn xe'
 metaTitle: 'Hóa đơn xe'
-id: 25
+stt: 11
 ---
 
 #### 1. Trích xuất thông tin hóa đơn xe với đầu vào url ảnh hoặc pdf

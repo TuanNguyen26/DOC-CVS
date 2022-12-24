@@ -1,7 +1,7 @@
 ---
 title: 'Hóa đơn'
 metaTitle: 'Hóa đơn'
-id: 23
+stt: 12
 ---
 
 #### 1. Trích xuất thông tin hóa đơn với đầu vào url ảnh hoặc pdf

@@ -1,7 +1,7 @@
 ---
 title: 'Giấy khai sinh'
 metaTitle: 'Giấy khai sinh'
-id: 22
+stt: 10
 ---
 
 #### 1. Trích xuất thông tin giấy khai sinh với đầu vào url ảnh

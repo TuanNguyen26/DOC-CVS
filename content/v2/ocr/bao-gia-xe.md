@@ -1,7 +1,7 @@
 ---
 title: 'Báo giá xe'
 metaTitle: 'Báo giá xe'
-id: 16
+stt: 4
 ---
 
 #### 1. Trích xuất thông tin Báo giá xe với đầu vào url ảnh

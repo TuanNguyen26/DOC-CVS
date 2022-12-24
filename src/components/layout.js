@@ -18,10 +18,19 @@ const Wrapper = styled('div')`
   }
 
   .sideBarUL .item > a:hover {
-    background-color: #1ed3c6;
-    color: #fff !important;
+    background-color: ${({ theme }) => theme.bgColors.backgroundColor};
+    color: ${({ theme }) => theme.bgActive.color};
+  }
 
-    /* background: #F8F8F8 */
+  .hideFrontLine .active > a {
+    border-radius: 8px;
+    background-color: ${({ theme }) => theme.bgActive.backgroundColor};
+    color: ${({ theme }) => theme.bgActive.color};
+  }
+
+  .rightSideBarUL li a:active {
+    /* background-color: ${({ theme }) => theme.bgActive.backgroundColor}; */
+    /* color: ${({ theme }) => theme.bgActive.color}; */
   }
 
   @media only screen and (max-width: 767px) {

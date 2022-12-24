@@ -6,6 +6,7 @@ import { StyledNextPrevious } from './styles/PageNavigationButtons';
 const NextPrevious = ({ mdx, nav }) => {
   let currentIndex;
 
+  console.log('nav', nav);
   const currentPaginationInfo = nav.map((el, index) => {
     if (el && el.url === mdx.fields.slug) {
       currentIndex = index;

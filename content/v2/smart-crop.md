@@ -2,7 +2,7 @@
 title: 'Smart Crop'
 metaTitle: 'Smart crop'
 metaDescription: 'This is the api v2 for this page'
-id: 14
+stt: 26
 ---
 
 #### 1. Cắt ảnh thông minh với đầu vào url ảnh

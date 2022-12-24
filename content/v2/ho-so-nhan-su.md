@@ -2,7 +2,7 @@
 title: 'Hồ sơ nhân sự'
 metaTitle: 'Hồ sơ nhân sự'
 metaDescription: 'This is the api v2 for this page'
-id: 8
+stt: 21
 ---
 
 #### 1. Trích xuất thông tin Hồ sơ nhân sự với đầu vào url của ảnh hoặc pdf

@@ -14,6 +14,7 @@ export default class MDXRuntimeTest extends Component {
   render() {
     const { data } = this.props;
 
+    console.log('dataa', data);
     if (!data) {
       return this.props.children;
     }
@@ -23,12 +24,14 @@ export default class MDXRuntimeTest extends Component {
     const navItems = allMdx.edges
       .map(({ node }) => node.fields.slug)
       .filter((slug) => slug !== '/')
-      .sort()
       .reduce(
         (acc, cur) => {
           if (forcedNavOrder.find((url) => url === cur)) {
             return { ...acc, [cur]: [cur] };
           }
+
+          // console.log('accc', acc);
+          console.log('curr', cur);
 
           let prefix = cur.split('/')[1];
 
@@ -44,6 +47,8 @@ export default class MDXRuntimeTest extends Component {
         },
         { items: [] }
       );
+
+    console.log('navItems', navItems);
 
     const nav = forcedNavOrder
       .reduce((acc, cur) => {
@@ -71,18 +76,6 @@ export default class MDXRuntimeTest extends Component {
 
     return (
       <Layout {...this.props}>
-        <Helmet>
-          {metaTitle ? <title>{metaTitle}</title> : null}
-          {metaTitle ? <meta name="title" content={metaTitle} /> : null}
-          {metaDescription ? <meta name="description" content={metaDescription} /> : null}
-          {metaTitle ? <meta property="og:title" content={metaTitle} /> : null}
-          {metaDescription ? <meta property="og:description" content={metaDescription} /> : null}
-          {metaTitle ? <meta property="twitter:title" content={metaTitle} /> : null}
-          {metaDescription ? (
-            <meta property="twitter:description" content={metaDescription} />
-          ) : null}
-          <link rel="canonical" href={canonicalUrl} />
-        </Helmet>
         <div className={'titleWrapper'}>
           <StyledHeading>{mdx.fields.title}</StyledHeading>
         </div>
@@ -123,12 +116,15 @@ export const pageQuery = graphql`
         metaDescription
       }
     }
-    allMdx {
+    allMdx(sort: { fields: frontmatter___stt, order: ASC }) {
       edges {
         node {
           fields {
             slug
             title
+          }
+          frontmatter {
+            stt
           }
         }
       }

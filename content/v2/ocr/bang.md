@@ -1,7 +1,7 @@
 ---
 title: 'Bảng'
 metaTitle: 'Bảng'
-id: 15
+stt: 3
 ---
 
 #### 1. Trích xuất thông tin dạng bảng với đầu vào url ảnh hoặc pdf

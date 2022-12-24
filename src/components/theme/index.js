@@ -13,6 +13,14 @@ const lightTheme = {
     preFormattedText: 'rgb(245, 247, 249)',
     link: '#1000EE',
   },
+  bgColors: {
+    backgroundColor: 'rgba(0, 0, 0, 0.06)',
+  },
+
+  bgActive: {
+    backgroundColor: '#e6f4ff',
+    color: '#1677ff',
+  },
 };
 
 const darkTheme = {
@@ -23,6 +31,15 @@ const darkTheme = {
     text: '#fff',
     preFormattedText: '#000',
     link: '#1ED3C6',
+  },
+
+  bgColors: {
+    backgroundColor: 'rgba(255, 255, 255, 0.12)',
+  },
+
+  bgActive: {
+    backgroundColor: '#1668dc',
+    color: '#FFF',
   },
 };
 

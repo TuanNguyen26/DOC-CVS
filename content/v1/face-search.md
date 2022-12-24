@@ -2,7 +2,7 @@
 title: 'Face Search'
 metaTitle: 'Face Search'
 metaDescription: 'This is the api v1 for this page'
-id: 2
+stt: 32
 ---
 
 #### 1. Xem toàn bộ ảnh

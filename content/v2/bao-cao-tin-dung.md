@@ -2,7 +2,7 @@
 title: 'Báo cáo tín dụng '
 metaTitle: 'Báo cáo tín dụng'
 metaDescription: 'This is the api v2 for this page'
-id: 1
+stt: 14
 ---
 
 #### 1. Trích xuất thông tin Báo cáo tín dụng với đầu vào url của ảnh hoặc pdf
