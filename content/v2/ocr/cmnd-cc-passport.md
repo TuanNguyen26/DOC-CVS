@@ -1,5 +1,5 @@
 ---
-title: 'CMND/CC/Passport'
+title: 'Cmnd - CC - Passport'
 metaTitle: 'Chứng minh nhân dân - Căn cước - Passport'
 stt: 6
 ---
