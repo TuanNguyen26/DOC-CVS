@@ -34,6 +34,7 @@ export default class MDXRuntimeTest extends Component {
     if (data.mdx.fields.slug === '/') {
       navigate('/v2');
     }
+
     const githubIcon = require('../components/images/github.svg').default;
     const navItems = allMdx.edges
       .map(({ node }) => node.fields.slug)

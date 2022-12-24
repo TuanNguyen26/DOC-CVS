@@ -1,6 +1,6 @@
 const config = {
   gatsby: {
-    pathPrefix: '/',
+    pathPrefix: '/v2',
     siteUrl: 'https://hasura.io',
     gaTrackingId: null,
     trailingSlash: false,
@@ -49,7 +49,7 @@ const config = {
     ],
     links: [{ text: 'Hasura', link: 'https://hasura.io' }],
     frontLine: false,
-    ignoreIndex: false,
+    ignoreIndex: true,
     title: "<a href='/'>Danh mục</a>",
   },
   siteMetadata: {
