@@ -7,19 +7,33 @@ import { Layout, Link } from '$components';
 import NextPrevious from '../components/NextPrevious';
 import config from '../../config';
 import { Edit, StyledHeading, StyledMainWrapper } from '../components/styles/Docs';
-
+import { navigate } from 'gatsby';
 const forcedNavOrder = config.sidebar.forcedNavOrder;
 
 export default class MDXRuntimeTest extends Component {
   render() {
     const { data } = this.props;
 
-    console.log('dataa', data);
     if (!data) {
       return this.props.children;
     }
-    const { allMdx, mdx } = data;
 
+    // const { allMdx, mdx } = data;
+
+    const {
+      allMdx,
+      mdx,
+      site: {
+        siteMetadata: { docsLocation, title },
+      },
+    } = data;
+
+    // if (data.mdx.fields)
+    console.log('dataa', data.mdx.fields.slug);
+
+    if (data.mdx.fields.slug === '/') {
+      navigate('/v2');
+    }
     const githubIcon = require('../components/images/github.svg').default;
     const navItems = allMdx.edges
       .map(({ node }) => node.fields.slug)
@@ -76,6 +90,18 @@ export default class MDXRuntimeTest extends Component {
 
     return (
       <Layout {...this.props}>
+        <Helmet>
+          {metaTitle ? <title>{metaTitle}</title> : null}
+          {metaTitle ? <meta name="title" content={metaTitle} /> : null}
+          {metaDescription ? <meta name="description" content={metaDescription} /> : null}
+          {metaTitle ? <meta property="og:title" content={metaTitle} /> : null}
+          {metaDescription ? <meta property="og:description" content={metaDescription} /> : null}
+          {metaTitle ? <meta property="twitter:title" content={metaTitle} /> : null}
+          {metaDescription ? (
+            <meta property="twitter:description" content={metaDescription} />
+          ) : null}
+          <link rel="canonical" href={canonicalUrl} />
+        </Helmet>
         <div className={'titleWrapper'}>
           <StyledHeading>{mdx.fields.title}</StyledHeading>
         </div>

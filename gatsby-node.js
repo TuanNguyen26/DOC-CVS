@@ -6,6 +6,15 @@ const startCase = require('lodash.startcase');
 
 const config = require('./config');
 
+// exports.createPages = async ({ graphql, actions }) => {
+//   const { createRedirect } = actions;
+
+//   createRedirect({
+//     fromPath: `/`,
+//     toPath: `/v2/`,
+//   });
+// };
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
