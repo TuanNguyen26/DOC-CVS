@@ -149,9 +149,9 @@ print(response.json())
 
 **Body**:
 
-| Key     | Type | Value         | Mô tả                                |
-| ------- | ---- | ------------- | ------------------------------------ |
-| `image` | file | `example.jpg` | file ảnh văn bản scan cần trích xuất |
+| Key     | Type   | Value         | Mô tả                                |
+| ------- | ------ | ------------- | ------------------------------------ |
+| `image` | `file` | `example.jpg` | file ảnh văn bản scan cần trích xuất |
 
 **Demo Python**:
 
@@ -190,8 +190,8 @@ _Chú ý_: Trường hợp trích xuất thông tin bằng lái xe và trích xu
 
 `type`: Loại giấy tờ tùy thân được trích xuất thông tin, trong trường hợp `get_haimat` sẽ không có trường này.
 
-- blx: ứng với bằng lái xe.
-- pdf: ứng với upload file PDF.
+- `blx` : ứng với bằng lái xe.
+- `pdf` : ứng với upload file PDF.
 
 `data`: Bao gồm các thông tin được trích xuất từ ảnh đầu vào có giấy tờ tùy thân, với mỗi loại giấy tờ tùy thân thì sẽ có những thông tin trả về khác nhau.
 
