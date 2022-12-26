@@ -16,10 +16,10 @@ stt: 8
 
 | Key           | Value                           | Mô tả                                                       |
 | ------------- | ------------------------------- | ----------------------------------------------------------- |
-| `img1`        | `https://example.com/front.png` | url ảnh mặt trước cần trích xuất thông tin                  |
-| `img2`        | `https://example.com/back.png`  | url ảnh mặt sau cần trích xuất thông tin                    |
-| `format_type` | `url`                           | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false`                  | trả về ảnh đăng ký xe đã được cắt và căn chỉnh              |
+| `img1`        | `https://example.com/front.png` | Url ảnh mặt trước cần trích xuất thông tin                  |
+| `img2`        | `https://example.com/back.png`  | Url ảnh mặt sau cần trích xuất thông tin                    |
+| `format_type` | `url`                           | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false`                  | Trả về ảnh đăng ký xe đã được cắt và căn chỉnh              |
 
 **Demo Python**:
 
@@ -52,15 +52,15 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `file`         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh đăng ký xe đã được cắt và căn chỉnh              |
+| `format_type` | `file`         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh đăng ký xe đã được cắt và căn chỉnh              |
 
 **Body**:
 
 | Key    | Type   | Value               | Mô tả                                       |
 | ------ | ------ | ------------------- | ------------------------------------------- |
-| `img1` | `file` | `example_front.jpg` | file ảnh mặt trước cần trích xuất thông tin |
-| `img2` | `file` | `example_back.jpg`  | file ảnh mặt sau cần trích xuất thông tin   |
+| `img1` | `file` | `example_front.jpg` | File ảnh mặt trước cần trích xuất thông tin |
+| `img2` | `file` | `example_back.jpg`  | File ảnh mặt sau cần trích xuất thông tin   |
 
 **Demo Python**:
 
@@ -94,8 +94,8 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `base64`       | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh đăng ký xe đã được cắt và căn chỉnh              |
+| `format_type` | `base64`       | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh đăng ký xe đã được cắt và căn chỉnh              |
 
 **Body**:
 
@@ -143,9 +143,9 @@ print(response.json())
 
 | Key           | Value                           | Mô tả                                                       |
 | ------------- | ------------------------------- | ----------------------------------------------------------- |
-| `img`         | `https://example.com/image.png` | url ảnh mặt trước hoặc mặt sau của đăng ký xe               |
-| `format_type` | `url`                           | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false`                  | trả về ảnh đăng ký xe đã được cắt và căn chỉnh              |
+| `img`         | `https://example.com/image.png` | Url ảnh mặt trước hoặc mặt sau của đăng ký xe               |
+| `format_type` | `url`                           | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false`                  | Trả về ảnh đăng ký xe đã được cắt và căn chỉnh              |
 
 **Demo Python**:
 
@@ -178,14 +178,14 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `file`         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh đăng ký xe đã được cắt và căn chỉnh              |
+| `format_type` | `file`         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh đăng ký xe đã được cắt và căn chỉnh              |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả                                              |
 | ----- | ------ | ------------- | -------------------------------------------------- |
-| `img` | `file` | `example.jpg` | file ảnh của mặt trước hoặc mặt sau của đăng ký xe |
+| `img` | `file` | `example.jpg` | File ảnh của mặt trước hoặc mặt sau của đăng ký xe |
 
 **Demo Python**:
 
@@ -218,8 +218,8 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `base64`       | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh đăng ký xe đã được cắt và căn chỉnh              |
+| `format_type` | `base64`       | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh đăng ký xe đã được cắt và căn chỉnh              |
 
 **Body**:
 
@@ -279,26 +279,26 @@ Chú ý: Trường hợp trích xuất thông tin từ đăng ký xe không có 
 
 Mặt trước đăng ký xe:
 
-- `name` : tên chủ sở hữu xe.
-- `address` : nơi cư trú.
-- `id` : id đăng ký xe.
-- `plate` : biển số xe.
-- `issued_at` : nơi cấp.
-- `image` : ảnh mặt trước đăng ký xe.
+- `name` : Tên chủ sở hữu xe.
+- `address` : Nơi cư trú.
+- `id` : Id đăng ký xe.
+- `plate` : Biển số xe.
+- `issued_at` : Nơi cấp.
+- `image` : Ảnh mặt trước đăng ký xe.
 
 Mặt sau đăng ký xe:
 
-- `name` : tên chủ sở hữu xe.
-- `address` : nơi cư trú.
-- `engine` : số máy.
-- `chassis` : số khung.
-- `brand` : nhãn hiệu.
-- `model` : số loại.
-- `color` : màu sơn.
-- `capacity`: dung tích.
-- `issued_at` : nơi đăng ký.
-- `last_issue_date` : ngày đăng ký cuối cùng.
-- `first_issue_date` : ngày đăng ký đầu tiên.
-- `plate` : biển số xe.
-- `pay_load` : trọng tải.
-- `image` : ảnh mặt sau đăng ký xe.
+- `name` : Tên chủ sở hữu xe.
+- `address` : Nơi cư trú.
+- `engine` : Số máy.
+- `chassis` : Số khung.
+- `brand` : Nhãn hiệu.
+- `model` : Số loại.
+- `color` : Màu sơn.
+- `capacity`: Dung tích.
+- `issued_at` : Nơi đăng ký.
+- `last_issue_date` : Ngày đăng ký cuối cùng.
+- `first_issue_date` : Ngày đăng ký đầu tiên.
+- `plate` : Biển số xe.
+- `pay_load` : Trọng tải.
+- `image` : Ảnh mặt sau đăng ký xe.

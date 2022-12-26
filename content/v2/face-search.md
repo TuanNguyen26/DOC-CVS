@@ -17,8 +17,8 @@ stt: 17
 
 | Key      | Value | Mô tả                       |
 | -------- | ----- | --------------------------- |
-| `offset` | `100` | số bản ghi sẽ bỏ qua        |
-| `limit`  | `50`  | số bản ghi tối đa sẽ trả về |
+| `offset` | `100` | Số bản ghi sẽ bỏ qua        |
+| `limit`  | `50`  | Số bản ghi tối đa sẽ trả về |
 
 **Demo Python**:
 
@@ -63,8 +63,8 @@ Trong đó:
 
 | Key      | Type        | Bắt buộc | Mô tả                      |
 | -------- | ----------- | -------- | -------------------------- |
-| `image`  | `ImageData` | có       | ảnh dùng để tìm kiếm       |
-| `base64` | `string`    | có       | mã hoá base64 của hình ảnh |
+| `image`  | `ImageData` | Có       | Ảnh dùng để tìm kiếm       |
+| `base64` | `string`    | Có       | Mã hoá base64 của hình ảnh |
 
 **Demo Python**:
 
@@ -106,9 +106,9 @@ Trong đó:
 
 | Key        | Type         | Bắt buộc | Mô tả                                                                                                                     |
 | ---------- | ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `image`    | `ImageData`  | có       | ảnh muốn thêm                                                                                                             |
-| `base64`   | `string`     | có       | mã hoá base64 của hình ảnh                                                                                                |
-| `metadata` | `dictionary` | không    | bất kỳ metadata key-value nào để lưu cùng với ảnh, trừ những key `"user"`, `"encoding"`, `"_id"` đã được hệ thống sử dụng |
+| `image`    | `ImageData`  | Có       | Ảnh muốn thêm                                                                                                             |
+| `base64`   | `string`     | Có       | Mã hoá base64 của hình ảnh                                                                                                |
+| `metadata` | `dictionary` | Không    | Bất kỳ metadata key-value nào để lưu cùng với ảnh, trừ những key `"user"`, `"encoding"`, `"_id"` đã được hệ thống sử dụng |
 
 **Demo Python**:
 
@@ -150,7 +150,7 @@ print(response.json())
 
 | Key        | Bắt buộc | Mô tả                                                                                                                     |
 | ---------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `metadata` | không    | bất kỳ metadata key-value nào để lưu cùng với ảnh, trừ những key `"user"`, `"encoding"`, `"_id"` đã được hệ thống sử dụng |
+| `metadata` | Không    | Bất kỳ metadata key-value nào để lưu cùng với ảnh, trừ những key `"user"`, `"encoding"`, `"_id"` đã được hệ thống sử dụng |
 
 **Demo Python**:
 
@@ -226,15 +226,15 @@ Mỗi api khác nhau sẽ trả về kết quả khác nhau.
 
 Xem toàn bộ ảnh:
 
-- `result` : mảng chứa các phần tử ảnh, mỗi phần tử gồm id của ảnh và url ảnh tương ứng
+- `result` : Mảng chứa các phần tử ảnh, mỗi phần tử gồm id của ảnh và url ảnh tương ứng
 
 Tìm kiếm khuôn mặt:
 
-- `result` : mảng chứa các phần tử ảnh phù hợp, mỗi phần tử gồm id của ảnh và url ảnh tương ứng
+- `result` : Mảng chứa các phần tử ảnh phù hợp, mỗi phần tử gồm id của ảnh và url ảnh tương ứng
 
 Thêm ảnh:
 
-- `result` : json chứa thông tin ảnh mới được thêm vào
+- `result` : Json chứa thông tin ảnh mới được thêm vào
 
 Xoá nhiều ảnh:
 

@@ -97,7 +97,8 @@ module.exports = {
     description: config.siteMetadata.description,
     docsLocation: config.siteMetadata.docsLocation,
     ogImage: config.siteMetadata.ogImage,
-    favicon: config.siteMetadata.favicon,
+    // favicon: config.siteMetadata.favicon,
+
     logo: {
       link: config.header.logoLink ? config.header.logoLink : '/',
       image: config.header.logo,

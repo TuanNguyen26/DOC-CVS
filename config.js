@@ -75,7 +75,7 @@ const config = {
           type: `image/png`,
         },
       ],
-      icon: 'src/components/images/favicon-32x32.png',
+      icon: 'src/components/images/cvs-favicon.png',
     },
   },
 };

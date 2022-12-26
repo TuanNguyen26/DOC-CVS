@@ -16,7 +16,7 @@ stt: 29
 
 | Key   | Value                         | Mô tả                                        |
 | ----- | ----------------------------- | -------------------------------------------- |
-| `url` | `https://example.com/blx.png` | url ảnh bằng lái xe cần trích xuất thông tin |
+| `url` | `https://example.com/blx.png` | Url ảnh bằng lái xe cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -48,7 +48,7 @@ print(response.json())
 
 | Key     | Type   | Value             | Mô tả                                         |
 | ------- | ------ | ----------------- | --------------------------------------------- |
-| `image` | `file` | `example_blx.jpg` | file ảnh bằng lái xe cần trích xuất thông tin |
+| `image` | `file` | `example_blx.jpg` | File ảnh bằng lái xe cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -119,7 +119,7 @@ print(response.json())
 
 | Key   | Value                           | Mô tả                |
 | ----- | ------------------------------- | -------------------- |
-| `url` | `https://example.com/image.png` | url ảnh văn bản scan |
+| `url` | `https://example.com/image.png` | Url ảnh văn bản scan |
 
 **Demo Python**:
 
@@ -151,7 +151,7 @@ print(response.json())
 
 | Key     | Type   | Value         | Mô tả                                |
 | ------- | ------ | ------------- | ------------------------------------ |
-| `image` | `file` | `example.jpg` | file ảnh văn bản scan cần trích xuất |
+| `image` | `file` | `example.jpg` | File ảnh văn bản scan cần trích xuất |
 
 **Demo Python**:
 
@@ -190,21 +190,21 @@ _Chú ý_: Trường hợp trích xuất thông tin bằng lái xe và trích xu
 
 `type`: Loại giấy tờ tùy thân được trích xuất thông tin, trong trường hợp `get_haimat` sẽ không có trường này.
 
-- `blx` : ứng với bằng lái xe.
-- `pdf` : ứng với upload file PDF.
+- `blx` : Ứng với bằng lái xe.
+- `pdf` : Ứng với upload file PDF.
 
 `data`: Bao gồm các thông tin được trích xuất từ ảnh đầu vào có giấy tờ tùy thân, với mỗi loại giấy tờ tùy thân thì sẽ có những thông tin trả về khác nhau.
 
 Bằng lái xe.
 
-- `id` : số thẻ.
-- `name` : họ và tên.
-- `born` : ngày sinh.
-- `class` : hạng.
-- `nation` : quốc tịch.
-- `dateissue` : ngày phát hành.
-- `duedate` : ngày hết hạn.
-- `address` : nơi cư trú.
+- `id` : Số thẻ.
+- `name` : Họ và tên.
+- `born` : Ngày sinh.
+- `class` : Hạng.
+- `nation` : Quốc tịch.
+- `dateissue` : Ngày phát hành.
+- `duedate` : Ngày hết hạn.
+- `address` : Nơi cư trú.
 
 Trong trường hợp `get_haimat`, `data` sẽ có gồm các thông tin sau:
 

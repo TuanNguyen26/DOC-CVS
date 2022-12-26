@@ -19,8 +19,8 @@ Matching service là hệ thống AI cho phép so sánh độ tương đồng gi
 
 | Key          | Value                            | Mô tả                                    |
 | ------------ | -------------------------------- | ---------------------------------------- |
-| `img_cmt`    | `https://example.com/cmt.png`    | url ảnh chứng minh thư hoặc thẻ căn cước |
-| `img_person` | `https://example.com/person.png` | url ảnh khuôn mặt cần so khớp            |
+| `img_cmt`    | `https://example.com/cmt.png`    | Url ảnh chứng minh thư hoặc thẻ căn cước |
+| `img_person` | `https://example.com/person.png` | Url ảnh khuôn mặt cần so khớp            |
 
 **Demo Python**:
 
@@ -51,8 +51,8 @@ print(response.json())
 
 | Key          | Type | Value                | Mô tả                                     |
 | ------------ | ---- | -------------------- | ----------------------------------------- |
-| `img_cmt`    | file | `example_cmt.jpg`    | file ảnh chứng minh thư hoặc thẻ căn cước |
-| `img_person` | file | `example_person.jpg` | file ảnh khuôn mặt cần so khớp            |
+| `img_cmt`    | file | `example_cmt.jpg`    | File ảnh chứng minh thư hoặc thẻ căn cước |
+| `img_person` | file | `example_person.jpg` | File ảnh khuôn mặt cần so khớp            |
 
 **Demo Python**:
 
@@ -127,8 +127,8 @@ print(response.json())
 
 | Key     | Value                           | Mô tả                      |
 | ------- | ------------------------------- | -------------------------- |
-| `face1` | `https://example.com/face1.png` | url ảnh chân dung thứ nhất |
-| `face2` | `https://example.com/face2.png` | url ảnh chân dung thứ hai  |
+| `face1` | `https://example.com/face1.png` | Url ảnh chân dung thứ nhất |
+| `face2` | `https://example.com/face2.png` | Url ảnh chân dung thứ hai  |
 
 **Demo Python**:
 
@@ -159,8 +159,8 @@ print(response.json())
 
 | Key     | Type   | Value               | Mô tả                       |
 | ------- | ------ | ------------------- | --------------------------- |
-| `face1` | `file` | `example_face1.jpg` | file ảnh chân dung thứ nhất |
-| `face2` | `file` | `example_face2.jpg` | file ảnh chân dung thứ hai  |
+| `face1` | `file` | `example_face1.jpg` | File ảnh chân dung thứ nhất |
+| `face2` | `file` | `example_face2.jpg` | File ảnh chân dung thứ hai  |
 
 **Demo Python**:
 
@@ -235,10 +235,10 @@ print(response.json())
 
 | Key       | Type   | Value               | Mô tả                                                        |
 | --------- | ------ | ------------------- | ------------------------------------------------------------ |
-| `img_cmt` | `file` | `example_cmt.jpg`   | file ảnh chứng minh thư hoặc thẻ căn cước hoặc ảnh chân dung |
-| `mid`     | `file` | `example_mid.jpg`   | file ảnh giữa khuôn mặt                                      |
-| `left`    | `file` | `example_left.jpg`  | file ảnh mặt quay trái                                       |
-| `right`   | `file` | `example_right.jpg` | file ảnh mặt quay phải                                       |
+| `img_cmt` | `file` | `example_cmt.jpg`   | File ảnh chứng minh thư hoặc thẻ căn cước hoặc ảnh chân dung |
+| `mid`     | `file` | `example_mid.jpg`   | File ảnh giữa khuôn mặt                                      |
+| `left`    | `file` | `example_left.jpg`  | File ảnh mặt quay trái                                       |
+| `right`   | `file` | `example_right.jpg` | File ảnh mặt quay phải                                       |
 
 **Demo Python**:
 

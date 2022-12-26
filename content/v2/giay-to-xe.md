@@ -17,9 +17,9 @@ stt: 19
 
 | Key           | Value                           | Mô tả                                                       |
 | ------------- | ------------------------------- | ----------------------------------------------------------- |
-| `img`         | `https://example.com/image.png` | url của ảnh hoặc pdf                                        |
-| `format_type` | `url`                           | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false`                  | trả về ảnh của Giấy tờ xe đã được căn chỉnh                 |
+| `img`         | `https://example.com/image.png` | Url của ảnh hoặc pdf                                        |
+| `format_type` | `url`                           | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false`                  | Trả về ảnh của Giấy tờ xe đã được căn chỉnh                 |
 
 **Demo Python**:
 
@@ -52,14 +52,14 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `file`         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh của Giấy tờ xe đã được căn chỉnh                 |
+| `format_type` | `file`         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của Giấy tờ xe đã được căn chỉnh                 |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả                            |
 | ----- | ------ | ------------- | -------------------------------- |
-| `img` | `file` | `example.jpg` | file ảnh hoặc pdf của Giấy tờ xe |
+| `img` | `file` | `example.jpg` | File ảnh hoặc pdf của Giấy tờ xe |
 
 **Demo Python**:
 
@@ -91,8 +91,8 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `base64`       | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh của Giấy tờ xe đã được căn chỉnh                 |
+| `format_type` | `base64`       | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của Giấy tờ xe đã được căn chỉnh                 |
 
 **Body**:
 
@@ -150,78 +150,78 @@ Mỗi phần tử trong mảng sẽ là một JSON với định dạng sau:
 
 `type`: Loại giấy tờ trong Giấy tờ xe được trích xuất thông tin.
 
-- `vehicle_registration_front`: Mặt trước đăng ký xe.
-- `vehicle_registration_back`: Mặt sau đăng ký xe.
-- `picertificate`: Đăng kiểm xe.
-- `driving_license`: Bằng lái xe.
+- `vehicle_registration_front` : Mặt trước đăng ký xe.
+- `vehicle_registration_back` : Mặt sau đăng ký xe.
+- `picertificate` : Đăng kiểm xe.
+- `driving_license` : Bằng lái xe.
 
-`info`: Bao gồm các thông tin trích xuất được, với mỗi loại giấy tờ thì sẽ có những thông tin trả về khác nhau.
+`info` : Bao gồm các thông tin trích xuất được, với mỗi loại giấy tờ thì sẽ có những thông tin trả về khác nhau.
 
 Mặt trước đăng ký xe:
 
-- `name` : tên chủ sở hữu xe.
-- `address` : nơi cư trú.
-- `id` : id đăng ký xe.
-- `plate` : biển số xe.
-- `issued_at` : nơi cấp.
-- `image` : ảnh mặt trước đăng ký xe.
+- `name` : Tên chủ sở hữu xe.
+- `address` : Nơi cư trú.
+- `id` : Id đăng ký xe.
+- `plate` : Biển số xe.
+- `issued_at` : Nơi cấp.
+- `image` : Ảnh mặt trước đăng ký xe.
 
 Mặt sau đăng ký xe:
 
-- `name` : tên chủ sở hữu xe.
-- `address` : nơi cư trú.
-- `engine` : số máy.
-- `chassis` : số khung.
-- `brand` : nhãn hiệu.
-- `model` : số loại.
-- `color` : màu sơn.
-- `capacity` : dung tích.
-- `issued_at` : nơi đăng ký.
-- `last_issue_date` : ngày đăng ký cuối cùng.
-- `first_issue_date` : ngày đăng ký đầu tiên.
-- `plate` : biển số xe.
-- `image` : ảnh mặt sau đăng ký xe.
+- `name` : Tên chủ sở hữu xe.
+- `address` : Nơi cư trú.
+- `engine` : Số máy.
+- `chassis` : Số khung.
+- `brand` : Nhãn hiệu.
+- `model` : Số loại.
+- `color` : Màu sơn.
+- `capacity` : Dung tích.
+- `issued_at` : Nơi đăng ký.
+- `last_issue_date` : Ngày đăng ký cuối cùng.
+- `first_issue_date` : Ngày đăng ký đầu tiên.
+- `plate` : Biển số xe.
+- `image` : Ảnh mặt sau đăng ký xe.
 
 Đăng kiểm xe:
 
-- `chassis_number` : số khung.
-- `commercial_use` : kinh doanh vận tải.
-- `design_pay_load` : khối lượng hàng.
-- `design_towed_mass` : khối lượng kéo theo.
-- `engine_number` : số máy.
-- `inside_cargo_container_dimension` : kích thước thùng hàng.
-- `issued_on` : đơn vị kiểm định.
-- `life_time_limit` : niên hạn sử dụng.
-- `manufactured_country` : quốc gia sản xuất.
-- `manufactured_year` : năm sản xuất.
-- `mark` : nhãn hiệu.
-- `model_code` : số loại.
-- `modification` : cải tạo.
-- `permissible_no` : số người cho phép chở.
-- `regis_date` : ngày đăng ký.
-- `registration_number` : biển đăng ký.
-- `seri` : số sê-ri.
-- `tire_size` : cỡ lốp.
-- `type` : loại phương tiện.
-- `valid_until` : có hiệu lực đến hết ngày.
-- `wheel_form` : công thức bánh.
-- `capacity` : dung tích.
-- `report_number` : số phiếu.
-- `design_pay_load` : khối lượng hàng thiết kế.
-- `authorized_pay_load` : khối lượng hàng cấp phép.
-- `image` : ảnh đã cắt ra và căn chỉnh của đăng kiểm xe.
+- `chassis_number` : Số khung.
+- `commercial_use` : Kinh doanh vận tải.
+- `design_pay_load` : Khối lượng hàng.
+- `design_towed_mass` : Khối lượng kéo theo.
+- `engine_number` : Số máy.
+- `inside_cargo_container_dimension` : Kích thước thùng hàng.
+- `issued_on` : Đơn vị kiểm định.
+- `life_time_limit` : Niên hạn sử dụng.
+- `manufactured_country` : Quốc gia sản xuất.
+- `manufactured_year` : Năm sản xuất.
+- `mark` : Nhãn hiệu.
+- `model_code` : Số loại.
+- `modification` : Cải tạo.
+- `permissible_no` : Số người cho phép chở.
+- `regis_date` : Ngày đăng ký.
+- `registration_number` : Biển đăng ký.
+- `seri` : Số sê-ri.
+- `tire_size` : Cỡ lốp.
+- `type` : Loại phương tiện.
+- `valid_until` : Có hiệu lực đến hết ngày.
+- `wheel_form` : Công thức bánh.
+- `capacity` : Dung tích.
+- `report_number` : Số phiếu.
+- `design_pay_load` : Khối lượng hàng thiết kế.
+- `authorized_pay_load` : Khối lượng hàng cấp phép.
+- `image` : Ảnh đã cắt ra và căn chỉnh của đăng kiểm xe.
 
 Bằng lái xe:
 
-- `id` : số thẻ.
-- `name` : họ và tên.
-- `dob` : ngày sinh.
-- `class` : hạng.
-- `nationality` : quốc tịch.
-- `issue_date` : ngày phát hành.
-- `due_date` : ngày hết hạn.
-- `address` : nơi cư trú.
-- `image` : ảnh đã cắt ra và căn chỉnh của bằng lái xe.
+- `id` : Số thẻ.
+- `name` : Họ và tên.
+- `dob` : Ngày sinh.
+- `class` : Hạng.
+- `nationality` : Quốc tịch.
+- `issue_date` : Ngày phát hành.
+- `due_date` : Ngày hết hạn.
+- `address` : Nơi cư trú.
+- `image` : Ảnh đã cắt ra và căn chỉnh của bằng lái xe.
 
 Bảng mã lỗi:
 

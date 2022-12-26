@@ -17,9 +17,9 @@ stt: 25
 
 | Key           | Value                           | Mô tả                                                       |
 | ------------- | ------------------------------- | ----------------------------------------------------------- |
-| `img`         | `https://example.com/image.png` | url của ảnh hoặc pdf                                        |
-| `format_type` | `url`                           | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false`                  | trả về ảnh của Sao kê ngân hàng đã được căn chỉnh           |
+| `img`         | `https://example.com/image.png` | Url của ảnh hoặc pdf                                        |
+| `format_type` | `url`                           | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false`                  | Trả về ảnh của Sao kê ngân hàng đã được căn chỉnh           |
 
 **Demo Python**:
 
@@ -52,14 +52,14 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `file`         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh của Sao kê ngân hàng đã được căn chỉnh           |
+| `format_type` | `file`         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của Sao kê ngân hàng đã được căn chỉnh           |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả                                  |
 | ----- | ------ | ------------- | -------------------------------------- |
-| `img` | `file` | `example.jpg` | file ảnh hoặc pdf của Sao kê ngân hàng |
+| `img` | `file` | `example.jpg` | File ảnh hoặc pdf của Sao kê ngân hàng |
 
 **Demo Python**:
 
@@ -91,8 +91,8 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `base64`       | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh của Sao kê ngân hàng đã được căn chỉnh           |
+| `format_type` | `base64`       | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của Sao kê ngân hàng đã được căn chỉnh           |
 
 **Body**:
 

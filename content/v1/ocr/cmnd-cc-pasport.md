@@ -16,8 +16,8 @@ stt: 30
 
 | Key        | Value                              | Mô tả                                      |
 | ---------- | ---------------------------------- | ------------------------------------------ |
-| `mattruoc` | `https://example.com/mattruoc.png` | url ảnh mặt trước cần trích xuất thông tin |
-| `matsau`   | `https://example.com/matsau.png`   | url ảnh mặt sau cần trích xuất thông tin   |
+| `mattruoc` | `https://example.com/mattruoc.png` | Url ảnh mặt trước cần trích xuất thông tin |
+| `matsau`   | `https://example.com/matsau.png`   | Url ảnh mặt sau cần trích xuất thông tin   |
 
 **Demo Python**:
 
@@ -49,7 +49,7 @@ print(response.json())
 
 | Key   | Value                              | Mô tả                                      |
 | ----- | ---------------------------------- | ------------------------------------------ |
-| `url` | `https://example.com/mattruoc.png` | url ảnh mặt trước cần trích xuất thông tin |
+| `url` | `https://example.com/mattruoc.png` | Url ảnh mặt trước cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -81,7 +81,7 @@ print(response.json())
 
 | Key   | Value                            | Mô tả                                    |
 | ----- | -------------------------------- | ---------------------------------------- |
-| `url` | `https://example.com/mausau.png` | url ảnh mặt sau cần trích xuất thông tin |
+| `url` | `https://example.com/mausau.png` | Url ảnh mặt sau cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -113,8 +113,8 @@ print(response.json())
 
 | Key        | Type   | Value                  | Mô tả                                       |
 | ---------- | ------ | ---------------------- | ------------------------------------------- |
-| `mattruoc` | `file` | `example_mattruoc.jpg` | file ảnh mặt trước cần trích xuất thông tin |
-| `matsau`   | `file` | `example_matsau.jpg`   | file ảnh mặt sau cần trích xuất thông tin   |
+| `mattruoc` | `file` | `example_mattruoc.jpg` | File ảnh mặt trước cần trích xuất thông tin |
+| `matsau`   | `file` | `example_matsau.jpg`   | File ảnh mặt sau cần trích xuất thông tin   |
 
 **Demo Python**:
 
@@ -148,7 +148,7 @@ print(response.json())
 
 | Key     | Type   | Value                  | Mô tả                                       |
 | ------- | ------ | ---------------------- | ------------------------------------------- |
-| `image` | `file` | `example_mattruoc.jpg` | file ảnh mặt trước cần trích xuất thông tin |
+| `image` | `file` | `example_mattruoc.jpg` | File ảnh mặt trước cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -180,7 +180,7 @@ print(response.json())
 
 | Key     | Type   | Value                | Mô tả                                     |
 | ------- | ------ | -------------------- | ----------------------------------------- |
-| `image` | `file` | `example_matsau.jpg` | file ảnh mặt sau cần trích xuất thông tin |
+| `image` | `file` | `example_matsau.jpg` | File ảnh mặt sau cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -332,7 +332,7 @@ print(response.json())
 
 | Key    | Type   | Value         | Mô tả                                                                    |
 | ------ | ------ | ------------- | ------------------------------------------------------------------------ |
-| `file` | `file` | `example.pdf` | file PDF chứa ảnh CMND, thẻ căn cước, có thể gồm cả mặt trước và mặt sau |
+| `file` | `file` | `example.pdf` | File PDF chứa ảnh CMND, thẻ căn cước, có thể gồm cả mặt trước và mặt sau |
 
 **Demo Python**:
 
@@ -365,7 +365,7 @@ print(response.json())
 
 | Key   | Value                           | Mô tả                                                                  |
 | ----- | ------------------------------- | ---------------------------------------------------------------------- |
-| `url` | `https://example.com/image.png` | url ảnh bất kỳ CMT mặt trước/mặt sau, CCCD mặt trước/mặt sau, Passport |
+| `url` | `https://example.com/image.png` | Url ảnh bất kỳ CMT mặt trước/mặt sau, CCCD mặt trước/mặt sau, Passport |
 
 **Demo Python**:
 
@@ -397,7 +397,7 @@ print(response.json())
 
 | Key     | Type   | Value         | Mô tả                                                                   |
 | ------- | ------ | ------------- | ----------------------------------------------------------------------- |
-| `image` | `file` | `example.jpg` | file ảnh bất kỳ CMT mặt trước/mặt sau, CCCD mặt trước/mặt sau, Passport |
+| `image` | `file` | `example.jpg` | File ảnh bất kỳ CMT mặt trước/mặt sau, CCCD mặt trước/mặt sau, Passport |
 
 **Demo Python**:
 
@@ -469,55 +469,55 @@ print(response.json())
 }
 ```
 
-`type`: Loại giấy tờ tùy thân được trích xuất thông tin, trong trường hợp `get_haimat` sẽ không có trường này.
+`type` : Loại giấy tờ tùy thân được trích xuất thông tin, trong trường hợp `get_haimat` sẽ không có trường này.
 
-- `cmt`: ứng với mặt trước của chứng minh nhân dân.
-- `tcc`: ứng với mặt trước thẻ căn cước công dân.
-- `matsaucmt`: ứng với mặt sau của chứng minh nhân dân.
-- `matsautcc`: ứng với mặt sau của thẻ căn cước.
-- `pdf`: ứng với upload file PDF.
+- `cmt` : Ứng với mặt trước của chứng minh nhân dân.
+- `tcc` : Ứng với mặt trước thẻ căn cước công dân.
+- `matsaucmt` : Ứng với mặt sau của chứng minh nhân dân.
+- `matsautcc` : Ứng với mặt sau của thẻ căn cước.
+- `pdf` : Ứng với upload file PDF.
 
-`data`: Bao gồm các thông tin được trích xuất từ ảnh đầu vào có giấy tờ tùy thân, với mỗi loại giấy tờ tùy thân thì sẽ có những thông tin trả về khác nhau.
+`data` : Bao gồm các thông tin được trích xuất từ ảnh đầu vào có giấy tờ tùy thân, với mỗi loại giấy tờ tùy thân thì sẽ có những thông tin trả về khác nhau.
 
 Mặt trước chứng minh nhân dân.
 
-- `id`: số chứng minh thư.
-- `name`: họ và tên.
-- `born`: ngày sinh.
-- `country`: quê quán.
-- `address`: thường trú
+- `id` : Số chứng minh thư.
+- `name` : Họ và tên.
+- `born` : Ngày sinh.
+- `country` : Quê quán.
+- `address` : Thường trú
 
 Mặt trước thẻ căn cước công dân.
 
-- `id`: số thẻ.
-- `name`: họ và tên.
-- `born`: ngày sinh.
-- `country`: quê quán
-- `sex`: giới tính.
-- `duedate`: ngày hết hạn.
-- `quoctich`: quốc tịch.
-- `dantoc`: dân tộc.
-- `address`: thường trú.
+- `id` : Số thẻ.
+- `name` : Họ và tên.
+- `born` : Ngày sinh.
+- `country` : Quê quán
+- `sex` : Giới tính.
+- `duedate` : Ngày hết hạn.
+- `quoctich` : Quốc tịch.
+- `dantoc` : Dân tộc.
+- `address` : Thường trú.
 
 Mặt sau chứng minh nhân dân.
 
-- `dantoc`: dân tộc.
-- `date`: ngày cấp.
-- `dauvet`: dấu vết riêng và dị hình.
-- `tongiao`: tôn giáo.
-- `noicap`: nơi cấp
+- `dantoc` : Dân tộc.
+- `date` : Ngày cấp.
+- `dauvet` : Dấu vết riêng và dị hình.
+- `tongiao` : Tôn giáo.
+- `noicap` : Nơi cấp
 
 Mặt sau thẻ căn cước công dân.
 
-- `dauvet`: đặc điểm nhận dạng
-- `date`: ngày cấp.
+- `dauvet` : Đặc điểm nhận dạng
+- `date` : Ngày cấp.
 
 Trong trường hợp `get_haimat`, `data` sẽ có gồm các thông tin sau:
 
 ```json
-"data": {
-  "mattruoc": [xxxx], // gồm các trường đã nếu ở trên
-  "matsau": [xxxx] // gồm các trường đã nêu ở trên
+"data" : {
+  "mattruoc" : [xxxx], // gồm các trường đã nếu ở trên
+  "matsau" : [xxxx] // gồm các trường đã nêu ở trên
 }
 ```
 
@@ -526,8 +526,8 @@ Trong trường hợp trích xuất thông tin từ file PDF, `data` gồm các 
 ```json
 "data": [
   {
-    "type": [xxxx], // loại giấy tờ nhận dạng được, đã nêu ở trên
-    "data": [xxxx], // các trường thông tin tương ứng với loại giây tờ
+    "type" : [xxxx], // loại giấy tờ nhận dạng được, đã nêu ở trên
+    "data" : [xxxx], // các trường thông tin tương ứng với loại giây tờ
   },
   ...
 ]
@@ -537,8 +537,8 @@ Trong trường hợp trích xuất thông tin từ văn bản scan, phản hồ
 
 ```json
 {
-  "result": [xxxx], // mảng các line text trong văn bản, nếu không có trả về null
-  "time": [xxxx] // thời gian xử lý
+  "result" : [xxxx], // mảng các line text trong văn bản, nếu không có trả về null
+  "time" : [xxxx] // thời gian xử lý
 }
 ```
 

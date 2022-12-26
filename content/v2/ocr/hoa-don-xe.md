@@ -16,9 +16,9 @@ stt: 11
 
 | Key           | Value                           | Mô tả                                                       |
 | ------------- | ------------------------------- | ----------------------------------------------------------- |
-| `img`         | `https://example.com/image.png` | url của ảnh hoặc pdf                                        |
-| `format_type` | `url`                           | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false`                  | trả về ảnh hóa đơn xe đã được cắt và căn chỉnh              |
+| `img`         | `https://example.com/image.png` | Url của ảnh hoặc pdf                                        |
+| `format_type` | `url`                           | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false`                  | Trả về ảnh hóa đơn xe đã được cắt và căn chỉnh              |
 
 **Demo Python**:
 
@@ -51,14 +51,14 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `file`         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh hóa đơn xe đã được cắt và căn chỉnh              |
+| `format_type` | `file`         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh hóa đơn xe đã được cắt và căn chỉnh              |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả                                                      |
 | ----- | ------ | ------------- | ---------------------------------------------------------- |
-| `img` | `file` | `example.jpg` | file ảnh hoặc file pdf hóa đơn xe cần trích xuất thông tin |
+| `img` | `file` | `example.jpg` | File ảnh hoặc file pdf hóa đơn xe cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -90,8 +90,8 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `base64`       | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh hóa đơn xe đã được cắt và căn chỉnh              |
+| `format_type` | `base64`       | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh hóa đơn xe đã được cắt và căn chỉnh              |
 
 **Body**:
 
@@ -149,31 +149,31 @@ Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trườn
 
 Hóa đơn xe: Trả về một danh sách, mỗi phần từ trong danh sách gồm
 
-- `date` : ngày lập hóa đơn.
-- `date_box` : tọa độ ngày lập hóa đơn là danh sách gồm [left, top, right, bottom].
-- `date_confidence` : độ tin cậy của ngày lập hóa đơn.
-- `form` : mẫu số.
-- `form_box` : tọa độ mẫu số hóa đơn là danh sách gồm [left, top, right, bottom].
-- `form_confidence` : độ tin cậy của mẫu số.
-- `invoice_no` : số hóa đơn.
-- `invoice_no_box` : tọa độ số hóa đơn là danh sách gồm [left, top, right, bottom].
-- `invoice_no_confidence` : độ tin cậy của số hóa đơn.
-- `serial_no` : số ký hiệu hóa đơn.
-- `serial_no_box` : tọa độ số ký hiệu hóa đơn là danh sách gồm [left, top, right, bottom].
-- `serial_no_confidence` : độ tin cậy của số ký hiệu hóa đơn.
-- `supplier` : nhà cung cấp.
-- `supplier_box` : tọa độ nhà cung cấp là danh sách gồm [left, top, right, bottom].
-- `supplier_confidence` : độ tin cậy của nhà cung cấp.
-- `tax_code` : mã số thuế nhà cung cấp.
-- `tax_code_box` : tọa độ mã số thuế nhà cung cấp là danh sách gồm [left, top, right, bottom].
-- `tax_code_confidence` : độ tin cậy của mã số thuế nhà cung cấp.
-- `total_amount` : tổng tiền.
-- `total_amount_box` : tọa độ tổng tiền là danh sách gồm [left, top, right, bottom].
-- `total_amount_confidence` : độ tin cậy của tổng tiền.
-- `date` : ngày lập hóa đơn.
-- `date_box` : tọa độ ngày lập hóa đơn là danh sách gồm [left, top, right, bottom].
-- `date_confidence` : độ tin cậy của ngày lập hóa đơn.
-- `info_goods` : thông tin hàng hóa, dịch vụ, trường này là một danh sách, mỗi phần tử trong danh sách gồm:
-- `name` : tên hàng hóa, dịch vụ
-- `coin` : giá của hàng hóa, dịch vụ
-- `image` : ảnh hóa đơn đã được xoay và căn chỉnh.
+- `date` : Ngày lập hóa đơn.
+- `date_box` : Tọa độ ngày lập hóa đơn là danh sách gồm [left, top, right, bottom].
+- `date_confidence` : Độ tin cậy của ngày lập hóa đơn.
+- `form` : Mẫu số.
+- `form_box` : Tọa độ mẫu số hóa đơn là danh sách gồm [left, top, right, bottom].
+- `form_confidence` : Độ tin cậy của mẫu số.
+- `invoice_no` : Số hóa đơn.
+- `invoice_no_box` : Tọa độ số hóa đơn là danh sách gồm [left, top, right, bottom].
+- `invoice_no_confidence` : Độ tin cậy của số hóa đơn.
+- `serial_no` : Số ký hiệu hóa đơn.
+- `serial_no_box` : Tọa độ số ký hiệu hóa đơn là danh sách gồm [left, top, right, bottom].
+- `serial_no_confidence` : Độ tin cậy của số ký hiệu hóa đơn.
+- `supplier` : Nhà cung cấp.
+- `supplier_box` : Tọa độ nhà cung cấp là danh sách gồm [left, top, right, bottom].
+- `supplier_confidence` : Độ tin cậy của nhà cung cấp.
+- `tax_code` : Mã số thuế nhà cung cấp.
+- `tax_code_box` : Tọa độ mã số thuế nhà cung cấp là danh sách gồm [left, top, right, bottom].
+- `tax_code_confidence` : Độ tin cậy của mã số thuế nhà cung cấp.
+- `total_amount` : Tổng tiền.
+- `total_amount_box` : Tọa độ tổng tiền là danh sách gồm [left, top, right, bottom].
+- `total_amount_confidence` : Độ tin cậy của tổng tiền.
+- `date` : Ngày lập hóa đơn.
+- `date_box` : Tọa độ ngày lập hóa đơn là danh sách gồm [left, top, right, bottom].
+- `date_confidence` : Độ tin cậy của ngày lập hóa đơn.
+- `info_goods` : Thông tin hàng hóa, dịch vụ, trường này là một danh sách, mỗi phần tử trong danh sách gồm:
+- `name` : Tên hàng hóa, dịch vụ
+- `coin` : Giá của hàng hóa, dịch vụ
+- `image` : Ảnh hóa đơn đã được xoay và căn chỉnh.

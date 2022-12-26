@@ -16,9 +16,9 @@ stt: 10
 
 | Key           | Value                         | Mô tả                                                       |
 | ------------- | ----------------------------- | ----------------------------------------------------------- |
-| `img`         | `https://example.com/blx.png` | url ảnh giấy khai sinh cần trích xuất thông tin             |
-| `format_type` | `url`                         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false`                | trả về ảnh giấy khai sinh đã được cắt và căn chỉnh          |
+| `img`         | `https://example.com/blx.png` | Url ảnh giấy khai sinh cần trích xuất thông tin             |
+| `format_type` | `url`                         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false`                | Trả về ảnh giấy khai sinh đã được cắt và căn chỉnh          |
 
 **Demo Python**:
 
@@ -51,14 +51,14 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `file`         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh giấy khai sinh đã được cắt và căn chỉnh          |
+| `format_type` | `file`         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh giấy khai sinh đã được cắt và căn chỉnh          |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả                                            |
 | ----- | ------ | ------------- | ------------------------------------------------ |
-| `img` | `file` | `example.jpg` | file ảnh giấy khai sinh cần trích xuất thông tin |
+| `img` | `file` | `example.jpg` | File ảnh giấy khai sinh cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -90,8 +90,8 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `base64`       | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh giấy khai sinh đã được cắt và căn chỉnh          |
+| `format_type` | `base64`       | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh giấy khai sinh đã được cắt và căn chỉnh          |
 
 **Body**:
 
@@ -151,24 +151,24 @@ Trường hợp trích xuất thông tin từ giấy khai sinh không có trư�
 
 Giấy khai sinh:
 
-- `dob` : ngày sinh.
-- `dob_confidence` : độ tin cậy của thông tin trích xuất ngày sinh.
-- `father_dob` : ngày sinh cha.
-- `father_dob_confidence` : độ tin cậy của thông tin trích xuất ngày sinh cha.
-- `father_name` : họ tên cha.
-- `father_name_confidence` : độ tin cậy của thông tin trích xuất họ tên cha.
-- `gender` : giới tính.
-- `gender_confidence` : độ tin cậy của thông tin trích xuất giới tính.
-- `mother_dob` : ngày sinh mẹ.
-- `mother_dob_confidence` : độ tin cậy của thông tin trích xuất ngày sinh mẹ.
-- `mother_name` : họ tên mẹ.
-- `mother_name_confidence` : độ tin cậy của thông tin trích xuất họ tên mẹ.
-- `name` : họ tên.
-- `name_confidence` : độ tin cậy của thông tin trích xuất họ tên.
+- `dob` : Ngày sinh.
+- `dob_confidence` : Độ tin cậy của thông tin trích xuất ngày sinh.
+- `father_dob` : Ngày sinh cha.
+- `father_dob_confidence` : Độ tin cậy của thông tin trích xuất ngày sinh cha.
+- `father_name` : Họ tên cha.
+- `father_name_confidence` : Độ tin cậy của thông tin trích xuất họ tên cha.
+- `gender` : Giới tính.
+- `gender_confidence` : Độ tin cậy của thông tin trích xuất giới tính.
+- `mother_dob` : Ngày sinh mẹ.
+- `mother_dob_confidence` : Độ tin cậy của thông tin trích xuất ngày sinh mẹ.
+- `mother_name` : Họ tên mẹ.
+- `mother_name_confidence` : Độ tin cậy của thông tin trích xuất họ tên mẹ.
+- `name` : Họ tên.
+- `name_confidence` : Độ tin cậy của thông tin trích xuất họ tên.
 - `number` : số giấy khai sinh.
-- `number_confidence` : độ tin cậy của thông tin trích xuất số giấy khai sinh.
-- `number_book` : quyển số giấy khai sinh.
-- `number_book_confidence` : độ tin cậy của thông tin trích xuất quyển số giấy khai sinh.
-- `regis_date` : ngày đăng ký.
-- `regis_date_confidence` : độ tin cậy của thông tin trích xuất ngày đăng ký.
-- `image` : ảnh đã cắt ra và căn chỉnh của giấy khai sinh.
+- `number_confidence` : Độ tin cậy của thông tin trích xuất số giấy khai sinh.
+- `number_book` : Quyển số giấy khai sinh.
+- `number_book_confidence` : Độ tin cậy của thông tin trích xuất quyển số giấy khai sinh.
+- `regis_date` : Ngày đăng ký.
+- `regis_date_confidence` : Độ tin cậy của thông tin trích xuất ngày đăng ký.
+- `image` : Ảnh đã cắt ra và căn chỉnh của giấy khai sinh.

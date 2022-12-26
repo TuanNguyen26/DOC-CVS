@@ -16,9 +16,9 @@ stt: 3
 
 | Key           | Value                           | Mô tả                                                       |
 | ------------- | ------------------------------- | ----------------------------------------------------------- |
-| `img`         | `https://example.com/image.png` | url của ảnh hoặc pdf                                        |
-| `format_type` | `url`                           | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false`                  | trả về ảnh của bảng đã được cắt và căn chỉnh                |
+| `img`         | `https://example.com/image.png` | Url của ảnh hoặc pdf                                        |
+| `format_type` | `url`                           | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false`                  | Trả về ảnh của bảng đã được cắt và căn chỉnh                |
 
 **Demo Python**:
 
@@ -51,14 +51,14 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `file`         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh của bảng đã được cắt và căn chỉnh                |
+| `format_type` | `file`         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của bảng đã được cắt và căn chỉnh                |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả                                                    |
 | ----- | ------ | ------------- | -------------------------------------------------------- |
-| `img` | `file` | `example.jpg` | file ảnh hoặc file pdf của bảng cần trích xuất thông tin |
+| `img` | `file` | `example.jpg` | File ảnh hoặc file pdf của bảng cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -90,8 +90,8 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `base64`       | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh của bảng đã được cắt và căn chỉnh                |
+| `format_type` | `base64`       | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của bảng đã được cắt và căn chỉnh                |
 
 **Body**:
 
@@ -138,8 +138,8 @@ Phản hồi sẽ là một JSON với định dạng sau:
 
 Trong trường hợp trích xuất thông tin dạng bảng, trường data sẽ là một list, mỗi phần tử trong list sẽ tương ứng với thông tin của một bảng. Mỗi phần tử gồm các trường:
 
-- `image`: ảnh bảng đã được cắt và căn chỉnh
-- `info`: thông tin bảng, trường này là một list, mỗi phần tử trong list tương ứng thông tin của một hàng
+- `image` : ảnh bảng đã được cắt và căn chỉnh
+- `info` : thông tin bảng, trường này là một list, mỗi phần tử trong list tương ứng thông tin của một hàng
 
 Ví dụ:
 

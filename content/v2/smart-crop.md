@@ -17,9 +17,9 @@ stt: 26
 
 | Key      | Value                           | Mô tả                     |
 | -------- | ------------------------------- | ------------------------- |
-| `url`    | `https://example.com/image.png` | url ảnh cần cắt           |
-| `width`  | `400`                           | chiều rộng của ảnh đầu ra |
-| `height` | `600`                           | chiều dài của ảnh đầu ra  |
+| `url`    | `https://example.com/image.png` | Url ảnh cần cắt           |
+| `width`  | `400`                           | Chiều rộng của ảnh đầu ra |
+| `height` | `600`                           | Chiều dài của ảnh đầu ra  |
 
 **Demo Python**:
 
@@ -55,14 +55,14 @@ print(response.json())
 
 | Key      | Value | Mô tả                     |
 | -------- | ----- | ------------------------- |
-| `width`  | `400` | chiều rộng của ảnh đầu ra |
-| `height` | `600` | chiều dài của ảnh đầu ra  |
+| `width`  | `400` | Chiều rộng của ảnh đầu ra |
+| `height` | `600` | Chiều dài của ảnh đầu ra  |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả            |
 | ----- | ------ | ------------- | ---------------- |
-| `img` | `file` | `example.jpg` | file ảnh cần cắt |
+| `img` | `file` | `example.jpg` | File ảnh cần cắt |
 
 **Demo Python**:
 
@@ -97,9 +97,9 @@ print(response.json())
 
 | Key      | Value                           | Mô tả                     |
 | -------- | ------------------------------- | ------------------------- |
-| `url`    | `https://example.com/image.png` | url ảnh cần cắt           |
-| `width`  | `400`                           | chiều rộng của ảnh đầu ra |
-| `height` | `600`                           | chiều dài của ảnh đầu ra  |
+| `url`    | `https://example.com/image.png` | Url ảnh cần cắt           |
+| `width`  | `400`                           | Chiều rộng của ảnh đầu ra |
+| `height` | `600`                           | Chiều dài của ảnh đầu ra  |
 
 **Demo Python**:
 
@@ -135,14 +135,14 @@ print(response.json())
 
 | Key      | Value | Mô tả                     |
 | -------- | ----- | ------------------------- |
-| `width`  | `400` | chiều rộng của ảnh đầu ra |
-| `height` | `600` | chiều dài của ảnh đầu ra  |
+| `width`  | `400` | Chiều rộng của ảnh đầu ra |
+| `height` | `600` | Chiều dài của ảnh đầu ra  |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả            |
 | ----- | ------ | ------------- | ---------------- |
-| `img` | `file` | `example.jpg` | file ảnh cần cắt |
+| `img` | `file` | `example.jpg` | File ảnh cần cắt |
 
 **Demo Python**:
 

@@ -17,9 +17,9 @@ stt: 23
 
 | Key              | Type   | Value           | Mô tả                                   |
 | ---------------- | ------ | --------------- | --------------------------------------- |
-| `portrait_left`  | `file` | `example_1.jpg` | file ảnh quay trái của người dùng       |
-| `portrait_mid`   | `file` | `example_2.jpg` | file ảnh chụp chính diện của người dùng |
-| `portrait_right` | `file` | `example_3.jpg` | file ảnh quay phải của người dùng       |
+| `portrait_left`  | `file` | `example_1.jpg` | File ảnh quay trái của người dùng       |
+| `portrait_mid`   | `file` | `example_2.jpg` | File ảnh chụp chính diện của người dùng |
+| `portrait_right` | `file` | `example_3.jpg` | File ảnh quay phải của người dùng       |
 
 **Demo Python**:
 

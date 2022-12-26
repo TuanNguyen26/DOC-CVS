@@ -16,9 +16,9 @@ stt: 5
 
 | Key           | Value                         | Mô tả                                                       |
 | ------------- | ----------------------------- | ----------------------------------------------------------- |
-| `img`         | `https://example.com/blx.png` | url ảnh chụp biển số xe cần trích xuất thông tin            |
-| `format_type` | `url`                         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false`                | trả về ảnh biển số xe đã được cắt và căn chỉnh              |
+| `img`         | `https://example.com/blx.png` | Url ảnh chụp biển số xe cần trích xuất thông tin            |
+| `format_type` | `url`                         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false`                | Trả về ảnh biển số xe đã được cắt và căn chỉnh              |
 
 **Demo Python**:
 
@@ -51,14 +51,14 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `file`         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh biển số xe đã được cắt và căn chỉnh              |
+| `format_type` | `file`         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh biển số xe đã được cắt và căn chỉnh              |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả                                        |
 | ----- | ------ | ------------- | -------------------------------------------- |
-| `img` | `file` | `example.jpg` | file ảnh biển số xe cần trích xuất thông tin |
+| `img` | `file` | `example.jpg` | File ảnh biển số xe cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -90,8 +90,8 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `base64`       | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh biển số xe đã được cắt và căn chỉnh              |
+| `format_type` | `base64`       | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh biển số xe đã được cắt và căn chỉnh              |
 
 **Body**:
 
@@ -149,5 +149,5 @@ Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trườn
 
 Biển số xe: Trả về một danh sách, mỗi phần từ trong danh sách gồm
 
-- `plate` : biển số xe.
-- `image` : ảnh đã cắt ra và căn chỉnh của biển số xe.
+- `plate` : Biển số xe.
+- `image` : Ảnh đã cắt ra và căn chỉnh của biển số xe.

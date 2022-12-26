@@ -19,10 +19,10 @@ Matching service là hệ thống AI cho phép so sánh độ tương đồng gi
 
 | Key           | Value                              | Mô tả                                                           |
 | ------------- | ---------------------------------- | --------------------------------------------------------------- |
-| `img1`        | `https://example.com/card.png`     | url ảnh chứng minh thư hoặc thẻ căn cước                        |
-| `img2`        | `https://example.com/portrait.png` | url ảnh khuôn mặt cần so khớp                                   |
-| `type1`       | `portrait`/`card`                  | loại data của ảnh 1, nhận các giá trị: `portrait`, `card`       |
-| `format_type` | `url`                              | loại data truyền vào, nhận các giá trị: `url`, `file`, `base64` |
+| `img1`        | `https://example.com/card.png`     | Url ảnh chứng minh thư hoặc thẻ căn cước                        |
+| `img2`        | `https://example.com/portrait.png` | Url ảnh khuôn mặt cần so khớp                                   |
+| `type1`       | `portrait`/`card`                  | Loại data của ảnh 1, nhận các giá trị: `portrait`, `card`       |
+| `format_type` | `url`                              | Loại data truyền vào, nhận các giá trị: `url`, `file`, `base64` |
 
 **Demo Python**:
 
@@ -53,15 +53,15 @@ print(response.json())
 
 | Key           | Value             | Mô tả                                                           |
 | ------------- | ----------------- | --------------------------------------------------------------- |
-| `type1`       | `portrait`/`card` | loại data của ảnh 1, nhận các giá trị: `portrait`, `card`       |
-| `format_type` | `file`            | loại data truyền vào, nhận các giá trị: `url`, `file`, `base64` |
+| `type1`       | `portrait`/`card` | Loại data của ảnh 1, nhận các giá trị: `portrait`, `card`       |
+| `format_type` | `file`            | Loại data truyền vào, nhận các giá trị: `url`, `file`, `base64` |
 
 **Body**:
 
 | Key    | Type   | Value                  | Mô tả                                     |
 | ------ | ------ | ---------------------- | ----------------------------------------- |
-| `img1` | `file` | `example_card.jpg`     | file ảnh chứng minh thư hoặc thẻ căn cước |
-| `img2` | `file` | `example_portrait.jpg` | file ảnh khuôn mặt cần so khớp            |
+| `img1` | `file` | `example_card.jpg`     | File ảnh chứng minh thư hoặc thẻ căn cước |
+| `img2` | `file` | `example_portrait.jpg` | File ảnh khuôn mặt cần so khớp            |
 
 **Demo Python**:
 
@@ -95,8 +95,8 @@ print(response.json())
 
 | Key           | Value             | Mô tả                                                           |
 | ------------- | ----------------- | --------------------------------------------------------------- |
-| `type1`       | `portrait`/`card` | loại data của ảnh 1, nhận các giá trị: `portrait`, `card`       |
-| `format_type` | `base64`          | loại data truyền vào, nhận các giá trị: `url`, `file`, `base64` |
+| `type1`       | `portrait`/`card` | Loại data của ảnh 1, nhận các giá trị: `portrait`, `card`       |
+| `format_type` | `base64`          | Loại data truyền vào, nhận các giá trị: `url`, `file`, `base64` |
 
 **Body**:
 

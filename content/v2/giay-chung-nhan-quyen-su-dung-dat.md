@@ -1,7 +1,7 @@
 ---
 title: 'Giấy chứng nhận quyền sử dụng đất'
 metaTitle: 'Giấy chứng nhận quyền sử dụng đất'
-metaDescription: 'This is the api v21 for this page'
+metaDescription: 'This is the api v2 for this page'
 stt: 18
 ---
 
@@ -17,9 +17,9 @@ stt: 18
 
 | Key           | Value                           | Mô tả                                                              |
 | ------------- | ------------------------------- | ------------------------------------------------------------------ |
-| `img`         | `https://example.com/image.png` | url của ảnh hoặc pdf                                               |
-| `format_type` | `url`                           | loại data truyền vào, nhận giá trị: `url`, `file`, `base64`        |
-| `get_thumb`   | `true`/`false`                  | trả về ảnh của Giấy chứng nhận quyền sử dụng đất đã được căn chỉnh |
+| `img`         | `https://example.com/image.png` | Url của ảnh hoặc pdf                                               |
+| `format_type` | `url`                           | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64`        |
+| `get_thumb`   | `true`/`false`                  | Trả về ảnh của Giấy chứng nhận quyền sử dụng đất đã được căn chỉnh |
 
 **Demo Python**:
 
@@ -52,14 +52,14 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                              |
 | ------------- | -------------- | ------------------------------------------------------------------ |
-| `format_type` | `file`         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64`        |
-| `get_thumb`   | `true`/`false` | trả về ảnh của Giấy chứng nhận quyền sử dụng đất đã được căn chỉnh |
+| `format_type` | `file`         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64`        |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của Giấy chứng nhận quyền sử dụng đất đã được căn chỉnh |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả                                                   |
 | ----- | ------ | ------------- | ------------------------------------------------------- |
-| `img` | `file` | `example.jpg` | file ảnh hoặc pdf của Giấy chứng nhận quyền sử dụng đất |
+| `img` | `file` | `example.jpg` | File ảnh hoặc pdf của Giấy chứng nhận quyền sử dụng đất |
 
 **Demo Python**:
 
@@ -91,8 +91,8 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                              |
 | ------------- | -------------- | ------------------------------------------------------------------ |
-| `format_type` | `base64`       | loại data truyền vào, nhận giá trị: `url`, `file`, `base64`        |
-| `get_thumb`   | `true`/`false` | trả về ảnh của Giấy chứng nhận quyền sử dụng đất đã được căn chỉnh |
+| `format_type` | `base64`       | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64`        |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của Giấy chứng nhận quyền sử dụng đất đã được căn chỉnh |
 
 **Body**:
 
@@ -144,61 +144,61 @@ Loại 1:
 
 `type`: `giay_cnqshdd_mau_1`. Giấy chứng nhận quyền sử dụng đất quyền sở hữu nhà ở và tài sản khác gắn liền với đất.
 
-`info`: Bao gồm các thông tin sau:
+`info` : Bao gồm các thông tin sau:
 
-- `so_so`: Số sổ của giấy chứng nhận
-- `noi_cap`: Nơi cấp của giấy chứng nhận
-- `ngay_cap`: Ngày cấp của giấy chứng nhận
-- `so_vao_so`: Số vào sổ cấp GCN
-- `thong_tin_thua_dat`: Thông tin của thửa đất
-- `thong_tin_nha_o`: Thông tin của nhà ở
-- `thong_tin_ghi_chu`: Thông tin ghi chú
-- `list_img`: Danh sách ảnh trả về dạng base64
-- `noi_dung_chu_dat`: Nội dung của chủ đất. Là một list, mỗi phần tử trong list gồm các thông tin sau:
-  - `ten`: Họ tên của chủ đất
-  - `nam_sinh`: Năm sinh của chủ đất
-  - `so_cmt`: Số cmnd, hộ chiếu của chủ đất
-  - `dia_chi`: Địa chỉ thường trú của chủ đất
+- `so_so` : Số sổ của giấy chứng nhận
+- `noi_cap` : Nơi cấp của giấy chứng nhận
+- `ngay_cap` : Ngày cấp của giấy chứng nhận
+- `so_vao_so` : Số vào sổ cấp GCN
+- `thong_tin_thua_dat` : Thông tin của thửa đất
+- `thong_tin_nha_o` : Thông tin của nhà ở
+- `thong_tin_ghi_chu` : Thông tin ghi chú
+- `list_img` : Danh sách ảnh trả về dạng base64
+- `noi_dung_chu_dat` : Nội dung của chủ đất. Là một list, mỗi phần tử trong list gồm các thông tin sau:
+  - `ten` : Họ tên của chủ đất
+  - `nam_sinh` : Năm sinh của chủ đất
+  - `so_cmt` : Số cmnd, hộ chiếu của chủ đất
+  - `dia_chi` : Địa chỉ thường trú của chủ đất
 
 Loại 2:
 
-`type`: `giay_cnqshdd_mau_2`. Giấy chứng nhận quyền sử dụng đất.
+`type` : `giay_cnqshdd_mau_2`. Giấy chứng nhận quyền sử dụng đất.
 
-`info`: Bao gồm các thông tin sau:
+`info` : Bao gồm các thông tin sau:
 
-- `so_so`: Số sổ của giấy chứng nhận
-- `noi_cap`: Nơi cấp của giấy chứng nhận
-- `ngay_cap`: Ngày cấp của giấy chứng nhận
-- `so_vao_so`: Số vào sổ cấp GCN
-- `dia_chi_thua_dat`: Địa chỉ của thửa đất
-- `thong_tin_thua_dat`: Thông tin của thửa đất
-- `list_img`: Danh sách ảnh trả về dạng base64
-- `noi_dung_chu_dat`: Nội dung của chủ đất. Là một list, mỗi phần tử trong list gồm các thông tin sau:
-  - `ten`: Họ tên của chủ đất
-  - `nam_sinh`: Năm sinh của chủ đất
-  - `so_cmt`: Số cmnd, hộ chiếu của chủ đất
-  - `dia_chi`: Địa chỉ thường trú của chủ đất
+- `so_so` : Số sổ của giấy chứng nhận
+- `noi_cap` : Nơi cấp của giấy chứng nhận
+- `ngay_cap` : Ngày cấp của giấy chứng nhận
+- `so_vao_so` : Số vào sổ cấp GCN
+- `dia_chi_thua_dat` : Địa chỉ của thửa đất
+- `thong_tin_thua_dat` : Thông tin của thửa đất
+- `list_img` : Danh sách ảnh trả về dạng base64
+- `noi_dung_chu_dat` : Nội dung của chủ đất. Là một list, mỗi phần tử trong list gồm các thông tin sau:
+  - `ten` : Họ tên của chủ đất
+  - `nam_sinh` : Năm sinh của chủ đất
+  - `so_cmt` : Số cmnd, hộ chiếu của chủ đất
+  - `dia_chi` : Địa chỉ thường trú của chủ đất
 
 Loại 3:
 
 `type`: `giay_cnqshdd_mau_3`. Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở.
 
-`info`: Bao gồm các thông tin sau:
+`info` : Bao gồm các thông tin sau:
 
-- `so_so`: Số sổ của giấy chứng nhận
-- `noi_cap`: Nơi cấp của giấy chứng nhận
-- `ngay_cap`: Ngày cấp của giấy chứng nhận
-- `so_vao_so`: Số vào sổ cấp GCN
-- `thong_tin_thua_dat`: Thông tin của thửa đất
-- `list_img`: Danh sách ảnh trả về dạng base64
-- `noi_dung_chu_dat`: Nội dung của chủ đất. Là một list, mỗi phần tử trong list gồm các thông tin sau:
-  - `ten`: Họ tên của chủ đất
-  - `nam_sinh`: Năm sinh của chủ đất
-  - `so_cmt`: Số cmnd, hộ chiếu của chủ đất
-  - `dia_chi`: Địa chỉ thường trú của chủ đất
+- `so_so` : Số sổ của giấy chứng nhận
+- `noi_cap` : Nơi cấp của giấy chứng nhận
+- `ngay_cap` : Ngày cấp của giấy chứng nhận
+- `so_vao_so` : Số vào sổ cấp GCN
+- `thong_tin_thua_dat` : Thông tin của thửa đất
+- `list_img` : Danh sách ảnh trả về dạng base64
+- `noi_dung_chu_dat` : Nội dung của chủ đất. Là một list, mỗi phần tử trong list gồm các thông tin sau:
+  - `ten` : Họ tên của chủ đất
+  - `nam_sinh` : Năm sinh của chủ đất
+  - `so_cmt` : Số cmnd, hộ chiếu của chủ đất
+  - `dia_chi` : Địa chỉ thường trú của chủ đất
 
 _Lưu ý_: Các trường thông tin (trừ trường `list_img` và `noi_dung_chu_dat`) sẽ có thêm trường `_box`, `_confidence`, `_id` đi kèm. Trong đó:
 
-- `_id`: thông tin được lấy thuộc trang thứ bao nhiêu trong list ảnh của trường `list_img`, index bắt đầu từ 0.
-- `_box`: tọa độ đi kèm [left, top, right, bottom].
-- `_confidence`: độ tin cậy đi kèm.
+- `_id` : Thông tin được lấy thuộc trang thứ bao nhiêu trong list ảnh của trường `list_img`, index bắt đầu từ 0.
+- `_box` : Tọa độ đi kèm [left, top, right, bottom].
+- `_confidence` : Độ tin cậy đi kèm.

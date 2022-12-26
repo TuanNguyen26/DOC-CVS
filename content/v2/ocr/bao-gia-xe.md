@@ -16,9 +16,9 @@ stt: 4
 
 | Key           | Value                           | Mô tả                                                       |
 | ------------- | ------------------------------- | ----------------------------------------------------------- |
-| `img`         | `https://example.com/image.png` | url của ảnh                                                 |
-| `format_type` | `url`                           | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false`                  | trả về ảnh của Báo giá xe đã được căn chỉnh                 |
+| `img`         | `https://example.com/image.png` | Url của ảnh                                                 |
+| `format_type` | `url`                           | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false`                  | Trả về ảnh của Báo giá xe đã được căn chỉnh                 |
 
 **Demo Python**:
 
@@ -51,14 +51,14 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `file`         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh của Báo giá xe đã được căn chỉnh                 |
+| `format_type` | `file`         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của Báo giá xe đã được căn chỉnh                 |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả                                            |
 | ----- | ------ | ------------- | ------------------------------------------------ |
-| `img` | `file` | `example.jpg` | file ảnh của Báo giá xe cần trích xuất thông tin |
+| `img` | `file` | `example.jpg` | File ảnh của Báo giá xe cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -90,8 +90,8 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `base64`       | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh của Báo giá xe đã được xoay và căn chỉnh         |
+| `format_type` | `base64`       | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của Báo giá xe đã được xoay và căn chỉnh         |
 
 **Body**:
 
@@ -152,38 +152,38 @@ Trường hợp trích xuất thông tin từ báo giá xe không có trường 
 Báo giá xe: Trả về một danh sách gồm
 
 - `name_of_garage` : Cơ sở sửa chữa.
-- `name_of_garage_box` : tọa độ Cơ sở sửa chữa là danh sách gồm [left, top, right, bottom].
-- `name_of_garage_confidence` : độ tin cậy của Cơ sở sửa chữa.
+- `name_of_garage_box` : Tọa độ Cơ sở sửa chữa là danh sách gồm [left, top, right, bottom].
+- `name_of_garage_confidence` : Độ tin cậy của Cơ sở sửa chữa.
 - `quotation_date` : Ngày báo giá.
-- `quotation_date_box` : tọa độ Ngày báo giá là danh sách gồm [left, top, right, bottom].
-- `quotation_date_confidence` : độ tin cậy của Ngày báo giá.
+- `quotation_date_box` : Tọa độ Ngày báo giá là danh sách gồm [left, top, right, bottom].
+- `quotation_date_confidence` : Độ tin cậy của Ngày báo giá.
 - `estimated_delivery_date` : Ngày dự kiến giao xe.
-- `estimated_delivery_date_box` : tọa độ Ngày dự kiến giao xe là danh sách gồm [left, top, right, bottom].
-- `estimated_delivery_date_confidence` : độ tin cậy của Ngày dự kiến giao xe.
+- `estimated_delivery_date_box` : Tọa độ Ngày dự kiến giao xe là danh sách gồm [left, top, right, bottom].
+- `estimated_delivery_date_confidence` : Độ tin cậy của Ngày dự kiến giao xe.
 - `total_amount` : Tổng tiền sửa chữa sau thuế.
-- `total_amount_box` : tọa độ Tổng tiền sửa chữa sau thuế là danh sách gồm [left, top, right, bottom].
-- `total_amount_confidence` : độ tin cậy của Tổng tiền sửa chữa sau thuế.
+- `total_amount_box` : Tọa độ Tổng tiền sửa chữa sau thuế là danh sách gồm [left, top, right, bottom].
+- `total_amount_confidence` : Độ tin cậy của Tổng tiền sửa chữa sau thuế.
 - `sub_total` : Tổng tiền sửa chữa trước thuế.
-- `sub_total_box` : tọa độ Tổng tiền sửa chữa trước thuế là danh sách gồm [left, top, right, bottom].
-- `sub_total_confidence` : độ tin cậy của Tổng tiền sửa chữa trước thuế.
+- `sub_total_box` : Tọa độ Tổng tiền sửa chữa trước thuế là danh sách gồm [left, top, right, bottom].
+- `sub_total_confidence` : Độ tin cậy của Tổng tiền sửa chữa trước thuế.
 - `vat_amount` : Tiền thuế.
-- `vat_amount_box` : tọa độ Tiền thuế là danh sách gồm [left, top, right, bottom].
-- `vat_amount_confidence` : độ tin cậy của Tiền thuế.
-- `table` : thông tin bảng, trường này là một danh sách, mỗi phần tử trong danh sách gồm:
+- `vat_amount_box` : Tọa độ Tiền thuế là danh sách gồm [left, top, right, bottom].
+- `vat_amount_confidence` : Độ tin cậy của Tiền thuế.
+- `table` : Thông tin bảng, trường này là một danh sách, mỗi phần tử trong danh sách gồm:
   - `description` : Tên phụ tùng, dịch vụ sửa chữa.
-  - `description_box` : tọa độ Tên phụ tùng, dịch vụ sửa chữa là danh sách gồm [left, top, right, bottom].
-  - `description_confidence` : độ tin cậy của Tên phụ tùng, dịch vụ sửa chữa.
+  - `description_box` : Tọa độ Tên phụ tùng, dịch vụ sửa chữa là danh sách gồm [left, top, right, bottom].
+  - `description_confidence` : Độ tin cậy của Tên phụ tùng, dịch vụ sửa chữa.
   - `quantity` : Số lượng.
-  - `quantity_box` : tọa độ Số lượng là danh sách gồm [left, top, right, bottom].
-  - `quantity_confidence` : độ tin cậy của Số lượng.
+  - `quantity_box` : Tọa độ Số lượng là danh sách gồm [left, top, right, bottom].
+  - `quantity_confidence` : Độ tin cậy của Số lượng.
   - `unit_price` : Đơn giá.
-  - `unit_price_box` : tọa độ Đơn giá là danh sách gồm [left, top, right, bottom].
-  - `unit_price_confidence` : độ tin cậy của Đơn giá.
+  - `unit_price_box` : Tọa độ Đơn giá là danh sách gồm [left, top, right, bottom].
+  - `unit_price_confidence` : Độ tin cậy của Đơn giá.
   - `percent_discount` : Phần trăm giảm giá.
-  - `percent_discount_box` : tọa độ Phần trăm giảm giá là danh sách gồm [left, top, right, bottom].
-  - `percent_discount_confidence` : độ tin cậy của Phần trăm giảm giá.
+  - `percent_discount_box` : Tọa độ Phần trăm giảm giá là danh sách gồm [left, top, right, bottom].
+  - `percent_discount_confidence` : Độ tin cậy của Phần trăm giảm giá.
   - `discount`: Số tiền giảm giá.
-  - `discount_box` : tọa độ Số tiền giảm giá là danh sách gồm [left, top, right, bottom].
-  - `discount_confidence` : độ tin cậy của Số tiền giảm giá.
+  - `discount_box` : Tọa độ Số tiền giảm giá là danh sách gồm [left, top, right, bottom].
+  - `discount_confidence` : Độ tin cậy của Số tiền giảm giá.
 - `image` : Ảnh của báo giá đã được căn chỉnh.
 - `image_table` : Ảnh của bảng trong báo giá đã được căn chỉnh.

@@ -17,14 +17,14 @@ stt: 22
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `file`         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh của Hóa đơn đã được căn chỉnh                    |
+| `format_type` | `file`         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của Hóa đơn đã được căn chỉnh                    |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả                |
 | ----- | ------ | ------------- | -------------------- |
-| `img` | `file` | `example.pdf` | file pdf của Hóa đơn |
+| `img` | `file` | `example.pdf` | File pdf của Hóa đơn |
 
 **Demo Python**:
 
@@ -56,14 +56,14 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `file`         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh của Hóa đơn đã được căn chỉnh                    |
+| `format_type` | `file`         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của Hóa đơn đã được căn chỉnh                    |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả                |
 | ----- | ------ | ------------- | -------------------- |
-| `img` | `file` | `example.xml` | file xml của Hóa đơn |
+| `img` | `file` | `example.xml` | File xml của Hóa đơn |
 
 **Demo Python**:
 

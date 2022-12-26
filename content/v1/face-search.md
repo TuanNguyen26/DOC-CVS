@@ -7,7 +7,7 @@ stt: 32
 
 #### 1. Xem toàn bộ ảnh
 
-**API**:
+**API:**
 
 | Method | URL                                                                                     |
 | ------ | --------------------------------------------------------------------------------------- |
@@ -15,10 +15,10 @@ stt: 32
 
 **Params**:
 
-| Key    | Value | Mô tả                       |
-| ------ | ----- | --------------------------- |
-| offset | 100   | số bản ghi sẽ bỏ qua        |
-| limit  | 50    | số bản ghi tối đa sẽ trả về |
+| Key      | Value | Mô tả                       |
+| -------- | ----- | --------------------------- |
+| `offset` | 100   | số bản ghi sẽ bỏ qua        |
+| `limit`  | 50    | số bản ghi tối đa sẽ trả về |
 
 **Demo Python**:
 
@@ -148,10 +148,10 @@ print(response.json())
 }
 ```
 
-| Key      | Bắt buộc | Mô tả                                                                                                                     |
-| -------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
-| image_id | có       | id ảnh cần cập nhật metadata                                                                                              |
-| metadata | không    | bất kỳ metadata key-value nào để lưu cùng với ảnh, trừ những key `"user"`, `"encoding"`, `"_id"` đã được hệ thống sử dụng |
+| Key        | Bắt buộc | Mô tả                                                                                                                     |
+| ---------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `image_id` | có       | id ảnh cần cập nhật metadata                                                                                              |
+| `metadata` | không    | bất kỳ metadata key-value nào để lưu cùng với ảnh, trừ những key `"user"`, `"encoding"`, `"_id"` đã được hệ thống sử dụng |
 
 **Demo Python**:
 
@@ -227,23 +227,31 @@ Mỗi api khác nhau sẽ trả về kết quả khác nhau.
 
 Xem toàn bộ ảnh.
 
-    - `result`: mảng chứa các phần tử ảnh, mỗi phần tử gồm id của ảnh và url ảnh tương ứng
+```javascript
+    - `result` : mảng chứa các phần tử ảnh, mỗi phần tử gồm id của ảnh và url ảnh tương ứng
     <!-- - `origin_image`: `Get all images` -->
+```
 
 Tìm kiếm khuôn mặt.
 
-    - `result`: mảng chứa các phần tử ảnh phù hợp, mỗi phần tử gồm id của ảnh và url ảnh tương ứng
-    <!-- - `origin_image`: url ảnh trong trường hợp `GET`, `Upload` trong trường hợp `POST` -->
+```javascript
+    - `result` : Mảng chứa các phần tử ảnh phù hợp, mỗi phần tử gồm id của ảnh và url ảnh tương ứng
+    <!-- - `origin_image`:Url ảnh trong trường hợp `GET`, `Upload` trong trường hợp `POST` -->
+```
 
 Thêm ảnh.
 
-    - `result`: json chứa thông tin ảnh mới được thêm vào
+```javascript
+    - `result` : Json chứa thông tin ảnh mới được thêm vào
     <!-- - `origin_image`: `Add` -->
+```
 
 Xoá nhiều ảnh.
 
-    - `result`: `None`
+```javascript
+    - `result` : `None`
     <!-- - `origin_image`: `Delete` -->
+```
 
 Bảng mã lỗi:
 

@@ -17,9 +17,9 @@ stt: 21
 
 | Key           | Value                           | Mô tả                                                       |
 | ------------- | ------------------------------- | ----------------------------------------------------------- |
-| `img`         | `https://example.com/image.png` | url của ảnh hoặc pdf                                        |
-| `format_type` | `url`                           | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false`                  | trả về ảnh của Hồ sơ nhân sự đã được căn chỉnh              |
+| `img`         | `https://example.com/image.png` | Url của ảnh hoặc pdf                                        |
+| `format_type` | `url`                           | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false`                  | Trả về ảnh của Hồ sơ nhân sự đã được căn chỉnh              |
 
 **Demo Python**:
 
@@ -52,14 +52,14 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `file`         | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh của Hồ sơ nhân sự đã được căn chỉnh              |
+| `format_type` | `file`         | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của Hồ sơ nhân sự đã được căn chỉnh              |
 
 **Body**:
 
 | Key   | Type   | Value         | Mô tả                               |
 | ----- | ------ | ------------- | ----------------------------------- |
-| `img` | `file` | `example.jpg` | file ảnh hoặc pdf của Hồ sơ nhân sự |
+| `img` | `file` | `example.jpg` | File ảnh hoặc pdf của Hồ sơ nhân sự |
 
 **Demo Python**:
 
@@ -91,8 +91,8 @@ print(response.json())
 
 | Key           | Value          | Mô tả                                                       |
 | ------------- | -------------- | ----------------------------------------------------------- |
-| `format_type` | `base64`       | loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
-| `get_thumb`   | `true`/`false` | trả về ảnh của Hồ sơ nhân sự đã được căn chỉnh              |
+| `format_type` | `base64`       | Loại data truyền vào, nhận giá trị: `url`, `file`, `base64` |
+| `get_thumb`   | `true`/`false` | Trả về ảnh của Hồ sơ nhân sự đã được căn chỉnh              |
 
 **Body**:
 
@@ -163,7 +163,7 @@ Mỗi phần tử trong mảng sẽ là một JSON với định dạng sau:
 Thẻ, giấy tờ tùy thân:
 
 - `type` : `id_card`.
-- `info_goods` : là json chứa các thông tin:
+- `info_goods` : Là json chứa các thông tin:
   - `name` : Họ tên
   - `dob` : Ngày sinh
   - `gender` : Giới tính
@@ -199,7 +199,7 @@ Sơ yếu lý lịch:
 Sổ hộ khẩu:
 
 - `type` : `registration_book`.
-- `info_goods` : là json chứa các thông tin:
+- `info_goods` : Là json chứa các thông tin:
   - `book_number` : Số sổ hộ khẩu
   - `address` : Địa chỉ
   - `head_name` : Họ tên chủ hộ
@@ -214,7 +214,7 @@ Sổ hộ khẩu:
 Bằng đại học:
 
 - `type` : `academic_degree`.
-- `info_goods` : là json chứa các thông tin:
+- `info_goods` : Là json chứa các thông tin:
   - `name` : Họ tên
   - `dob` : Ngày sinh
   - `school` : Trường học
@@ -227,7 +227,7 @@ Bằng đại học:
 Giấy khai sinh:
 
 - `type` : `birth_certificate`.
-- `info_goods` : là json chứa các thông tin:
+- `info_goods` : Là json chứa các thông tin:
   - `name` : Họ và Tên
   - `dob` : Ngày sinh
   - `regis_place` : Nơi Đăng ký
@@ -245,7 +245,7 @@ Giấy khai sinh:
 Giấy khám sức khỏe:
 
 - `type` : `health_certification`.
-- `info_goods` : là json chứa các thông tin:
+- `info_goods` : Là json chứa các thông tin:
   - `name` : Họ và Tên
   - `dob` : Ngày sinh
   - `height` : Chiều cao
