@@ -57,9 +57,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                            |
-| ----- | ---- | ------------- | -------------------------------- |
-| `img` | file | `example.jpg` | file ảnh hoặc pdf của Giấy tờ xe |
+| Key   | Type   | Value         | Mô tả                            |
+| ----- | ------ | ------------- | -------------------------------- |
+| `img` | `file` | `example.jpg` | file ảnh hoặc pdf của Giấy tờ xe |
 
 **Demo Python**:
 
@@ -159,69 +159,69 @@ Mỗi phần tử trong mảng sẽ là một JSON với định dạng sau:
 
 Mặt trước đăng ký xe:
 
-- `name`: tên chủ sở hữu xe.
-- `address`: nơi cư trú.
-- `id`: id đăng ký xe.
-- `plate`: biển số xe.
-- `issued_at`: nơi cấp.
-- `image`: ảnh mặt trước đăng ký xe.
+- `name` : tên chủ sở hữu xe.
+- `address` : nơi cư trú.
+- `id` : id đăng ký xe.
+- `plate` : biển số xe.
+- `issued_at` : nơi cấp.
+- `image` : ảnh mặt trước đăng ký xe.
 
 Mặt sau đăng ký xe:
 
-- `name`: tên chủ sở hữu xe.
-- `address`: nơi cư trú.
-- `engine`: số máy.
-- `chassis`: số khung.
-- `brand`: nhãn hiệu.
-- `model`: số loại.
-- `color`: màu sơn.
-- `capacity`: dung tích.
-- `issued_at`: nơi đăng ký.
-- `last_issue_date`: ngày đăng ký cuối cùng.
-- `first_issue_date`: ngày đăng ký đầu tiên.
-- `plate`: biển số xe.
-- `image`: ảnh mặt sau đăng ký xe.
+- `name` : tên chủ sở hữu xe.
+- `address` : nơi cư trú.
+- `engine` : số máy.
+- `chassis` : số khung.
+- `brand` : nhãn hiệu.
+- `model` : số loại.
+- `color` : màu sơn.
+- `capacity` : dung tích.
+- `issued_at` : nơi đăng ký.
+- `last_issue_date` : ngày đăng ký cuối cùng.
+- `first_issue_date` : ngày đăng ký đầu tiên.
+- `plate` : biển số xe.
+- `image` : ảnh mặt sau đăng ký xe.
 
 Đăng kiểm xe:
 
-- `chassis_number`: số khung.
-- `commercial_use`: kinh doanh vận tải.
-- `design_pay_load`: khối lượng hàng.
-- `design_towed_mass`: khối lượng kéo theo.
-- `engine_number`: số máy.
-- `inside_cargo_container_dimension`: kích thước thùng hàng.
-- `issued_on`: đơn vị kiểm định.
-- `life_time_limit`: niên hạn sử dụng.
-- `manufactured_country`: quốc gia sản xuất.
-- `manufactured_year`: năm sản xuất.
-- `mark`: nhãn hiệu.
-- `model_code`: số loại.
-- `modification`: cải tạo.
-- `permissible_no`: số người cho phép chở.
-- `regis_date`: ngày đăng ký.
-- `registration_number`: biển đăng ký.
-- `seri`: số sê-ri.
-- `tire_size`: cỡ lốp.
-- `type`: loại phương tiện.
-- `valid_until`: có hiệu lực đến hết ngày.
-- `wheel_form`: công thức bánh.
-- `capacity`: dung tích.
-- `report_number`: số phiếu.
-- `design_pay_load`: khối lượng hàng thiết kế.
-- `authorized_pay_load`: khối lượng hàng cấp phép.
-- `image`: ảnh đã cắt ra và căn chỉnh của đăng kiểm xe.
+- `chassis_number` : số khung.
+- `commercial_use` : kinh doanh vận tải.
+- `design_pay_load` : khối lượng hàng.
+- `design_towed_mass` : khối lượng kéo theo.
+- `engine_number` : số máy.
+- `inside_cargo_container_dimension` : kích thước thùng hàng.
+- `issued_on` : đơn vị kiểm định.
+- `life_time_limit` : niên hạn sử dụng.
+- `manufactured_country` : quốc gia sản xuất.
+- `manufactured_year` : năm sản xuất.
+- `mark` : nhãn hiệu.
+- `model_code` : số loại.
+- `modification` : cải tạo.
+- `permissible_no` : số người cho phép chở.
+- `regis_date` : ngày đăng ký.
+- `registration_number` : biển đăng ký.
+- `seri` : số sê-ri.
+- `tire_size` : cỡ lốp.
+- `type` : loại phương tiện.
+- `valid_until` : có hiệu lực đến hết ngày.
+- `wheel_form` : công thức bánh.
+- `capacity` : dung tích.
+- `report_number` : số phiếu.
+- `design_pay_load` : khối lượng hàng thiết kế.
+- `authorized_pay_load` : khối lượng hàng cấp phép.
+- `image` : ảnh đã cắt ra và căn chỉnh của đăng kiểm xe.
 
 Bằng lái xe:
 
-- `id`: số thẻ.
-- `name`: họ và tên.
-- `dob`: ngày sinh.
-- `class`: hạng.
-- `nationality`: quốc tịch.
-- `issue_date`: ngày phát hành.
-- `due_date`: ngày hết hạn.
-- `address`: nơi cư trú.
-- `image`: ảnh đã cắt ra và căn chỉnh của bằng lái xe.
+- `id` : số thẻ.
+- `name` : họ và tên.
+- `dob` : ngày sinh.
+- `class` : hạng.
+- `nationality` : quốc tịch.
+- `issue_date` : ngày phát hành.
+- `due_date` : ngày hết hạn.
+- `address` : nơi cư trú.
+- `image` : ảnh đã cắt ra và căn chỉnh của bằng lái xe.
 
 Bảng mã lỗi:
 

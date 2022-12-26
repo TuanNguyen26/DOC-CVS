@@ -157,10 +157,10 @@ print(response.json())
 
 **Body**:
 
-| Key     | Type | Value               | Mô tả                       |
-| ------- | ---- | ------------------- | --------------------------- |
-| `face1` | file | `example_face1.jpg` | file ảnh chân dung thứ nhất |
-| `face2` | file | `example_face2.jpg` | file ảnh chân dung thứ hai  |
+| Key     | Type   | Value               | Mô tả                       |
+| ------- | ------ | ------------------- | --------------------------- |
+| `face1` | `file` | `example_face1.jpg` | file ảnh chân dung thứ nhất |
+| `face2` | `file` | `example_face2.jpg` | file ảnh chân dung thứ hai  |
 
 **Demo Python**:
 
@@ -233,12 +233,12 @@ print(response.json())
 
 **Body**:
 
-| Key       | Type | Value               | Mô tả                                                        |
-| --------- | ---- | ------------------- | ------------------------------------------------------------ |
-| `img_cmt` | file | `example_cmt.jpg`   | file ảnh chứng minh thư hoặc thẻ căn cước hoặc ảnh chân dung |
-| `mid`     | file | `example_mid.jpg`   | file ảnh giữa khuôn mặt                                      |
-| `left`    | file | `example_left.jpg`  | file ảnh mặt quay trái                                       |
-| `right`   | file | `example_right.jpg` | file ảnh mặt quay phải                                       |
+| Key       | Type   | Value               | Mô tả                                                        |
+| --------- | ------ | ------------------- | ------------------------------------------------------------ |
+| `img_cmt` | `file` | `example_cmt.jpg`   | file ảnh chứng minh thư hoặc thẻ căn cước hoặc ảnh chân dung |
+| `mid`     | `file` | `example_mid.jpg`   | file ảnh giữa khuôn mặt                                      |
+| `left`    | `file` | `example_left.jpg`  | file ảnh mặt quay trái                                       |
+| `right`   | `file` | `example_right.jpg` | file ảnh mặt quay phải                                       |
 
 **Demo Python**:
 

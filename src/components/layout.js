@@ -23,7 +23,6 @@ const Wrapper = styled('div')`
   }
 
   .hideFrontLine .active > a {
-    border-radius: 8px;
     background-color: ${({ theme }) => theme.bgActive.backgroundColor};
     color: ${({ theme }) => theme.bgActive.color};
   }

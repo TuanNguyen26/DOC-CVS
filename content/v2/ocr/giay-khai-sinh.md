@@ -56,9 +56,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                                            |
-| ----- | ---- | ------------- | ------------------------------------------------ |
-| `img` | file | `example.jpg` | file ảnh giấy khai sinh cần trích xuất thông tin |
+| Key   | Type   | Value         | Mô tả                                            |
+| ----- | ------ | ------------- | ------------------------------------------------ |
+| `img` | `file` | `example.jpg` | file ảnh giấy khai sinh cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -151,24 +151,24 @@ Trường hợp trích xuất thông tin từ giấy khai sinh không có trư�
 
 Giấy khai sinh:
 
-- dob: ngày sinh.
-- dob_confidence: độ tin cậy của thông tin trích xuất ngày sinh.
-- father_dob: ngày sinh cha.
-- father_dob_confidence: độ tin cậy của thông tin trích xuất ngày sinh cha.
-- father_name: họ tên cha.
-- father_name_confidence: độ tin cậy của thông tin trích xuất họ tên cha.
-- gender: giới tính.
-- gender_confidence: độ tin cậy của thông tin trích xuất giới tính.
-- mother_dob: ngày sinh mẹ.
-- mother_dob_confidence: độ tin cậy của thông tin trích xuất ngày sinh mẹ.
-- mother_name: họ tên mẹ.
-- mother_name_confidence: độ tin cậy của thông tin trích xuất họ tên mẹ.
-- name: họ tên.
-- name_confidence: độ tin cậy của thông tin trích xuất họ tên.
-- number: số giấy khai sinh.
-- number_confidence: độ tin cậy của thông tin trích xuất số giấy khai sinh.
-- number_book: quyển số giấy khai sinh.
-- number_book_confidence: độ tin cậy của thông tin trích xuất quyển số giấy khai sinh.
-- regis_date: ngày đăng ký.
-- regis_date_confidence: độ tin cậy của thông tin trích xuất ngày đăng ký.
-- image: ảnh đã cắt ra và căn chỉnh của giấy khai sinh.
+- `dob` : ngày sinh.
+- `dob_confidence` : độ tin cậy của thông tin trích xuất ngày sinh.
+- `father_dob` : ngày sinh cha.
+- `father_dob_confidence` : độ tin cậy của thông tin trích xuất ngày sinh cha.
+- `father_name` : họ tên cha.
+- `father_name_confidence` : độ tin cậy của thông tin trích xuất họ tên cha.
+- `gender` : giới tính.
+- `gender_confidence` : độ tin cậy của thông tin trích xuất giới tính.
+- `mother_dob` : ngày sinh mẹ.
+- `mother_dob_confidence` : độ tin cậy của thông tin trích xuất ngày sinh mẹ.
+- `mother_name` : họ tên mẹ.
+- `mother_name_confidence` : độ tin cậy của thông tin trích xuất họ tên mẹ.
+- `name` : họ tên.
+- `name_confidence` : độ tin cậy của thông tin trích xuất họ tên.
+- `number` : số giấy khai sinh.
+- `number_confidence` : độ tin cậy của thông tin trích xuất số giấy khai sinh.
+- `number_book` : quyển số giấy khai sinh.
+- `number_book_confidence` : độ tin cậy của thông tin trích xuất quyển số giấy khai sinh.
+- `regis_date` : ngày đăng ký.
+- `regis_date_confidence` : độ tin cậy của thông tin trích xuất ngày đăng ký.
+- `image` : ảnh đã cắt ra và căn chỉnh của giấy khai sinh.

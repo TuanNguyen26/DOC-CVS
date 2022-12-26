@@ -143,6 +143,7 @@ export const baseStyles = css`
     display: flex;
     align-items: center;
   }
+
   .formElement {
     background-color: transparent;
     padding: 4px;
@@ -258,7 +259,7 @@ export const baseStyles = css`
   }
   .navBarDefault {
     border-radius: 0;
-    border-top: 0;
+    border-top: 1px soild #ccc;
     margin-bottom: 0;
     border: 0;
     display: flex;
@@ -273,10 +274,12 @@ export const baseStyles = css`
     height: 80px;
   }
   .navBarHeader {
-    min-width: 335px;
+    /* min-width: 335px; */
+    width: 100%;
     padding-right: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .navBarBrand {
     padding: 0px 0px;
@@ -285,7 +288,8 @@ export const baseStyles = css`
   }
 
   .navBarBrand img {
-    width: 120px;
+    width: 240px;
+    /* height: 120px; */
     margin-right: 6px;
     display: inline-block;
   }

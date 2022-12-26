@@ -57,10 +57,10 @@ print(response.json())
 
 **Body**:
 
-| Key    | Type | Value               | Mô tả                                       |
-| ------ | ---- | ------------------- | ------------------------------------------- |
-| `img1` | file | `example_front.jpg` | file ảnh mặt trước cần trích xuất thông tin |
-| `img2` | file | `example_back.jpg`  | file ảnh mặt sau cần trích xuất thông tin   |
+| Key    | Type   | Value               | Mô tả                                       |
+| ------ | ------ | ------------------- | ------------------------------------------- |
+| `img1` | `file` | `example_front.jpg` | file ảnh mặt trước cần trích xuất thông tin |
+| `img2` | `file` | `example_back.jpg`  | file ảnh mặt sau cần trích xuất thông tin   |
 
 **Demo Python**:
 
@@ -183,9 +183,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                                              |
-| ----- | ---- | ------------- | -------------------------------------------------- |
-| `img` | file | `example.jpg` | file ảnh của mặt trước hoặc mặt sau của đăng ký xe |
+| Key   | Type   | Value         | Mô tả                                              |
+| ----- | ------ | ------------- | -------------------------------------------------- |
+| `img` | `file` | `example.jpg` | file ảnh của mặt trước hoặc mặt sau của đăng ký xe |
 
 **Demo Python**:
 
@@ -279,26 +279,26 @@ Chú ý: Trường hợp trích xuất thông tin từ đăng ký xe không có 
 
 Mặt trước đăng ký xe:
 
-- name: tên chủ sở hữu xe.
-- address: nơi cư trú.
-- id: id đăng ký xe.
-- plate: biển số xe.
-- issued_at: nơi cấp.
-- image: ảnh mặt trước đăng ký xe.
+- `name` : tên chủ sở hữu xe.
+- `address` : nơi cư trú.
+- `id` : id đăng ký xe.
+- `plate` : biển số xe.
+- `issued_at` : nơi cấp.
+- `image` : ảnh mặt trước đăng ký xe.
 
 Mặt sau đăng ký xe:
 
-- name: tên chủ sở hữu xe.
-- address: nơi cư trú.
-- engine: số máy.
-- chassis: số khung.
-- brand: nhãn hiệu.
-- model: số loại.
-- color: màu sơn.
-- capacity: dung tích.
-- issued_at: nơi đăng ký.
-- last_issue_date: ngày đăng ký cuối cùng.
-- first_issue_date: ngày đăng ký đầu tiên.
-- plate: biển số xe.
-- pay_load: trọng tải.
-- image: ảnh mặt sau đăng ký xe.
+- `name` : tên chủ sở hữu xe.
+- `address` : nơi cư trú.
+- `engine` : số máy.
+- `chassis` : số khung.
+- `brand` : nhãn hiệu.
+- `model` : số loại.
+- `color` : màu sơn.
+- `capacity`: dung tích.
+- `issued_at` : nơi đăng ký.
+- `last_issue_date` : ngày đăng ký cuối cùng.
+- `first_issue_date` : ngày đăng ký đầu tiên.
+- `plate` : biển số xe.
+- `pay_load` : trọng tải.
+- `image` : ảnh mặt sau đăng ký xe.

@@ -101,11 +101,21 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
           <BgNavDefault className={'navBarDefault'} isDarkThemeActive={isDarkThemeActive}>
             <div className={'navBarHeader'}>
               <Link to="/" className={'navBarBrand'}>
-                <img
-                  className={'img-responsive displayInline'}
-                  src="https://demo.computervision.com.vn/Web_logo.svg"
-                  alt="logo-cvs"
-                />
+                {isDarkThemeActive ? (
+                  <img
+                    isDarkThemeActive={isDarkThemeActive}
+                    className={'img-responsive displayInline img-logo'}
+                    src="https://demo.computervision.com.vn/Web_logo.svg"
+                    alt="logo-cvs"
+                  />
+                ) : (
+                  <img
+                    isDarkThemeActive={isDarkThemeActive}
+                    className={'img-responsive displayInline img-logo'}
+                    alt="logo-cvs"
+                    src="https://www.docs.computervision.com.vn/static/logo-cvs-8d7e167d315ede0146bebe3e494a5898.svg"
+                  />
+                )}
               </Link>
             </div>
 

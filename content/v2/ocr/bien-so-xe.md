@@ -56,9 +56,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                                        |
-| ----- | ---- | ------------- | -------------------------------------------- |
-| `img` | file | `example.jpg` | file ảnh biển số xe cần trích xuất thông tin |
+| Key   | Type   | Value         | Mô tả                                        |
+| ----- | ------ | ------------- | -------------------------------------------- |
+| `img` | `file` | `example.jpg` | file ảnh biển số xe cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -149,5 +149,5 @@ Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trườn
 
 Biển số xe: Trả về một danh sách, mỗi phần từ trong danh sách gồm
 
-- plate: biển số xe.
-- image: ảnh đã cắt ra và căn chỉnh của biển số xe.
+- `plate` : biển số xe.
+- `image` : ảnh đã cắt ra và căn chỉnh của biển số xe.

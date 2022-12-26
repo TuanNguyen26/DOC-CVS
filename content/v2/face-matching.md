@@ -58,10 +58,10 @@ print(response.json())
 
 **Body**:
 
-| Key    | Type | Value                  | Mô tả                                     |
-| ------ | ---- | ---------------------- | ----------------------------------------- |
-| `img1` | file | `example_card.jpg`     | file ảnh chứng minh thư hoặc thẻ căn cước |
-| `img2` | file | `example_portrait.jpg` | file ảnh khuôn mặt cần so khớp            |
+| Key    | Type   | Value                  | Mô tả                                     |
+| ------ | ------ | ---------------------- | ----------------------------------------- |
+| `img1` | `file` | `example_card.jpg`     | file ảnh chứng minh thư hoặc thẻ căn cước |
+| `img2` | `file` | `example_portrait.jpg` | file ảnh khuôn mặt cần so khớp            |
 
 **Demo Python**:
 

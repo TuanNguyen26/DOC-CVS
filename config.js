@@ -1,6 +1,6 @@
 const config = {
   gatsby: {
-    pathPrefix: '/v2',
+    pathPrefix: '/',
     siteUrl: 'https://hasura.io',
     gaTrackingId: null,
     trailingSlash: false,
@@ -40,11 +40,10 @@ const config = {
     forcedNavOrder: [
       '/v2',
       '/v1',
-      '/',
       // add trailing slash if enabled above
     ],
     collapsedNav: [
-      // '/',
+      '/index',
       // add trailing slash if enabled above
     ],
     links: [{ text: 'Hasura', link: 'https://hasura.io' }],
@@ -57,7 +56,8 @@ const config = {
     description: 'Documentation built with mdx. Powering hasura.io/learn ',
     ogImage: null,
     docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    favicon:
+      'https://www.docs.computervision.com.vn/favicon-32x32.png?v=075792fd54459d7cd555453d10a2fa0b',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.

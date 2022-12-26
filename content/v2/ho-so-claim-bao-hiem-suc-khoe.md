@@ -57,9 +57,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                                               |
-| ----- | ---- | ------------- | --------------------------------------------------- |
-| `img` | file | `example.jpg` | file ảnh hoặc pdf của Hồ sơ claim bảo hiểm sức khỏe |
+| Key   | Type   | Value         | Mô tả                                               |
+| ----- | ------ | ------------- | --------------------------------------------------- |
+| `img` | `file` | `example.jpg` | file ảnh hoặc pdf của Hồ sơ claim bảo hiểm sức khỏe |
 
 **Demo Python**:
 
@@ -148,149 +148,149 @@ Mỗi phần tử trong mảng sẽ là một JSON với định dạng sau:
 }
 ```
 
-`type`: Loại giấy tờ trong hồ sơ claim bảo hiểm sức khỏe được trích xuất thông tin.
+`type` : Loại giấy tờ trong hồ sơ claim bảo hiểm sức khỏe được trích xuất thông tin.
 
-- `9_id_card_front`: Mặt trước của chứng minh nhân dân.
-- `12_id_card_front`: Mặt trước thẻ căn cước công dân.
-- `chip_id_card_front`: Mặt trước thẻ căn cước công dân gán chip.
-- `9_id_card_back`: Mặt sau của chứng minh nhân dân.
-- `12_id_card_back`: Mặt sau của thẻ căn cước.
-- `chip_id_card_back`: Mặt sau thẻ căn cước công dân gán chip.
-- `passport`: Hộ chiếu.
-- `bvcard`: Thẻ bên Bảo Việt.
-- `claim_form`: Giấy yêu cầu bồi thường.
+- `9_id_card_front` : Mặt trước của chứng minh nhân dân.
+- `12_id_card_front` : Mặt trước thẻ căn cước công dân.
+- `chip_id_card_front` : Mặt trước thẻ căn cước công dân gán chip.
+- `9_id_card_back` : Mặt sau của chứng minh nhân dân.
+- `12_id_card_back` : Mặt sau của thẻ căn cước.
+- `chip_id_card_back` : Mặt sau thẻ căn cước công dân gán chip.
+- `passport` : Hộ chiếu.
+- `bvcard` : Thẻ bên Bảo Việt.
+- `claim_form` : Giấy yêu cầu bồi thường.
 
-`info`: Bao gồm các thông tin trích xuất được, với mỗi loại giấy tờ thì sẽ có những thông tin trả về khác nhau.
+`info` : Bao gồm các thông tin trích xuất được, với mỗi loại giấy tờ thì sẽ có những thông tin trả về khác nhau.
 
 Mặt trước chứng minh nhân dân:
 
-- `id`: số chứng minh thư.
-- `id_box`: tọa độ số chứng minh thư là mảng gồm [left, top, right, bottom]
-- `id_confidence`: độ tin cậy số chứng minh thư
-- `name`: họ và tên.
-- `name_box`: tọa độ họ và tên là mảng gồm [left, top, right, bottom]
-- `name_confidence`: độ tin cậy của họ và tên
-- `dob`: ngày sinh.
-- `dob_box`: tọa độ ngày sinh là mảng gồm [left, top, right, bottom]
-- `dob_confidence`: độ tin cậy của ngày sinh
-- `hometown`: quê quán.
-- `hometown_box`: tọa độ quê quán là mảng gồm [left, top, right, bottom].
-- `hometown_confidence`: độ tin cậy của quê quán.
-- `address`: thường trú.
-- `address_box`: tọa độ thường trú là mảng gồm [left, top, right, bottom].
-- `address_confidence`: độ tin cậy của thường trú.
-- `address_town_code`: mã tỉnh/thành phố trong địa chỉ thường trú.
-- `address_district_code` mã quận/huyện trong địa chỉ thường trú.
-- `address_ward_code`: mã phường/xã trong địa chỉ thường trú.
-- `hometown_town_code`: mã tỉnh/thành phố trong quê quán.
-- `hometown_district_code`: mã quận/huyện trong quê quán.
-- `hometown_ward_code`: mã phường/xã trong quê quán.
-- `address_town`: tỉnh/thành phố trong địa chỉ thường trú.
-- `address_district`: quận/huyện trong địa chỉ thường trú.
-- `address_ward`: phường/xã trong địa chỉ thường trú.
-- `hometown_town`: tỉnh/thành phố trong quê quán.
-- `hometown_district`: quận/huyện trong quê quán.
-- `hometown_ward`: phường/xã trong quê quán.
-- `image`: ảnh đã cắt ra và căn chỉnh của giấy tờ.
+- `id` : số chứng minh thư.
+- `id_box` : tọa độ số chứng minh thư là mảng gồm [left, top, right, bottom]
+- `id_confidence` : độ tin cậy số chứng minh thư
+- `name` : họ và tên.
+- `name_box` : tọa độ họ và tên là mảng gồm [left, top, right, bottom]
+- `name_confidence` : độ tin cậy của họ và tên
+- `dob` : ngày sinh.
+- `dob_box` : tọa độ ngày sinh là mảng gồm [left, top, right, bottom]
+- `dob_confidence` : độ tin cậy của ngày sinh
+- `hometown` : quê quán.
+- `hometown_box` : tọa độ quê quán là mảng gồm [left, top, right, bottom].
+- `hometown_confidence` : độ tin cậy của quê quán.
+- `address` : thường trú.
+- `address_box` : tọa độ thường trú là mảng gồm [left, top, right, bottom].
+- `address_confidence` : độ tin cậy của thường trú.
+- `address_town_code` : mã tỉnh/thành phố trong địa chỉ thường trú.
+- `address_district_code` : mã quận/huyện trong địa chỉ thường trú.
+- `address_ward_code` : mã phường/xã trong địa chỉ thường trú.
+- `hometown_town_code` : mã tỉnh/thành phố trong quê quán.
+- `hometown_district_code` : mã quận/huyện trong quê quán.
+- `hometown_ward_code` : mã phường/xã trong quê quán.
+- `address_town` : tỉnh/thành phố trong địa chỉ thường trú.
+- `address_district` : quận/huyện trong địa chỉ thường trú.
+- `address_ward` : phường/xã trong địa chỉ thường trú.
+- `hometown_town` : tỉnh/thành phố trong quê quán.
+- `hometown_district` : quận/huyện trong quê quán.
+- `hometown_ward` : phường/xã trong quê quán.
+- `image` : ảnh đã cắt ra và căn chỉnh của giấy tờ.
 
 Mặt trước thẻ căn cước công dân:
 
-- `id`: số thẻ.
-- `id_box`: tọa độ số thẻ là mảng gồm [left, top, right, bottom]
-- `id_confidence`: độ tin cậy số thẻ
-- `name`: họ và tên.
-- `name_box`: tọa độ họ và tên là mảng gồm [left, top, right, bottom]
-- `name_confidence`: độ tin cậy của họ và tên
-- `dob`: ngày sinh.
-- `dob_box`: tọa độ ngày sinh là mảng gồm [left, top, right, bottom]
-- `dob_confidence`: độ tin cậy của ngày sinh
-- `hometown`: quê quán
-- `hometown_box`: tọa độ quê quán là mảng gồm [left, top, right, bottom]
-- `hometown_confidence`: độ tin cậy của quê quán
-- `gender`: giới tính.
-- `gender_box`: tọa độ giới tính là mảng gồm [left, top, right, bottom]
-- `gender_confidence`: độ tin cậy của giới tính
-- `due_date`: ngày hết hạn.
-- `due_date_box`: tọa độ ngày hết hạn là mảng gồm [left, top, right, bottom]
-- `due_date_confidence`: độ tin cậy của ngày hết hạn
-- `nationality`: quốc tịch.
-- `nationality_box`: tọa độ quốc tịch là mảng gồm [left, top, right, bottom]
-- `nationality_confidence`: độ tin cậy của quốc tịch
-- `ethnicity`: dân tộc.
-- `ethnicity_box`: tọa độ dân tộc là mảng gồm [left, top, right, bottom]
-- `ethnicity_confidence`: độ tin cậy của dân tộc
-- `address`: thường trú.
-- `address_box`: tọa độ thường trú là mảng gồm [left, top, right, bottom]
-- `address_confidence`: độ tin cậy của thường trú
-- `address_town_code`: mã tỉnh/thành phố trong địa chỉ thường trú.
-- `address_district_code`: mã quận/huyện trong địa chỉ thường trú.
-- `address_ward_code`: mã phường/xã trong địa chỉ thường trú.
-- `hometown_town_code`: mã tỉnh/thành phố trong quê quán.
-- `hometown_district_code`: mã quận/huyện trong quê quán.
-- `hometown_ward_code`: mã phường/xã trong quê quán.
-- `address_town`: tỉnh/thành phố trong địa chỉ thường trú.
-- `address_district`: quận/huyện trong địa chỉ thường trú.
-- `address_ward`: phường/xã trong địa chỉ thường trú.
-- `hometown_town`: tỉnh/thành phố trong quê quán.
-- `hometown_district`: quận/huyện trong quê quán.
-- `hometown_ward`: phường/xã trong quê quán.
-- `image`: ảnh đã cắt ra và căn chỉnh của giấy tờ.
+- `id` : số thẻ.
+- `id_box` : tọa độ số thẻ là mảng gồm [left, top, right, bottom]
+- `id_confidence` : độ tin cậy số thẻ
+- `name` : họ và tên.
+- `name_box` : tọa độ họ và tên là mảng gồm [left, top, right, bottom]
+- `name_confidence` : độ tin cậy của họ và tên
+- `dob` : ngày sinh.
+- `dob_box` : tọa độ ngày sinh là mảng gồm [left, top, right, bottom]
+- `dob_confidence` : độ tin cậy của ngày sinh
+- `hometown` : quê quán
+- `hometown_box` : tọa độ quê quán là mảng gồm [left, top, right, bottom]
+- `hometown_confidence` : độ tin cậy của quê quán
+- `gender` : giới tính.
+- `gender_box` : tọa độ giới tính là mảng gồm [left, top, right, bottom]
+- `gender_confidence` : độ tin cậy của giới tính
+- `due_date` : ngày hết hạn.
+- `due_date_box` : tọa độ ngày hết hạn là mảng gồm [left, top, right, bottom]
+- `due_date_confidence` : độ tin cậy của ngày hết hạn
+- `nationality` : quốc tịch.
+- `nationality_box` : tọa độ quốc tịch là mảng gồm [left, top, right, bottom]
+- `nationality_confidence` : độ tin cậy của quốc tịch
+- `ethnicity` : dân tộc.
+- `ethnicity_box` : tọa độ dân tộc là mảng gồm [left, top, right, bottom]
+- `ethnicity_confidence` : độ tin cậy của dân tộc
+- `address` : thường trú.
+- `address_box` : tọa độ thường trú là mảng gồm [left, top, right, bottom]
+- `address_confidence` : độ tin cậy của thường trú
+- `address_town_code` : mã tỉnh/thành phố trong địa chỉ thường trú.
+- `address_district_code` : mã quận/huyện trong địa chỉ thường trú.
+- `address_ward_code` : mã phường/xã trong địa chỉ thường trú.
+- `hometown_town_code` : mã tỉnh/thành phố trong quê quán.
+- `hometown_district_code` : mã quận/huyện trong quê quán.
+- `hometown_ward_code` : mã phường/xã trong quê quán.
+- `address_town` : tỉnh/thành phố trong địa chỉ thường trú.
+- `address_district` : quận/huyện trong địa chỉ thường trú.
+- `address_ward` : phường/xã trong địa chỉ thường trú.
+- `hometown_town` : tỉnh/thành phố trong quê quán.
+- `hometown_district` : quận/huyện trong quê quán.
+- `hometown_ward` : phường/xã trong quê quán.
+- `image` : ảnh đã cắt ra và căn chỉnh của giấy tờ.
 
 Mặt trước thẻ căn cước công dân gắn chip:
 
-- `id`: số thẻ.
-- `id_box`: tọa độ số thẻ là mảng gồm [left, top, right, bottom]
-- `id_confidence`: độ tin cậy số thẻ
-- `name`: họ và tên.
-- `name_box`: tọa độ họ và tên là mảng gồm [left, top, right, bottom]
-- `name_confidence`: độ tin cậy của họ và tên
-- `dob`: ngày sinh.
-- `dob_box`: tọa độ ngày sinh là mảng gồm [left, top, right, bottom]
-- `dob_confidence`: độ tin cậy của ngày sinh
-- `hometown`: quê quán
-- `hometown_box`: tọa độ quê quán là mảng gồm [left, top, right, bottom]
-- `hometown_confidence`: độ tin cậy của quê quán
-- `gender`: giới tính.
-- `gender_box`: tọa độ giới tính là mảng gồm [left, top, right, bottom]
-- `gender_confidence`: độ tin cậy của giới tính
-- `due_date`: ngày hết hạn.
-- `due_date_box`: tọa độ ngày hết hạn là mảng gồm [left, top, right, bottom]
-- `due_date_confidence`: độ tin cậy của ngày hết hạn
-- `nationality`: quốc tịch.
-- `nationality_box`: tọa độ quốc tịch là mảng gồm [left, top, right, bottom]
-- `nationality_confidence`: độ tin cậy của quốc tịch
-- `address`: thường trú.
-- `address_box`: tọa độ thường trú là mảng gồm [left, top, right, bottom]
-- `address_confidence`: độ tin cậy của thường trú
-- `address_town_code`: mã tỉnh/thành phố trong địa chỉ thường trú.
-- `address_district_code`: mã quận/huyện trong địa chỉ thường trú.
-- `address_ward_code`: mã phường/xã trong địa chỉ thường trú.
-- `hometown_town_code`: mã tỉnh/thành phố trong quê quán.
-- `hometown_district_code`: mã quận/huyện trong quê quán.
-- `hometown_ward_code`: mã phường/xã trong quê quán.
-- `address_town`: tỉnh/thành phố trong địa chỉ thường trú.
-- `address_district`: quận/huyện trong địa chỉ thường trú.
-- `address_ward`: phường/xã trong địa chỉ thường trú.
-- `hometown_town`: tỉnh/thành phố trong quê quán.
-- `hometown_district`: quận/huyện trong quê quán.
-- `hometown_ward`: phường/xã trong quê quán.
-- `image`: ảnh đã cắt ra và căn chỉnh của giấy tờ.
+- `id` : số thẻ.
+- `id_box` : tọa độ số thẻ là mảng gồm [left, top, right, bottom]
+- `id_confidence` : độ tin cậy số thẻ
+- `name` : họ và tên.
+- `name_box` : tọa độ họ và tên là mảng gồm [left, top, right, bottom]
+- `name_confidence` : độ tin cậy của họ và tên
+- `dob` : ngày sinh.
+- `dob_box` : tọa độ ngày sinh là mảng gồm [left, top, right, bottom]
+- `dob_confidence` : độ tin cậy của ngày sinh
+- `hometown` : quê quán
+- `hometown_box` : tọa độ quê quán là mảng gồm [left, top, right, bottom]
+- `hometown_confidence` : độ tin cậy của quê quán
+- `gender` : giới tính.
+- `gender_box` : tọa độ giới tính là mảng gồm [left, top, right, bottom]
+- `gender_confidence` : độ tin cậy của giới tính
+- `due_date` : ngày hết hạn.
+- `due_date_box` : tọa độ ngày hết hạn là mảng gồm [left, top, right, bottom]
+- `due_date_confidence` : độ tin cậy của ngày hết hạn
+- `nationality` : quốc tịch.
+- `nationality_box` : tọa độ quốc tịch là mảng gồm [left, top, right, bottom]
+- `nationality_confidence` : độ tin cậy của quốc tịch
+- `address` : thường trú.
+- `address_box` : tọa độ thường trú là mảng gồm [left, top, right, bottom]
+- `address_confidence` : độ tin cậy của thường trú
+- `address_town_code` : mã tỉnh/thành phố trong địa chỉ thường trú.
+- `address_district_code` : mã quận/huyện trong địa chỉ thường trú.
+- `address_ward_code` : mã phường/xã trong địa chỉ thường trú.
+- `hometown_town_code` : mã tỉnh/thành phố trong quê quán.
+- `hometown_district_code` : mã quận/huyện trong quê quán.
+- `hometown_ward_code` : mã phường/xã trong quê quán.
+- `address_town` : tỉnh/thành phố trong địa chỉ thường trú.
+- `address_district` : quận/huyện trong địa chỉ thường trú.
+- `address_ward` : phường/xã trong địa chỉ thường trú.
+- `hometown_town` : tỉnh/thành phố trong quê quán.
+- `hometown_district` : quận/huyện trong quê quán.
+- `hometown_ward` : phường/xã trong quê quán.
+- `image` : ảnh đã cắt ra và căn chỉnh của giấy tờ.
 
 Mặt sau chứng minh nhân dân:
 
-- `ethnicity`: dân tộc.
-- `ethnicity_box`: tọa độ dân tộc là mảng gồm [left, top, right, bottom]
-- `ethnicity_confidence`: độ tin cậy của dân tộc
-- `issue_date`: ngày cấp.
-- `issue_date_box`: tọa độ ngày cấp là mảng gồm [left, top, right, bottom]
-- `issue_date_confidence`: độ tin cậy của ngày cấp
-- `religious`: tôn giáo.
-- `religious_box`: tọa độ tôn giáo là mảng gồm [left, top, right, bottom]
-- `religious_confidence`: độ tin cậy của tôn giáo
-- `issued_at`: nơi cấp
-- `issued_at_box`: tọa độ nơi cấp là mảng gồm [left, top, right, bottom]
-- `issued_at_confidence`: độ tin cậy của nơi cấp
-- `image`: ảnh đã cắt ra và căn chỉnh của giấy tờ.
+- `ethnicity` : dân tộc.
+- `ethnicity_box` : tọa độ dân tộc là mảng gồm [left, top, right, bottom]
+- `ethnicity_confidence` : độ tin cậy của dân tộc
+- `issue_date` : ngày cấp.
+- `issue_date_box` : tọa độ ngày cấp là mảng gồm [left, top, right, bottom]
+- `issue_date_confidence` : độ tin cậy của ngày cấp
+- `religious` : tôn giáo.
+- `religious_box` : tọa độ tôn giáo là mảng gồm [left, top, right, bottom]
+- `religious_confidence` : độ tin cậy của tôn giáo
+- `issued_at` : nơi cấp
+- `issued_at_box` : tọa độ nơi cấp là mảng gồm [left, top, right, bottom]
+- `issued_at_confidence` : độ tin cậy của nơi cấp
+- `image` : ảnh đã cắt ra và căn chỉnh của giấy tờ.
 
 Mặt sau thẻ căn cước công dân:
 

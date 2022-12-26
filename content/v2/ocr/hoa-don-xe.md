@@ -56,9 +56,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                                                      |
-| ----- | ---- | ------------- | ---------------------------------------------------------- |
-| `img` | file | `example.jpg` | file ảnh hoặc file pdf hóa đơn xe cần trích xuất thông tin |
+| Key   | Type   | Value         | Mô tả                                                      |
+| ----- | ------ | ------------- | ---------------------------------------------------------- |
+| `img` | `file` | `example.jpg` | file ảnh hoặc file pdf hóa đơn xe cần trích xuất thông tin |
 
 **Demo Python**:
 
@@ -149,35 +149,31 @@ Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trườn
 
 Hóa đơn xe: Trả về một danh sách, mỗi phần từ trong danh sách gồm
 
-- date: ngày lập hóa đơn.
-- date_box: tọa độ ngày lập hóa đơn là danh sách gồm [left, top, right, bottom].
-- date_confidence: độ tin cậy của ngày lập hóa đơn.
-- form: mẫu số.
-- form_box: tọa độ mẫu số hóa đơn là danh sách gồm [left, top, right, bottom].
-- form_confidence: độ tin cậy của mẫu số.
-- invoice_no: số hóa đơn.
-- invoice_no_box: tọa độ số hóa đơn là danh sách gồm [left, top, right, bottom].
-- invoice_no_confidence: độ tin cậy của số hóa đơn.
-- serial_no: số ký hiệu hóa đơn.
-- serial_no_box: tọa độ số ký hiệu hóa đơn là danh sách gồm [left, top, right, bottom].
-- serial_no_confidence: độ tin cậy của số ký hiệu hóa đơn.
-- supplier: nhà cung cấp.
-- supplier_box: tọa độ nhà cung cấp là danh sách gồm [left, top, right, bottom].
-- supplier_confidence: độ tin cậy của nhà cung cấp.
-- tax_code: mã số thuế nhà cung cấp.
-- tax_code_box: tọa độ mã số thuế nhà cung cấp là danh sách gồm [left, top, right, bottom].
-- tax_code_confidence: độ tin cậy của mã số thuế nhà cung cấp.
-- total_amount: tổng tiền.
-- total_amount_box: tọa độ tổng tiền là danh sách gồm [left, top, right, bottom].
-- total_amount_confidence: độ tin cậy của tổng tiền.
-- date: ngày lập hóa đơn.
-- date_box: tọa độ ngày lập hóa đơn là danh sách gồm [left, top, right, bottom].
-- date_confidence: độ tin cậy của ngày lập hóa đơn.
-- info_goods: thông tin hàng hóa, dịch vụ, trường này là một danh sách, mỗi phần tử trong danh sách gồm:
-- name: tên hàng hóa, dịch vụ
-- coin: giá của hàng hóa, dịch vụ
-- image: ảnh hóa đơn đã được xoay và căn chỉnh.
-
-```
-
-```
+- `date` : ngày lập hóa đơn.
+- `date_box` : tọa độ ngày lập hóa đơn là danh sách gồm [left, top, right, bottom].
+- `date_confidence` : độ tin cậy của ngày lập hóa đơn.
+- `form` : mẫu số.
+- `form_box` : tọa độ mẫu số hóa đơn là danh sách gồm [left, top, right, bottom].
+- `form_confidence` : độ tin cậy của mẫu số.
+- `invoice_no` : số hóa đơn.
+- `invoice_no_box` : tọa độ số hóa đơn là danh sách gồm [left, top, right, bottom].
+- `invoice_no_confidence` : độ tin cậy của số hóa đơn.
+- `serial_no` : số ký hiệu hóa đơn.
+- `serial_no_box` : tọa độ số ký hiệu hóa đơn là danh sách gồm [left, top, right, bottom].
+- `serial_no_confidence` : độ tin cậy của số ký hiệu hóa đơn.
+- `supplier` : nhà cung cấp.
+- `supplier_box` : tọa độ nhà cung cấp là danh sách gồm [left, top, right, bottom].
+- `supplier_confidence` : độ tin cậy của nhà cung cấp.
+- `tax_code` : mã số thuế nhà cung cấp.
+- `tax_code_box` : tọa độ mã số thuế nhà cung cấp là danh sách gồm [left, top, right, bottom].
+- `tax_code_confidence` : độ tin cậy của mã số thuế nhà cung cấp.
+- `total_amount` : tổng tiền.
+- `total_amount_box` : tọa độ tổng tiền là danh sách gồm [left, top, right, bottom].
+- `total_amount_confidence` : độ tin cậy của tổng tiền.
+- `date` : ngày lập hóa đơn.
+- `date_box` : tọa độ ngày lập hóa đơn là danh sách gồm [left, top, right, bottom].
+- `date_confidence` : độ tin cậy của ngày lập hóa đơn.
+- `info_goods` : thông tin hàng hóa, dịch vụ, trường này là một danh sách, mỗi phần tử trong danh sách gồm:
+- `name` : tên hàng hóa, dịch vụ
+- `coin` : giá của hàng hóa, dịch vụ
+- `image` : ảnh hóa đơn đã được xoay và căn chỉnh.

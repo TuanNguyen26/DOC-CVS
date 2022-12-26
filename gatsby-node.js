@@ -85,7 +85,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
     let value = parent.relativePath.replace(parent.ext, '');
 
-    if (value === 'web') {
+    if (value === 'index') {
       value = '';
     }
 

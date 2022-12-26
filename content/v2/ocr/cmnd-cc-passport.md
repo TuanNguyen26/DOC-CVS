@@ -1,5 +1,5 @@
 ---
-title: 'Cmnd - CC - Passport'
+title: 'Chứng minh nhân dân - Căn cước - Passport'
 metaTitle: 'Chứng minh nhân dân - Căn cước - Passport'
 stt: 6
 ---
@@ -57,10 +57,10 @@ print(response.json())
 
 **Body**:
 
-| Key    | Type | Value               | Mô tả                                       |
-| ------ | ---- | ------------------- | ------------------------------------------- |
-| `img1` | file | `example_front.jpg` | file ảnh mặt trước cần trích xuất thông tin |
-| `img2` | file | `example_back.jpg`  | file ảnh mặt sau cần trích xuất thông tin   |
+| Key    | Type   | Value               | Mô tả                                       |
+| ------ | ------ | ------------------- | ------------------------------------------- |
+| `img1` | `file` | `example_front.jpg` | file ảnh mặt trước cần trích xuất thông tin |
+| `img2` | `file` | `example_back.jpg`  | file ảnh mặt sau cần trích xuất thông tin   |
 
 **Demo Python**:
 
@@ -182,9 +182,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                                                                   |
-| ----- | ---- | ------------- | ----------------------------------------------------------------------- |
-| `img` | file | `example.jpg` | file ảnh bất kỳ CMT mặt trước/mặt sau, CCCD mặt trước/mặt sau, Passport |
+| Key   | Type   | Value         | Mô tả                                                                   |
+| ----- | ------ | ------------- | ----------------------------------------------------------------------- |
+| `img` | `file` | `example.jpg` | file ảnh bất kỳ CMT mặt trước/mặt sau, CCCD mặt trước/mặt sau, Passport |
 
 **Demo Python**:
 
@@ -303,9 +303,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                                                                   |
-| ----- | ---- | ------------- | ----------------------------------------------------------------------- |
-| `img` | file | `example.jpg` | file ảnh bất kỳ CMT mặt trước/mặt sau, CCCD mặt trước/mặt sau, Passport |
+| Key   | Type   | Value         | Mô tả                                                                   |
+| ----- | ------ | ------------- | ----------------------------------------------------------------------- |
+| `img` | `file` | `example.jpg` | file ảnh bất kỳ CMT mặt trước/mặt sau, CCCD mặt trước/mặt sau, Passport |
 
 **Demo Python**:
 
@@ -397,151 +397,151 @@ Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trườn
 
 type: Loại giấy tờ tùy thân được trích xuất thông tin.
 
-- 9_id_card_front: ứng với mặt trước của chứng minh nhân dân.
-- 12_id_card_front: ứng với mặt trước thẻ căn cước công dân.
-- chip_id_card_front: ứng với mặt trước thẻ căn cước công dân gán chip.
-- 9_id_card_back: ứng với mặt sau của chứng minh nhân dân.
-- 12_id_card_back: ứng với mặt sau của thẻ căn cước.
-- chip_id_card_back: ứng với mặt sau thẻ căn cước công dân gán chip.
-- driving_license: ứng với bằng lái xe.
-- passport: ứng với loại giấy tờ là hộ chiếu.
-- vehicle_registration_front: ứng với mặt trước của giấy đăng ký xe.
-- vehicle_registration_back: ứng với mặt sau của giấy đăng ký xe.
-- picertificate: ứng với đăng kiểm xe.
+- `9_id_card_front` : ứng với mặt trước của chứng minh nhân dân.
+- `12_id_card_front` : ứng với mặt trước thẻ căn cước công dân.
+- `chip_id_card_front` : ứng với mặt trước thẻ căn cước công dân gán chip.
+- `9_id_card_back` : ứng với mặt sau của chứng minh nhân dân.
+- `12_id_card_back` : ứng với mặt sau của thẻ căn cước.
+- `chip_id_card_back` : ứng với mặt sau thẻ căn cước công dân gán chip.
+- `driving_license` : ứng với bằng lái xe.
+- `passport` : ứng với loại giấy tờ là hộ chiếu.
+- `vehicle_registration_front` : ứng với mặt trước của giấy đăng ký xe.
+- `vehicle_registration_back` : ứng với mặt sau của giấy đăng ký xe.
+- `picertificate` : ứng với đăng kiểm xe.
 
-info: Bao gồm các thông tin được trích xuất từ ảnh đầu vào có giấy tờ tùy thân, với mỗi loại giấy tờ tùy thân thì sẽ có những thông tin trả về khác nhau.
+`info` : Bao gồm các thông tin được trích xuất từ ảnh đầu vào có giấy tờ tùy thân, với mỗi loại giấy tờ tùy thân thì sẽ có những thông tin trả về khác nhau.
 
 Mặt trước chứng minh nhân dân:
 
-- id: số chứng minh thư.
-- name: họ và tên.
-- dob: ngày sinh.
-- hometown: quê quán.
-- address: thường trú.
-- address_town_code: mã tỉnh/thành phố trong địa chỉ thường trú.
-- address_district_code: mã quận/huyện trong địa chỉ thường trú.
-- address_ward_code: mã phường/xã trong địa chỉ thường trú.
-- hometown_town_code: mã tỉnh/thành phố trong quê quán.
-- hometown_district_code: mã quận/huyện trong quê quán.
-- hometown_ward_code: mã phường/xã trong quê quán.
-- address_town: tỉnh/thành phố trong địa chỉ thường trú.
-- address_district: quận/huyện trong địa chỉ thường trú.
-- address_ward: phường/xã trong địa chỉ thường trú.
-- hometown_town: tỉnh/thành phố trong quê quán.
-- hometown_district: quận/huyện trong quê quán.
-- hometown_ward: phường/xã trong quê quán.
-- id_confidence: độ tin cậy của thông tin trích xuất số thẻ.
-- name_confidence: độ tin cậy của thông tin trích xuất họ và tên.
-- dob_confidence: độ tin cậy của thông tin trích xuất ngày sinh.
-- hometown_confidence: độ tin cậy của thông tin trích xuất quê quán.
-- address_confidence: độ tin cậy của thông tin trích xuất thường trú.
+- `id` : số chứng minh thư.
+- `name` : họ và tên.
+- `dob` : ngày sinh.
+- `hometown` : quê quán.
+- `address` : thường trú.
+- `address_town_code` : mã tỉnh/thành phố trong địa chỉ thường trú.
+- `address_district_code` : mã quận/huyện trong địa chỉ thường trú.
+- `address_ward_code` : mã phường/xã trong địa chỉ thường trú.
+- `hometown_town_code` : mã tỉnh/thành phố trong quê quán.
+- `hometown_district_code` : mã quận/huyện trong quê quán.
+- `hometown_ward_code` : mã phường/xã trong quê quán.
+- `address_town` : tỉnh/thành phố trong địa chỉ thường trú.
+- `address_district` : quận/huyện trong địa chỉ thường trú.
+- `address_ward` : phường/xã trong địa chỉ thường trú.
+- `hometown_town` : tỉnh/thành phố trong quê quán.
+- `hometown_district` : quận/huyện trong quê quán.
+- `hometown_ward` : phường/xã trong quê quán.
+- `id_confidence` : độ tin cậy của thông tin trích xuất số thẻ.
+- `name_confidence` : độ tin cậy của thông tin trích xuất họ và tên.
+- `dob_confidence` : độ tin cậy của thông tin trích xuất ngày sinh.
+- `hometown_confidence` : độ tin cậy của thông tin trích xuất quê quán.
+- `address_confidence` : độ tin cậy của thông tin trích xuất thường trú.
 
 Mặt trước thẻ căn cước công dân:
 
-- id: số thẻ.
-- name: họ và tên.
-- dob: ngày sinh.
-- hometown: quê quán
-- gender: giới tính.
-- due_date: ngày hết hạn.
-- nationality: quốc tịch.
-- ethnicity: dân tộc.
-- address: thường trú.
-- address_town_code: mã tỉnh/thành phố trong địa chỉ thường trú.
-- address_district_code: mã quận/huyện trong địa chỉ thường trú.
-- address_ward_code: mã phường/xã trong địa chỉ thường trú.
-- hometown_town_code: mã tỉnh/thành phố trong quê quán.
-- hometown_district_code: mã quận/huyện trong quê quán.
-- hometown_ward_code: mã phường/xã trong quê quán.
-- address_town: tỉnh/thành phố trong địa chỉ thường trú.
-- address_district: quận/huyện trong địa chỉ thường trú.
-- address_ward: phường/xã trong địa chỉ thường trú.
-- hometown_town: tỉnh/thành phố trong quê quán.
-- hometown_district: quận/huyện trong quê quán.
-- hometown_ward: phường/xã trong quê quán.
-- image: ảnh đã cắt ra và căn chỉnh của giấy tờ.
-- id_confidence: độ tin cậy của thông tin trích xuất số thẻ.
-- name_confidence: độ tin cậy của thông tin trích xuất họ và tên.
-- dob_confidence: độ tin cậy của thông tin trích xuất ngày sinh.
-- hometown_confidence: độ tin cậy của thông tin trích xuất quê quán.
-- gender_confidence: độ tin cậy của thông tin trích xuất giới tính.
-- due_date_confidence: độ tin cậy của thông tin trích xuất ngày hết hạn.
-- nationality_confidence: độ tin cậy của thông tin trích xuất quốc tịch.
-- ethnicity_confidence: độ tin cậy của thông tin trích xuất dân tộc.
-- address_confidence: độ tin cậy của thông tin trích xuất thường trú.
+- `id` : số thẻ.
+- `name` : họ và tên.
+- `dob` : ngày sinh.
+- `hometown` : quê quán
+- `gender` : giới tính.
+- `due_date` : ngày hết hạn.
+- `nationality` : quốc tịch.
+- `ethnicity` : dân tộc.
+- `address` : thường trú.
+- `address_town_code` : mã tỉnh/thành phố trong địa chỉ thường trú.
+- `address_district_code` : mã quận/huyện trong địa chỉ thường trú.
+- `address_ward_code` : mã phường/xã trong địa chỉ thường trú.
+- `hometown_town_code` : mã tỉnh/thành phố trong quê quán.
+- `hometown_district_code` : mã quận/huyện trong quê quán.
+- `hometown_ward_code` : mã phường/xã trong quê quán.
+- `address_town` : tỉnh/thành phố trong địa chỉ thường trú.
+- `address_district` : quận/huyện trong địa chỉ thường trú.
+- `address_ward` : phường/xã trong địa chỉ thường trú.
+- `hometown_town` : tỉnh/thành phố trong quê quán.
+- `hometown_district` : quận/huyện trong quê quán.
+- `hometown_ward` : phường/xã trong quê quán.
+- `image` : ảnh đã cắt ra và căn chỉnh của giấy tờ.
+- `id_confidence` : độ tin cậy của thông tin trích xuất số thẻ.
+- `name_confidence` : độ tin cậy của thông tin trích xuất họ và tên.
+- `dob_confidence` : độ tin cậy của thông tin trích xuất ngày sinh.
+- `hometown_confidence` : độ tin cậy của thông tin trích xuất quê quán.
+- `gender_confidence` : độ tin cậy của thông tin trích xuất giới tính.
+- `due_date_confidence` : độ tin cậy của thông tin trích xuất ngày hết hạn.
+- `nationality_confidence` : độ tin cậy của thông tin trích xuất quốc tịch.
+- `ethnicity_confidence` : độ tin cậy của thông tin trích xuất dân tộc.
+- `address_confidence` : độ tin cậy của thông tin trích xuất thường trú.
 
 Mặt trước thẻ căn cước công dân gán chip:
 
-- id: số thẻ.
-- name: họ và tên.
-- dob: ngày sinh.
-- hometown: quê quán
-- gender: giới tính.
-- due_date: ngày hết hạn.
-- nationality: quốc tịch.
-- address: thường trú.
-- address_town_code: mã tỉnh/thành phố trong địa chỉ thường trú.
-- address_district_code: mã quận/huyện trong địa chỉ thường trú.
-- address_ward_code: mã phường/xã trong địa chỉ thường trú.
-- hometown_town_code: mã tỉnh/thành phố trong quê quán.
-- hometown_district_code: mã quận/huyện trong quê quán.
-- hometown_ward_code: mã phường/xã trong quê quán.
-- address_town: tỉnh/thành phố trong địa chỉ thường trú.
-- address_district: quận/huyện trong địa chỉ thường trú.
-- address_ward: phường/xã trong địa chỉ thường trú.
-- hometown_town: tỉnh/thành phố trong quê quán.
-- hometown_district: quận/huyện trong quê quán.
-- hometown_ward: phường/xã trong quê quán.
-- image: ảnh đã cắt ra và căn chỉnh của giấy tờ.
+- `id` : số thẻ.
+- `name` : họ và tên.
+- `dob` : ngày sinh.
+- `hometown` : quê quán
+- `gender` : giới tính.
+- `due_date` : ngày hết hạn.
+- `nationality` : quốc tịch.
+- `address` : thường trú.
+- `address_town_code` : mã tỉnh/thành phố trong địa chỉ thường trú.
+- `address_district_code` : mã quận/huyện trong địa chỉ thường trú.
+- `address_ward_code` : mã phường/xã trong địa chỉ thường trú.
+- `hometown_town_code` : mã tỉnh/thành phố trong quê quán.
+- `hometown_district_code` : mã quận/huyện trong quê quán.
+- `hometown_ward_code` : mã phường/xã trong quê quán.
+- `address_town` : tỉnh/thành phố trong địa chỉ thường trú.
+- `address_district` : quận/huyện trong địa chỉ thường trú.
+- `address_ward` : phường/xã trong địa chỉ thường trú.
+- `hometown_town` : tỉnh/thành phố trong quê quán.
+- `hometown_district` : quận/huyện trong quê quán.
+- `hometown_ward` : phường/xã trong quê quán.
+- `image` : ảnh đã cắt ra và căn chỉnh của giấy tờ.
 
 Mặt sau chứng minh nhân dân:
 
-- ethnicity: dân tộc.
-- issue_date: ngày cấp.
-- religious: tôn giáo.
-- issued_at: nơi cấp
-- image: ảnh đã cắt ra và căn chỉnh của giấy tờ.
-- issue_date_confidence: độ tin cậy của thông tin trích xuất ngày cấp.
-- issued_at_confidence: độ tin cậy của thông tin trích xuất nơi cấp.
-- religious_confidence: độ tin cậy của thông tin trích xuất tôn giáo.
-- ethnicity_confidence: độ tin cậy của thông tin trích xuất dân tộc.
+- `ethnicity` : dân tộc.
+- `issue_date` : ngày cấp.
+- `religious` : tôn giáo.
+- `issued_at` : nơi cấp
+- `image` : ảnh đã cắt ra và căn chỉnh của giấy tờ.
+- `issue_date_confidence` : độ tin cậy của thông tin trích xuất ngày cấp.
+- `issued_at_confidence` : độ tin cậy của thông tin trích xuất nơi cấp.
+- `religious_confidence` : độ tin cậy của thông tin trích xuất tôn giáo.
+- `ethnicity_confidence` : độ tin cậy của thông tin trích xuất dân tộc.
 
 Mặt sau thẻ căn cước công dân:
 
-- issue_date: ngày cấp.
-- issued_at: nơi cấp.
-- image: ảnh đã cắt ra và căn chỉnh của giấy tờ.
-- issue_date_confidence: độ tin cậy của thông tin trích xuất ngày cấp.
-- issued_at_confidence: độ tin cậy của thông tin trích xuất nơi cấp.
+- `issue_date` : ngày cấp.
+- `issued_at` : nơi cấp.
+- `image` : ảnh đã cắt ra và căn chỉnh của giấy tờ.
+- `issue_date_confidence` : độ tin cậy của thông tin trích xuất ngày cấp.
+- `issued_at_confidence` : độ tin cậy của thông tin trích xuất nơi cấp.
 
 Mặt sau thẻ căn cước công dân gán chip:
 
-- issue_date: ngày cấp.
-- issued_at: nơi cấp.
-- country: quốc gia.
-- document_number: id mặt sau.
-- person_number: id mặt trước.
-- dob: ngày sinh.
-- gender: giới tính.
-- due_date: ngày hết hạn.
-- nationality: quốc tịch.
-- sur_name: họ.
-- given_name: tên.
-- image: ảnh đã cắt ra và căn chỉnh của giấy tờ.
+- `issue_date` : ngày cấp.
+- `issued_at` : nơi cấp.
+- `country` : quốc gia.
+- `document_number` : id mặt sau.
+- `person_number` : id mặt trước.
+- `dob` : ngày sinh.
+- `gender` : giới tính.
+- `due_date` : ngày hết hạn.
+- `nationality` : quốc tịch.
+- `sur_name` : họ.
+- `given_name` : tên.
+- `image` : ảnh đã cắt ra và căn chỉnh của giấy tờ.
 
 Passport:
 
-- id: passport id.
-- sur_name: họ.
-- given_name: tên.
-- dob: ngày sinh.
-- gender: giới tính.
-- country: quốc gia.
-- nationality : quốc tịch.
-- due_date: ngày hết hạn.
-- person_number: mã số công dân.
-- image: ảnh passport.
-- confidence: độ tin cậy của thông tin phát hiện được trong passport.
+- `id` : passport id.
+- `sur_name` : họ.
+- `given_name` : tên.
+- `dob` : ngày sinh.
+- `gender` : giới tính.
+- `country` : quốc gia.
+- `nationality` : quốc tịch.
+- `due_date` : ngày hết hạn.
+- `person_number` : mã số công dân.
+- `image` : ảnh passport.
+- `confidence` : độ tin cậy của thông tin phát hiện được trong passport.
 
 Bảng mã lỗi:
 

@@ -56,9 +56,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                                                   |
-| ----- | ---- | ------------- | ------------------------------------------------------- |
-| `img` | file | `example.jpg` | file ảnh hoặc file pdf văn bản cần trích xuất thông tin |
+| Key   | Type   | Value         | Mô tả                                                   |
+| ----- | ------ | ------------- | ------------------------------------------------------- |
+| `img` | `file` | `example.jpg` | file ảnh hoặc file pdf văn bản cần trích xuất thông tin |
 
 **Demo Python**:
 

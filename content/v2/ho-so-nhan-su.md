@@ -57,9 +57,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                               |
-| ----- | ---- | ------------- | ----------------------------------- |
-| `img` | file | `example.jpg` | file ảnh hoặc pdf của Hồ sơ nhân sự |
+| Key   | Type   | Value         | Mô tả                               |
+| ----- | ------ | ------------- | ----------------------------------- |
+| `img` | `file` | `example.jpg` | file ảnh hoặc pdf của Hồ sơ nhân sự |
 
 **Demo Python**:
 

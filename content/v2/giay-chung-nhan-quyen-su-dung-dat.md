@@ -57,9 +57,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                                                   |
-| ----- | ---- | ------------- | ------------------------------------------------------- |
-| `img` | file | `example.jpg` | file ảnh hoặc pdf của Giấy chứng nhận quyền sử dụng đất |
+| Key   | Type   | Value         | Mô tả                                                   |
+| ----- | ------ | ------------- | ------------------------------------------------------- |
+| `img` | `file` | `example.jpg` | file ảnh hoặc pdf của Giấy chứng nhận quyền sử dụng đất |
 
 **Demo Python**:
 

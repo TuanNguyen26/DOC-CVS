@@ -61,10 +61,10 @@ print(response.json())
 
 Trong đó:
 
-| Key      | Type      | Bắt buộc | Mô tả                      |
-| -------- | --------- | -------- | -------------------------- |
-| `image`  | ImageData | có       | ảnh dùng để tìm kiếm       |
-| `base64` | string    | có       | mã hoá base64 của hình ảnh |
+| Key      | Type        | Bắt buộc | Mô tả                      |
+| -------- | ----------- | -------- | -------------------------- |
+| `image`  | `ImageData` | có       | ảnh dùng để tìm kiếm       |
+| `base64` | `string`    | có       | mã hoá base64 của hình ảnh |
 
 **Demo Python**:
 
@@ -104,11 +104,11 @@ print(response.json())
 
 Trong đó:
 
-| Key        | Type       | Bắt buộc | Mô tả                                                                         |
-| ---------- | ---------- | -------- | ----------------------------------------------------------------------------- |
-| `image`    | ImageData  | có       | ảnh muốn thêm                                                                 |
-| `base64`   | string     | có       | mã hoá base64 của hình ảnh                                                    |
-| `metadata` | dictionary | không    | bất kỳ metadata key-value nào để lưu cùng với ảnh, key và value ở dạng string |
+| Key        | Type         | Bắt buộc | Mô tả                                                                         |
+| ---------- | ------------ | -------- | ----------------------------------------------------------------------------- |
+| `image`    | `ImageData`  | có       | ảnh muốn thêm                                                                 |
+| `base64`   | `string`     | có       | mã hoá base64 của hình ảnh                                                    |
+| `metadata` | `dictionary` | không    | bất kỳ metadata key-value nào để lưu cùng với ảnh, key và value ở dạng string |
 
 **Demo Python**:
 

@@ -14,8 +14,8 @@ const StyledSwitch = styled('div')`
   .switch {
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 20px;
+    width: 40px;
+    height: 16px;
   }
 
   /* Hide default HTML checkbox */
@@ -41,8 +41,8 @@ const StyledSwitch = styled('div')`
   .slider:before {
     position: absolute;
     content: '';
-    height: 30px;
-    width: 30px;
+    height: 24px;
+    width: 24px;
     left: 0px;
     bottom: 4px;
     top: 0;

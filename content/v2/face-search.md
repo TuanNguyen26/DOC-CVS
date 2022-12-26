@@ -61,10 +61,10 @@ print(response.json())
 
 Trong đó:
 
-| Key      | Type      | Bắt buộc | Mô tả                      |
-| -------- | --------- | -------- | -------------------------- |
-| `image`  | ImageData | có       | ảnh dùng để tìm kiếm       |
-| `base64` | string    | có       | mã hoá base64 của hình ảnh |
+| Key      | Type        | Bắt buộc | Mô tả                      |
+| -------- | ----------- | -------- | -------------------------- |
+| `image`  | `ImageData` | có       | ảnh dùng để tìm kiếm       |
+| `base64` | `string`    | có       | mã hoá base64 của hình ảnh |
 
 **Demo Python**:
 
@@ -226,19 +226,19 @@ Mỗi api khác nhau sẽ trả về kết quả khác nhau.
 
 Xem toàn bộ ảnh:
 
-- `result`: mảng chứa các phần tử ảnh, mỗi phần tử gồm id của ảnh và url ảnh tương ứng
+- `result` : mảng chứa các phần tử ảnh, mỗi phần tử gồm id của ảnh và url ảnh tương ứng
 
 Tìm kiếm khuôn mặt:
 
-- `result`: mảng chứa các phần tử ảnh phù hợp, mỗi phần tử gồm id của ảnh và url ảnh tương ứng
+- `result` : mảng chứa các phần tử ảnh phù hợp, mỗi phần tử gồm id của ảnh và url ảnh tương ứng
 
 Thêm ảnh:
 
-- `result`: json chứa thông tin ảnh mới được thêm vào
+- `result` : json chứa thông tin ảnh mới được thêm vào
 
 Xoá nhiều ảnh:
 
-- `result`: `None`
+- `result` : `None`
 
 Bảng mã lỗi:
 

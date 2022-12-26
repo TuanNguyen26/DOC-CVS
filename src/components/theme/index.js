@@ -28,7 +28,8 @@ const darkTheme = {
   colors: {
     background: '#001933',
     heading: '#fff',
-    text: '#fff',
+    // text: '#ccc',
+    text: 'rgba(255, 255, 255, 0.65)',
     preFormattedText: '#000',
     link: '#1ED3C6',
   },
@@ -39,7 +40,7 @@ const darkTheme = {
 
   bgActive: {
     backgroundColor: '#1668dc',
-    color: '#FFF',
+    color: '#fff',
   },
 };
 

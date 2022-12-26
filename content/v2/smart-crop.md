@@ -60,9 +60,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả            |
-| ----- | ---- | ------------- | ---------------- |
-| `img` | file | `example.jpg` | file ảnh cần cắt |
+| Key   | Type   | Value         | Mô tả            |
+| ----- | ------ | ------------- | ---------------- |
+| `img` | `file` | `example.jpg` | file ảnh cần cắt |
 
 **Demo Python**:
 
@@ -140,9 +140,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả            |
-| ----- | ---- | ------------- | ---------------- |
-| `img` | file | `example.jpg` | file ảnh cần cắt |
+| Key   | Type   | Value         | Mô tả            |
+| ----- | ------ | ------------- | ---------------- |
+| `img` | `file` | `example.jpg` | file ảnh cần cắt |
 
 **Demo Python**:
 

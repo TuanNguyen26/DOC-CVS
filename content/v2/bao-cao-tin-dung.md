@@ -57,9 +57,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                                  |
-| ----- | ---- | ------------- | -------------------------------------- |
-| `img` | file | `example.jpg` | file ảnh hoặc pdf của Báo cáo tín dụng |
+| Key   | Type   | Value         | Mô tả                                  |
+| ----- | ------ | ------------- | -------------------------------------- |
+| `img` | `file` | `example.jpg` | file ảnh hoặc pdf của Báo cáo tín dụng |
 
 **Demo Python**:
 

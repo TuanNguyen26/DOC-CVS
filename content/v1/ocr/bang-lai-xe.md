@@ -46,9 +46,9 @@ print(response.json())
 
 **Body**:
 
-| Key     | Type | Value             | Mô tả                                         |
-| ------- | ---- | ----------------- | --------------------------------------------- |
-| `image` | file | `example_blx.jpg` | file ảnh bằng lái xe cần trích xuất thông tin |
+| Key     | Type   | Value             | Mô tả                                         |
+| ------- | ------ | ----------------- | --------------------------------------------- |
+| `image` | `file` | `example_blx.jpg` | file ảnh bằng lái xe cần trích xuất thông tin |
 
 **Demo Python**:
 

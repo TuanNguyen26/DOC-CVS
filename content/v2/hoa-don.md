@@ -22,9 +22,9 @@ stt: 22
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                |
-| ----- | ---- | ------------- | -------------------- |
-| `img` | file | `example.pdf` | file pdf của Hóa đơn |
+| Key   | Type   | Value         | Mô tả                |
+| ----- | ------ | ------------- | -------------------- |
+| `img` | `file` | `example.pdf` | file pdf của Hóa đơn |
 
 **Demo Python**:
 
@@ -61,9 +61,9 @@ print(response.json())
 
 **Body**:
 
-| Key   | Type | Value         | Mô tả                |
-| ----- | ---- | ------------- | -------------------- |
-| `img` | file | `example.xml` | file xml của Hóa đơn |
+| Key   | Type   | Value         | Mô tả                |
+| ----- | ------ | ------------- | -------------------- |
+| `img` | `file` | `example.xml` | file xml của Hóa đơn |
 
 **Demo Python**:
 

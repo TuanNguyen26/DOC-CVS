@@ -28,9 +28,6 @@ export default class MDXRuntimeTest extends Component {
       },
     } = data;
 
-    // if (data.mdx.fields)
-    console.log('dataa', data.mdx.fields.slug);
-
     if (data.mdx.fields.slug === '/') {
       navigate('/v2');
     }
@@ -44,9 +41,6 @@ export default class MDXRuntimeTest extends Component {
           if (forcedNavOrder.find((url) => url === cur)) {
             return { ...acc, [cur]: [cur] };
           }
-
-          // console.log('accc', acc);
-          console.log('curr', cur);
 
           let prefix = cur.split('/')[1];
 
@@ -62,8 +56,6 @@ export default class MDXRuntimeTest extends Component {
         },
         { items: [] }
       );
-
-    console.log('navItems', navItems);
 
     const nav = forcedNavOrder
       .reduce((acc, cur) => {
