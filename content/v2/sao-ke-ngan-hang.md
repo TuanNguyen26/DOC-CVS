@@ -158,11 +158,11 @@ Mỗi phần tử trong mảng `json` có cấu trúc như sau:
 
 Trong đó:
 
-- `json_0`: Thông tin trường Ngày
-- `json_1`: Thông tin trường Mô tả
-- `json_2`: Thông tin trường Nợ
-- `json_3`: Thông tin trường Có
-- `json_4`: Thông tin trường Số dư
+- `json_0` : Thông tin trường Ngày
+- `json_1` : Thông tin trường Mô tả
+- `json_2` : Thông tin trường Nợ
+- `json_3` : Thông tin trường Có
+- `json_4` : Thông tin trường Số dư
 
 Mỗi json này có cấu trúc như sau:
 

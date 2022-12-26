@@ -162,98 +162,98 @@ Mỗi phần tử trong mảng sẽ là một JSON với định dạng sau:
 
 Thẻ, giấy tờ tùy thân:
 
-- `type`: `id_card`.
-- `info_goods`: là json chứa các thông tin:
-  - `name`: Họ tên
-  - `dob`: Ngày sinh
-  - `gender`: Giới tính
-  - `address`: Địa chỉ
-  - `hometown`: Quê quán
-  - `id`: Số thẻ
-  - `issue_date`: Ngày cấp
-  - `issued_at`: Nơi cấp
-  - `image_front`: Ảnh giấy tờ tùy thân mặt trước dạng base64
-  - `image_back`: Ảnh giấy tờ tùy thân mặt sau dạng base64
+- `type` : `id_card`.
+- `info_goods` : là json chứa các thông tin:
+  - `name` : Họ tên
+  - `dob` : Ngày sinh
+  - `gender` : Giới tính
+  - `address` : Địa chỉ
+  - `hometown` : Quê quán
+  - `id` : Số thẻ
+  - `issue_date` : Ngày cấp
+  - `issued_at` : Nơi cấp
+  - `image_front` : Ảnh giấy tờ tùy thân mặt trước dạng base64
+  - `image_back` : Ảnh giấy tờ tùy thân mặt sau dạng base64
 
 Sơ yếu lý lịch:
 
-- `type`: `curriculum_vitae`.
-- `info_goods`: là json chứa các thông tin:
-  - `name`: Họ tên
-  - `name_id`: Trang đi kèm với họ tên được trích xuất
-  - `dob`: Ngày sinh
-  - `dob_id`: Trang đi kèm với ngày sinh được trích xuất
-  - `work_experience`: Kinh nghiệm làm việc
-  - `work_experience_id`: Trang đi kèm với kinh nghiệm làm việc
-  - `father_name`: Họ tên bố
-  - `father_name_id`: Trang đi kèm với họ tên bố
-  - `mother_name`: Họ tên mẹ
-  - `mother_name_id`: Trang đi kèm với họ tên mẹ
-  - `academic_level`: Trình độ học vấn
+- `type` : `curriculum_vitae`.
+- `info_goods` : Là json chứa các thông tin:
+  - `name` : Họ tên
+  - `name_id` : Trang đi kèm với họ tên được trích xuất
+  - `dob` : Ngày sinh
+  - `dob_id` : Trang đi kèm với ngày sinh được trích xuất
+  - `work_experience` : Kinh nghiệm làm việc
+  - `work_experience_id` : Trang đi kèm với kinh nghiệm làm việc
+  - `father_name` : Họ tên bố
+  - `father_name_id` : Trang đi kèm với họ tên bố
+  - `mother_name` : Họ tên mẹ
+  - `mother_name_id` : Trang đi kèm với họ tên mẹ
+  - `academic_level` : Trình độ học vấn
   - `academic_level_id`: Trang đi kèm trình độ học vấn.
-  - `image_0`: Ảnh trang đầu của sơ yếu lý lịch
-  - `image_1`: Ảnh trang thứ 2 của sơ yếu lý lịch
+  - `image_0` : Ảnh trang đầu của sơ yếu lý lịch
+  - `image_1` : Ảnh trang thứ 2 của sơ yếu lý lịch
   - `image_2`: Ảnh trang thứ 3 của sơ yếu lý lịch
-  - `image_3`: Ảnh trang thứ 4 của sơ yếu lý lịch
+  - `image_3` : Ảnh trang thứ 4 của sơ yếu lý lịch
 
 Sổ hộ khẩu:
 
-- `type`: `registration_book`.
-- `info_goods`: là json chứa các thông tin:
-  - `book_number`: Số sổ hộ khẩu
-  - `address`: Địa chỉ
-  - `head_name`: Họ tên chủ hộ
-  - `image`: Ảnh trang bìa sổ hộ khẩu
-  - `member`: Là một json chứa thông tin của các thành viên gồm:
-    - `relationship_to_head`: Mối quan hệ với chủ hộ
-    - `name`: Họ tên thành viên
-    - `dob`: Ngày sinh thành viên
-    - `id_card`: Số chứng minh thư/Hộ chiếu thành viên
-    - `image_member`: Ảnh trang chứa thông tin thành viên
+- `type` : `registration_book`.
+- `info_goods` : là json chứa các thông tin:
+  - `book_number` : Số sổ hộ khẩu
+  - `address` : Địa chỉ
+  - `head_name` : Họ tên chủ hộ
+  - `image` : Ảnh trang bìa sổ hộ khẩu
+  - `member` : Là một json chứa thông tin của các thành viên gồm:
+    - `relationship_to_head` : Mối quan hệ với chủ hộ
+    - `name` : Họ tên thành viên
+    - `dob` : Ngày sinh thành viên
+    - `id_card` : Số chứng minh thư/Hộ chiếu thành viên
+    - `image_member` : Ảnh trang chứa thông tin thành viên
 
 Bằng đại học:
 
-- `type`: `academic_degree`.
-- `info_goods`: là json chứa các thông tin:
-  - `name`: Họ tên
-  - `dob`: Ngày sinh
-  - `school`: Trường học
-  - `major`: Ngành học
-  - `graduation_year`: Năm tốt nghiệp
+- `type` : `academic_degree`.
+- `info_goods` : là json chứa các thông tin:
+  - `name` : Họ tên
+  - `dob` : Ngày sinh
+  - `school` : Trường học
+  - `major` : Ngành học
+  - `graduation_year` : Năm tốt nghiệp
   - `award_classification`: Xếp loại
-  - `academic_level`: Trình độ
-  - `image`: Ảnh của bằng đại học
+  - `academic_level` : Trình độ
+  - `image` : Ảnh của bằng đại học
 
 Giấy khai sinh:
 
-- `type`: `birth_certificate`.
-- `info_goods`: là json chứa các thông tin:
-  - `name`: Họ và Tên
-  - `dob`: Ngày sinh
-  - `regis_place`: Nơi Đăng ký
-  - `number`: Số
-  - `number_book`: Số quyển
-  - `father_name`: Họ và Tên Bố
-  - `father_dob`: Ngày sinh Bố
-  - `father_address`: Nơi cư trú của Bố
-  - `mother_name`: Họ và Tên Mẹ
-  - `mother_dob`: Ngày sinh Mẹ
-  - `mother_address`: Nơi cư trú của Mẹ
-  - `place_of_birth`: Nơi sinh
-  - `image`: Ảnh của giấy khai sinh
+- `type` : `birth_certificate`.
+- `info_goods` : là json chứa các thông tin:
+  - `name` : Họ và Tên
+  - `dob` : Ngày sinh
+  - `regis_place` : Nơi Đăng ký
+  - `number` : Số
+  - `number_book` : Số quyển
+  - `father_name` : Họ và Tên Bố
+  - `father_dob` : Ngày sinh Bố
+  - `father_address` : Nơi cư trú của Bố
+  - `mother_name` : Họ và Tên Mẹ
+  - `mother_dob` : Ngày sinh Mẹ
+  - `mother_address` : Nơi cư trú của Mẹ
+  - `place_of_birth` : Nơi sinh
+  - `image` : Ảnh của giấy khai sinh
 
 Giấy khám sức khỏe:
 
-- `type`: `health_certification`.
-- `info_goods`: là json chứa các thông tin:
-  - `name`: Họ và Tên
-  - `dob`: Ngày sinh
-  - `height`: Chiều cao
-  - `weight`: Cân nặng
-  - `health_condition`: Điều kiện sức khoẻ
-  - `image_0`: Ảnh trang đầu của giấy khám sức khoẻ
-  - `image_1`: Ảnh trang chứa thông tin chiều cao cân nặng
-  - `image_2`: Ảnh trang thứ 3 ảnh chứa thông tin điều kiện sức khoẻ
+- `type` : `health_certification`.
+- `info_goods` : là json chứa các thông tin:
+  - `name` : Họ và Tên
+  - `dob` : Ngày sinh
+  - `height` : Chiều cao
+  - `weight` : Cân nặng
+  - `health_condition` : Điều kiện sức khoẻ
+  - `image_0` : Ảnh trang đầu của giấy khám sức khoẻ
+  - `image_1` : Ảnh trang chứa thông tin chiều cao cân nặng
+  - `image_2` : Ảnh trang thứ 3 ảnh chứa thông tin điều kiện sức khoẻ
 
 Lưu ý: các trường thông tin (trừ trường image) sẽ có `_box` và `_confidence` đi kèm
 

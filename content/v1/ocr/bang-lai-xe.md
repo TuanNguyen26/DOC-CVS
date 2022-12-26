@@ -197,14 +197,14 @@ _Chú ý_: Trường hợp trích xuất thông tin bằng lái xe và trích xu
 
 Bằng lái xe.
 
-- id: số thẻ.
-- name: họ và tên.
-- born: ngày sinh.
-- class: hạng.
-- nation: quốc tịch.
-- dateissue: ngày phát hành.
-- duedate: ngày hết hạn.
-- address: nơi cư trú.
+- `id` : số thẻ.
+- `name` : họ và tên.
+- `born` : ngày sinh.
+- `class` : hạng.
+- `nation` : quốc tịch.
+- `dateissue` : ngày phát hành.
+- `duedate` : ngày hết hạn.
+- `address` : nơi cư trú.
 
 Trong trường hợp `get_haimat`, `data` sẽ có gồm các thông tin sau:
 

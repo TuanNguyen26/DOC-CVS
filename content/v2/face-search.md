@@ -104,11 +104,11 @@ print(response.json())
 
 Trong đó:
 
-| Key        | Type       | Bắt buộc | Mô tả                                                                                                                     |
-| ---------- | ---------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `image`    | ImageData  | có       | ảnh muốn thêm                                                                                                             |
-| `base64`   | string     | có       | mã hoá base64 của hình ảnh                                                                                                |
-| `metadata` | dictionary | không    | bất kỳ metadata key-value nào để lưu cùng với ảnh, trừ những key `"user"`, `"encoding"`, `"_id"` đã được hệ thống sử dụng |
+| Key        | Type         | Bắt buộc | Mô tả                                                                                                                     |
+| ---------- | ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `image`    | `ImageData`  | có       | ảnh muốn thêm                                                                                                             |
+| `base64`   | `string`     | có       | mã hoá base64 của hình ảnh                                                                                                |
+| `metadata` | `dictionary` | không    | bất kỳ metadata key-value nào để lưu cùng với ảnh, trừ những key `"user"`, `"encoding"`, `"_id"` đã được hệ thống sử dụng |
 
 **Demo Python**:
 

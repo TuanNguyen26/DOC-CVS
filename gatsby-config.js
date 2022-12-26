@@ -5,12 +5,6 @@ const plugins = [
   'gatsby-plugin-sitemap',
   'gatsby-plugin-sharp',
 
-  // {
-  //   resolve: 'gatsby-plugin-manifest',
-  //   options: {
-  //     icon: 'src/faviconCvs.png',
-  //   },
-  // },
   {
     resolve: `gatsby-plugin-layout`,
     options: {
