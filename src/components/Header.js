@@ -1,12 +1,13 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
 import { StaticQuery, graphql } from 'gatsby';
+import GitHubButton from 'react-github-btn';
 import Link from './link';
 import Loadable from 'react-loadable';
 import config from '../../config.js';
 import LoadingProvider from './mdxComponents/loading';
 import { DarkModeSwitch } from './DarkModeSwitch';
-import LogoCvsSvg from './imagesCvs/logoCvs';
+import LogoCvsSvg from './images/logo-cvs';
 
 const help = require('./images/help.svg');
 
@@ -100,24 +101,40 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
           <BgNavDefault className={'navBarDefault'} isDarkThemeActive={isDarkThemeActive}>
             <div className={'navBarHeader'}>
               <Link to="/" className={'navBarBrand'}>
+                {/* {isDarkThemeActive ? (
+                  <img
+                    isDarkThemeActive={isDarkThemeActive}
+                    className={'img-responsive displayInline img-logo'}
+                    src="https://demo.computervision.com.vn/Web_logo.svg"
+                    alt="logo-cvs"
+                  />
+                ) : (
+                  <img
+                    isDarkThemeActive={isDarkThemeActive}
+                    className={'img-responsive displayInline img-logo'}
+                    alt="logo-cvs"
+                    src="https://www.docs.computervision.com.vn/static/logo-cvs-8d7e167d315ede0146bebe3e494a5898.svg"
+                  />
+                )} */}
+
                 <LogoCvsSvg></LogoCvsSvg>
               </Link>
             </div>
 
-            {/* <div id="navbar" className={'topnav'}>
+            <div id="navbar" className={'topnav'}>
               <div className={'visibleMobile'}>
                 <Sidebar location={location} />
                 <hr />
               </div>
               <ul className={'navBarUL navBarNav navBarULRight'}>
                 <li>
-                  <DarkModeSwitch
+                  {/* <DarkModeSwitch
                     isDarkThemeActive={isDarkThemeActive}
                     toggleActiveTheme={toggleActiveTheme}
-                  />
+                  /> */}
                 </li>
               </ul>
-            </div> */}
+            </div>
           </BgNavDefault>
           <StyledBgDiv isDarkThemeActive={isDarkThemeActive}>
             <div className={'navBarDefault removePadd'}>

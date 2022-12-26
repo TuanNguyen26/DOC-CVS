@@ -57,11 +57,9 @@ const config = {
     description: 'Documentation built with mdx. Powering hasura.io/learn ',
     ogImage: null,
     docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
-    favicon:
-      'https://www.docs.computervision.com.vn/favicon-32x32.png?v=075792fd54459d7cd555453d10a2fa0b',
   },
   pwa: {
-    enabled: false, // disabling this will also remove the existing service worker.
+    enabled: true, // disabling this will also remove the existing service worker.
     manifest: {
       name: 'Document',
       short_name: 'Document',
@@ -72,11 +70,12 @@ const config = {
       crossOrigin: 'use-credentials',
       icons: [
         {
-          src: 'src/favicon.png',
+          src: 'src/pwa-512.png',
           sizes: `512x512`,
           type: `image/png`,
         },
       ],
+      icon: 'src/components/images/favicon-cvs.png',
     },
   },
 };

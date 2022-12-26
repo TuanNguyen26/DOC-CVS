@@ -138,8 +138,8 @@ Phản hồi sẽ là một JSON với định dạng sau:
 
 Trong trường hợp trích xuất thông tin dạng bảng, trường data sẽ là một list, mỗi phần tử trong list sẽ tương ứng với thông tin của một bảng. Mỗi phần tử gồm các trường:
 
-- image: ảnh bảng đã được cắt và căn chỉnh
-- info: thông tin bảng, trường này là một list, mỗi phần tử trong list tương ứng thông tin của một hàng
+- `image`: ảnh bảng đã được cắt và căn chỉnh
+- `info`: thông tin bảng, trường này là một list, mỗi phần tử trong list tương ứng thông tin của một hàng
 
 Ví dụ:
 

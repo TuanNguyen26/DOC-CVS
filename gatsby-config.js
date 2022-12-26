@@ -4,6 +4,13 @@ const config = require('./config');
 const plugins = [
   'gatsby-plugin-sitemap',
   'gatsby-plugin-sharp',
+
+  // {
+  //   resolve: 'gatsby-plugin-manifest',
+  //   options: {
+  //     icon: 'src/faviconCvs.png',
+  //   },
+  // },
   {
     resolve: `gatsby-plugin-layout`,
     options: {
@@ -70,7 +77,9 @@ if (
 if (config.pwa && config.pwa.enabled && config.pwa.manifest) {
   plugins.push({
     resolve: `gatsby-plugin-manifest`,
-    options: { ...config.pwa.manifest },
+    options: {
+      ...config.pwa.manifest,
+    },
   });
   plugins.push({
     resolve: 'gatsby-plugin-offline',
