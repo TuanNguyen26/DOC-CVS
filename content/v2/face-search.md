@@ -54,7 +54,7 @@ print(response.json())
 ```json
 {
   "image": {
-    "base64": string // mã hóa base64 của hình ảnh
+    "base64": string // Mã hóa base64 của hình ảnh
   }
 }
 ```

@@ -132,8 +132,8 @@ Thông tin trả về là một JSON với định dạng sau:
 ```json
 {
   "data": array,
-  "errorCode": string, // mã lỗi
-  "errorMessage": string // thông báo lỗi
+  "errorCode": string, // Mã lỗi
+  "errorMessage": string // Thông báo lỗi
 }
 ```
 
