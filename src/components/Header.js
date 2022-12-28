@@ -54,7 +54,7 @@ const StyledBgDiv = styled('div')`
 `;
 
 const BgNavDefault = styled('nav')`
-  background: ${(props) => (props.isDarkThemeActive ? '#001932' : undefined)};
+  background: ${(props) => (props.isDarkThemeActive ? 'rgb(20, 20, 20)' : undefined)};
 `;
 
 const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (

@@ -147,7 +147,8 @@ Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trườn
 }
 ```
 
-Biển số xe: Trả về một danh sách, mỗi phần từ trong danh sách gồm
+Biển số xe - `vehicle_plate` :
+Trả về một danh sách, mỗi phần từ trong danh sách gồm:
 
 - `plate` : Biển số xe.
 - `image` : Ảnh đã cắt ra và căn chỉnh của biển số xe.

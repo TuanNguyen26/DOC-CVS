@@ -1,6 +1,6 @@
 ---
 title: 'OCR'
-metaTitle: 'Ocr'
+metaTitle: 'OCR'
 metaDescription: 'This is the api v2 for this page'
 stt: 2
 ---

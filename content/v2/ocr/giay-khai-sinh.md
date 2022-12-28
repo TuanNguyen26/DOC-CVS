@@ -147,9 +147,9 @@ Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trườn
 }
 ```
 
-Trường hợp trích xuất thông tin từ giấy khai sinh không có trường valid và trường invalidMessage.
+Trường hợp trích xuất thông tin từ giấy khai sinh không có trường valid, invalidCode và trường invalidMessage.
 
-Giấy khai sinh:
+Giấy khai sinh - `birth_certificate`
 
 - `dob` : Ngày sinh.
 - `dob_confidence` : Độ tin cậy của thông tin trích xuất ngày sinh.
@@ -166,9 +166,19 @@ Giấy khai sinh:
 - `name` : Họ tên.
 - `name_confidence` : Độ tin cậy của thông tin trích xuất họ tên.
 - `number` : số giấy khai sinh.
-- `number_confidence` : Độ tin cậy của thông tin trích xuất số giấy khai sinh.
+- `number_confidence` : Độ tin cậy của thông tin trích xuất quyển số giấy khai sinh.
 - `number_book` : Quyển số giấy khai sinh.
 - `number_book_confidence` : Độ tin cậy của thông tin trích xuất quyển số giấy khai sinh.
 - `regis_date` : Ngày đăng ký.
 - `regis_date_confidence` : Độ tin cậy của thông tin trích xuất ngày đăng ký.
+- `id` : Số định danh.
+- `id_confidence` : Độ tin cậy của thông tin trích xuất số định danh.
+- `regis_place` : Nơi đăng ký.
+- `regis_place_confidence` : Độ tin cậy của thông tin trích xuất nơi đăng ký.
+- `regis_place_district` : Quận/huyện trong nơi đăng ký.
+- `regis_place_district_code` : Mã quận/huyện trong nơi đăng ký.
+- `regis_place_town` : Tỉnh/thành phố trong nơi đăng ký.
+- `regis_place_town_code` : Mã tỉnh/thành phố trong nơi đăng ký.
+- `regis_place_ward` : Phường/xã trong nơi đăng ký.
+- `regis_place_ward_code` : Phường/xã trong nơi đăng ký.
 - `image` : Ảnh đã cắt ra và căn chỉnh của giấy khai sinh.

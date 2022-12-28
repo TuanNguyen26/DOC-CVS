@@ -1,6 +1,6 @@
 ---
 title: 'Smart Crop'
-metaTitle: 'Smart crop'
+metaTitle: 'Smart Crop'
 metaDescription: 'This is the api v2 for this page'
 stt: 26
 ---

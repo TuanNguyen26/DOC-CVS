@@ -238,7 +238,7 @@ Thêm ảnh:
 
 Xoá nhiều ảnh:
 
-- `result` : `None`
+- `result` : None
 
 Bảng mã lỗi:
 

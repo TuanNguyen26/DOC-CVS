@@ -454,10 +454,11 @@ export const baseStyles = css`
     right: 20px;
     z-index: 1;
     cursor: pointer;
+    color: #ec1c2a;
   }
 
   .firstLevel ul li .collapser svg path {
-    fill: #fff !important;
+    fill: #ec1c2a !important;
   }
   .active .collapser > svg > path {
     fill: #001933 !important;
@@ -473,7 +474,7 @@ export const baseStyles = css`
   }
 
   .sideBarUL .item > a {
-    color: #1ed3c6;
+    color: rgba(0, 0, 0, 0.9);
     text-decoration: none;
     display: flex;
     align-items: center;

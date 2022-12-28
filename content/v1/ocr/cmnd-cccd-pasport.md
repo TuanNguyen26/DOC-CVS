@@ -1,10 +1,10 @@
 ---
-title: 'Chứng minh nhân dân - Căn cước - Passport'
-metaTitle: 'Chứng minh nhân dân - Căn cước - Passport'
+title: 'CMND - CCCD - Passport'
+metaTitle: 'CMND - CCCD - Passport'
 stt: 30
 ---
 
-### 1. Trích xuất thông tin hai mặt chứng minh thư thẻ căn cước với đầu vào url ảnh
+### 1. Trích xuất thông tin hai mặt chứng minh nhân dân, căn cước công dân với đầu vào url ảnh
 
 **API**:
 
@@ -37,7 +37,7 @@ print(response.json())
 
 ```
 
-### 2. Trích xuất thông tin mặt trước chứng minh thư thẻ căn cước với đầu vào url ảnh
+### 2. Trích xuất thông tin mặt trước chứng minh nhân dân, căn cước cước công dân với đầu vào url ảnh
 
 **API**:
 
@@ -69,7 +69,7 @@ print(response.json())
 
 ```
 
-### 3. Trích xuất thông tin mặt sau chứng minh thư thẻ căn cước với đầu vào url ảnh.
+### 3. Trích xuất thông tin mặt sau chứng minh nhân dân, căn cước công dân với đầu vào url ảnh.
 
 **API**:
 
@@ -101,7 +101,7 @@ print(response.json())
 
 ```
 
-### 4. Trích xuất thông tin hai mặt chứng minh thư thẻ căn cước với đầu vào file ảnh
+### 4. Trích xuất thông tin hai mặt chứng minh nhân dân, căn cước công dân với đầu vào file ảnh
 
 **API**:
 
@@ -136,7 +136,7 @@ print(response.json())
 
 ```
 
-### 5. Trích xuất thông tin mặt trước chứng minh thư thẻ căn cước với đầu vào file ảnh
+### 5. Trích xuất thông tin mặt trước chứng minh nhân dân, căn cước công dân với đầu vào file ảnh
 
 **API**:
 
@@ -168,7 +168,7 @@ print(response.json())
 
 ```
 
-### 6. Trích xuất thông tin mặt sau chứng minh thư thẻ căn cước với đầu vào file ảnh
+### 6. Trích xuất thông tin mặt sau chứng minh nhân dân, căn cước công dân với đầu vào file ảnh
 
 **API**:
 
@@ -200,7 +200,7 @@ print(response.json())
 
 ```
 
-### 7. Trích xuất thông tin hai mặt chứng minh thư thẻ căn cước với đầu vào json
+### 7. Trích xuất thông tin hai mặt chứng minh nhân dân, căn cước công dân với đầu vào json
 
 **API**:
 
@@ -242,7 +242,7 @@ response = requests.post(
 print(response.json())
 ```
 
-### 8. Trích xuất thông tin mặt trước chứng minh thư thẻ căn cước với đầu vào json
+### 8. Trích xuất thông tin mặt trước chứng minh nhân dân, căn cước công dân với đầu vào json
 
 **API**:
 
@@ -281,7 +281,7 @@ response = requests.post(
 print(response.json())
 ```
 
-### 9. Trích xuất thông tin mặt sau chứng minh thư thẻ căn cước với đầu vào json
+### 9. Trích xuất thông tin mặt sau chứng minh nhân dân, căn cước công dân với đầu vào json
 
 **API**:
 
@@ -320,7 +320,7 @@ response = requests.post(
 print(response.json())
 ```
 
-### 10. Trích xuất thông tin chứng minh thư, thẻ căn cước với đầu vào file PDF hoặc file ảnh
+### 10. Trích xuất thông tin chứng minh nhân dân, căn cước công dân với đầu vào file PDF hoặc file ảnh
 
 **API**:
 
@@ -330,9 +330,9 @@ print(response.json())
 
 **Body**:
 
-| Key    | Type   | Value         | Mô tả                                                                    |
-| ------ | ------ | ------------- | ------------------------------------------------------------------------ |
-| `file` | `file` | `example.pdf` | File PDF chứa ảnh CMND, thẻ căn cước, có thể gồm cả mặt trước và mặt sau |
+| Key    | Type   | Value         | Mô tả                                                            |
+| ------ | ------ | ------------- | ---------------------------------------------------------------- |
+| `file` | `file` | `example.pdf` | File PDF chứa ảnh CMND, CCCD, có thể gồm cả mặt trước và mặt sau |
 
 **Demo Python**:
 
@@ -472,22 +472,22 @@ print(response.json())
 `type` : Loại giấy tờ tùy thân được trích xuất thông tin, trong trường hợp `get_haimat` sẽ không có trường này.
 
 - `cmt` : Ứng với mặt trước của chứng minh nhân dân.
-- `tcc` : Ứng với mặt trước thẻ căn cước công dân.
+- `tcc` : Ứng với mặt trước căn cước công dân.
 - `matsaucmt` : Ứng với mặt sau của chứng minh nhân dân.
-- `matsautcc` : Ứng với mặt sau của thẻ căn cước.
+- `matsautcc` : Ứng với mặt sau của căn cước công dân.
 - `pdf` : Ứng với upload file PDF.
 
 `data` : Bao gồm các thông tin được trích xuất từ ảnh đầu vào có giấy tờ tùy thân, với mỗi loại giấy tờ tùy thân thì sẽ có những thông tin trả về khác nhau.
 
 Mặt trước chứng minh nhân dân.
 
-- `id` : Số chứng minh thư.
+- `id` : Số chứng minh nhân dân.
 - `name` : Họ và tên.
 - `born` : Ngày sinh.
 - `country` : Quê quán.
 - `address` : Thường trú
 
-Mặt trước thẻ căn cước công dân.
+Mặt trước căn cước công dân.
 
 - `id` : Số thẻ.
 - `name` : Họ và tên.
@@ -507,7 +507,7 @@ Mặt sau chứng minh nhân dân.
 - `tongiao` : Tôn giáo.
 - `noicap` : Nơi cấp
 
-Mặt sau thẻ căn cước công dân.
+Mặt sau căn cước công dân.
 
 - `dauvet` : Đặc điểm nhận dạng
 - `date` : Ngày cấp.

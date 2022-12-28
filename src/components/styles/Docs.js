@@ -4,7 +4,7 @@ export const StyledHeading = styled('h1')`
   font-size: 32px;
   line-height: 1.5;
   font-weight: 500;
-  border-left: 2px solid #1ed3c6;
+  border-left: 2px solid #ec1c2a;
   padding: 0 16px;
   flex: 1;
   margin-top: 0;
@@ -67,8 +67,10 @@ export const StyledMainWrapper = styled.div`
     border-radius: 4px;
     padding: 2px 6px;
     font-size: 0.9375em;
-
-    background: ${(props) => props.theme.colors.background};
+    /* background: ${(props) => props.theme.colors.background}; */
+    color: #e63b19;
+    background: rgba(233, 218, 172, 0.15);
+    /* font-family: 'Roboto Mono'; */
   }
 
   @media (max-width: 767px) {

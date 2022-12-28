@@ -19,14 +19,14 @@ const lightTheme = {
 
   bgActive: {
     backgroundColor: '#e6f4ff',
-    color: '#1677ff',
+    color: '#EC1C2A',
   },
 };
 
 const darkTheme = {
   ...baseTheme,
   colors: {
-    background: '#001933',
+    background: 'rgb(20, 20, 20)',
     heading: '#fff',
     // text: '#ccc',
     text: 'rgba(255, 255, 255, 0.65)',
@@ -39,7 +39,7 @@ const darkTheme = {
   },
 
   bgActive: {
-    backgroundColor: '#1668dc',
+    backgroundColor: '#FFF',
     color: '#fff',
   },
 };

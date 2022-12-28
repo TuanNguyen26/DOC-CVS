@@ -22,8 +22,6 @@ export default class HTML extends React.Component {
             <link rel="shortcut icon" type="image/png" href={config.siteMetadata.favicon} />
           ) : null} */}
 
-          {/* <link rel="shortcut icon" type="image/png" href="./faviconCvs.png" /> */}
-
           <noscript key="noscript"></noscript>
           {this.props.headComponents}
         </head>
