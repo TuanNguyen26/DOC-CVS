@@ -1,7 +1,7 @@
 ---
 title: 'Báo giá xe'
 metaTitle: 'Báo giá xe'
-stt: 4
+stt: 13
 ---
 
 #### 1. Trích xuất thông tin Báo giá xe với đầu vào url ảnh
@@ -128,73 +128,73 @@ print(response.json())
 
 Phản hồi sẽ là một JSON với định dạng sau:
 
-```javascript
+```json
 {
   "data": [xxxx],
-  "errorCode": string, // mã lỗi
-  "errorMessage": string // thông báo lỗi
+  "errorCode": string, // Mã lỗi
+  "errorMessage": string // Thông báo lỗi
 }
 ```
 
-Trong đó trường data là một list, mỗi phần tử trong list tương ứng với một báo giá (một báo giá có thể là một hoặc nhiều trang). Mỗi phần tử này là một json định dạng như sau:
+Trong đó trường `data` là một list, mỗi phần tử trong list tương ứng với một báo giá xe (một báo giá xe có thể là một hoặc nhiều trang). Mỗi phần tử này là một json định dạng như sau:
 
 ```json
 {
-“type": “price_quotation" - Thể hiện loại giấy tờ ở đây là báo giá
-“info": [xxxx]
+  "type": "price_quotation", // Thể hiện loại giấy tờ ở đây là báo giá
+  "info": [xxxx]
 }
 ```
 
-Trong đó trường info thể hiện thông tin trích xuất được từ báo giá. Trường info là một json có các trường như sau:
+Trong đó trường `info` thể hiện thông tin trích xuất được từ báo giá. Trường `info` là một json có các trường như sau:
 
-- `estimated_delivery_date` : Ngày dự kiến giao xe
-- `estimated_delivery_date_box` : Tọa độ ngày dự kiến giao xe là một list gồm [left, top, right, bottom]
-- `estimated_delivery_date_confidence` : Độ tin cậy của ngày dự kiến giao xe
-- `image` : Ảnh của báo giá đã được căn chỉnh, định dạng base64
-- `image_table` : Ảnh của bảng trong báo giá đã được căn chỉnh, định dạng base64
-- `make_model` : Loại xe
-- `make_model_box` : Tọa độ loại xe là một list gồm [left, top, right, bottom]
-- `make_model_confidence` : Độ tin cậy của loại xe
-- `name_of_garage` : Cơ sở sửa chữa
-- `name_of_garage_box` : Tọa độ cơ sở sửa chữa là một list gồm [left, top, right, bottom]
-- `name_of_garage_confidence` : Độ tin cậy của cơ sở sửa chữa
-- `number_plate` : Biển số xe
-- `number_plate_box` : Tọa độ biển số xe là một list gồm [left, top, right, bottom]
-- `number_plate_confidence` : Độ tin cậy của biển số xe
-- `quotation_date` : Ngày báo giá
-- `quotation_date_box` : Tọa độ ngày báo giá là một list gồm [left, top, right, bottom]
-- `quotation_date_confidence` : Độ tin cậy của ngày báo giá
-- `sub_total` : Tổng tiền sửa chữa trước thuế
-- `sub_total_box` : Tọa độ tổng tiền sửa chữa trước thuế là một list gồm [left, top, right, bottom]
-- `sub_total_confidence` : Độ tin cậy của tổng tiền sửa chữa trước thuế
-- `table` : Chứa thông tin trích xuất từ bảng. Là một list, mỗi phần tử trong list chứa thông tin của một hàng. Mỗi phần tử này là một json chứa các thông tin sau:
-  - `amount_total` : Thành tiền
-  - `amount_total_box` : Tọa độ phần thành tiền là một list gồm [left, top, right, bottom]
-  - `amount_total_confidence` : Độ tin cậy của thành tiền
-  - `description` : Tên phụ tùng, dịch vụ sửa chữa
-  - `description_box` : Tọa độ tên phụ tùng, dịch vụ sửa chữa là một list gồm [left, top, right, bottom]
-  - `description_confidence` : Độ tin cậy của tên phụ tùng, dịch vụ sửa chữa
-  - `discount` : Số tiền giảm giá
-  - `discount_box` : Tọa độ số tiền giảm giá là một list gồm [left, top, right, bottom]
-  - `discount_confidence` : Độ tin cậy của số tiền giảm giá
-  - `percent_discount` : Phần trăm giảm giá
-  - `percent_discount_box` : Tọa độ phần trăm giảm giá là một list gồm [left, top, right, bottom]
-  - `percent_discount_confidence` : Độ tin cậy của phần trăm giảm giá
-  - `quantity` : Số lượng
-  - `quantity_box` : Tọa độ số lượng là một list gồm [left, top, right, bottom]
-  - `quantity_confidence` : Độ tin cậy của số lượng
-  - `tax` : Phần trăm thuế
-  - `tax_box` : Tọa độ phần trăm thuế là một list gồm [left, top, right, bottom]
-  - `tax_confidence` : Độ tin cậy của phần trăm thuế
-  - `unit_price` : Đơn giá
-  - `unit_price_box` : Tọa độ đơn giá là một list gồm [left, top, right, bottom]
-  - `unit_price_confidence` : Độ tin cậy của đơn giá
-- `total_amount` : Tổng tiền sửa chữa sau thuế
-- `total_amount_box` : Tọa độ tổng tiền sửa chữa sau thuế là một list gồm [left, top, right, bottom]
-- `total_amount_confidence` : Độ tin cậy của tổng tiền sửa chữa sau thuế
-- `vat_amount` : Tiền thuế
-- `vat_amount_box` : Tọa độ tiền thuế là một list gồm [left, top, right, bottom]
-- `vat_amount_confidence` : Độ tin cậy của tiền thuế
+- `estimated_delivery_date`: Ngày dự kiến giao xe
+- `estimated_delivery_date_box`: Tọa độ ngày dự kiến giao xe là một list gồm [left, top, right, bottom]
+- `estimated_delivery_date_confidence`: Độ tin cậy của ngày dự kiến giao xe
+- `image`: Ảnh của báo giá đã được căn chỉnh, định dạng base64
+- `image_table`: Ảnh của bảng trong báo giá đã được căn chỉnh, định dạng base64
+- `make_model`: Loại xe
+- `make_model_box`: Tọa độ loại xe là một list gồm [left, top, right, bottom]
+- `make_model_confidence`: Độ tin cậy của loại xe
+- `name_of_garage`: Cơ sở sửa chữa
+- `name_of_garage_box`: Tọa độ cơ sở sửa chữa là một list gồm [left, top, right, bottom]
+- `name_of_garage_confidence`: Độ tin cậy của cơ sở sửa chữa
+- `number_plate`: Biển số xe
+- `number_plate_box`: Tọa độ biển số xe là một list gồm [left, top, right, bottom]
+- `number_plate_confidence`: Độ tin cậy của biển số xe
+- `quotation_date`: Ngày báo giá
+- `quotation_date_box`: Tọa độ ngày báo giá là một list gồm [left, top, right, bottom]
+- `quotation_date_confidence`: Độ tin cậy của ngày báo giá
+- `sub_total`: Tổng tiền sửa chữa trước thuế
+- `sub_total_box`: Tọa độ tổng tiền sửa chữa trước thuế là một list gồm [left, top, right, bottom]
+- `sub_total_confidence`: Độ tin cậy của tổng tiền sửa chữa trước thuế
+- `table`: Chứa thông tin trích xuất từ bảng. Là một list, mỗi phần tử trong list chứa thông tin của một hàng. Mỗi phần tử này là một json chứa các thông tin sau:
+  - `amount_total`: Thành tiền
+  - `amount_total_box`: Tọa độ phần thành tiền là một list gồm [left, top, right, bottom]
+  - `amount_total_confidence`: Độ tin cậy của thành tiền
+  - `description`: Tên phụ tùng, dịch vụ sửa chữa
+  - `description_box`: Tọa độ tên phụ tùng, dịch vụ sửa chữa là một list gồm [left, top, right, bottom]
+  - `description_confidence`: Độ tin cậy của tên phụ tùng, dịch vụ sửa chữa
+  - `discount`: Số tiền giảm giá
+  - `discount_box`: Tọa độ số tiền giảm giá là một list gồm [left, top, right, bottom]
+  - `discount_confidence`: Độ tin cậy của số tiền giảm giá
+  - `percent_discount`: Phần trăm giảm giá
+  - `percent_discount_box`: Tọa độ phần trăm giảm giá là một list gồm [left, top, right, bottom]
+  - `percent_discount_confidence`: Độ tin cậy của phần trăm giảm giá
+  - `quantity`: Số lượng
+  - `quantity_box`: Tọa độ số lượng là một list gồm [left, top, right, bottom]
+  - `quantity_confidence`: Độ tin cậy của số lượng
+  - `tax`: Phần trăm thuế
+  - `tax_box`: Tọa độ phần trăm thuế là một list gồm [left, top, right, bottom]
+  - `tax_confidence`: Độ tin cậy của phần trăm thuế
+  - `unit_price`: Đơn giá
+  - `unit_price_box`: Tọa độ đơn giá là một list gồm [left, top, right, bottom]
+  - `unit_price_confidence`: Độ tin cậy của đơn giá
+- `total_amount`: Tổng tiền sửa chữa sau thuế
+- `total_amount_box`: Tọa độ tổng tiền sửa chữa sau thuế là một list gồm [left, top, right, bottom]
+- `total_amount_confidence`: Độ tin cậy của tổng tiền sửa chữa sau thuế
+- `vat_amount`: Tiền thuế
+- `vat_amount_box`: Tọa độ tiền thuế là một list gồm [left, top, right, bottom]
+- `vat_amount_confidence`: Độ tin cậy của tiền thuế
 
 Bảng mã lỗi:
 

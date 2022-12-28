@@ -72,9 +72,7 @@ const NextPrevious = ({ mdx, nav }) => {
             </svg>
           </div>
           <div className={'preRightWrapper'}>
-            <div className={'smallContent'}>
-              <span>Sau</span>
-            </div>
+            <div className={'smallContent'}>{/* <span>Sau</span> */}</div>
             <div className={'nextPreviousTitle'}>
               <span>{nav[currentIndex - 1].title}</span>
             </div>
@@ -84,9 +82,7 @@ const NextPrevious = ({ mdx, nav }) => {
       {nextInfo.url && currentIndex >= 0 ? (
         <Link to={nav[currentIndex + 1].url} className={'nextBtn'}>
           <div className={'nextRightWrapper'}>
-            <div className={'smallContent'}>
-              <span>Trước</span>
-            </div>
+            <div className={'smallContent'}>{/* <span>Trước</span> */}</div>
             <div className={'nextPreviousTitle'}>
               <span>{nav[currentIndex + 1] && nav[currentIndex + 1].title}</span>
             </div>

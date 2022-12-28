@@ -1,7 +1,7 @@
 ---
 title: 'Giấy khai sinh'
 metaTitle: 'Giấy khai sinh'
-stt: 10
+stt: 6
 ---
 
 #### 1. Trích xuất thông tin giấy khai sinh với đầu vào url ảnh
@@ -128,53 +128,53 @@ print(response.json())
 
 Phản hồi sẽ là một JSON với định dạng sau:
 
-```javascript
+```json
 {
   "data": [xxxx],
-  "errorCode": string, // mã lỗi
-  "errorMessage": string // thông báo lỗi
+  "errorCode": string, // Mã lỗi
+  "errorMessage": string // Thông báo lỗi
 }
 ```
 
-Trong đó trường data là một list, mỗi phần tử trong list tương ứng với một báo giá (một báo giá có thể là một hoặc nhiều trang). Mỗi phần tử này là một json định dạng như sau:
+Trong đó trường `data` là một list, mỗi phần tử trong list tương ứng với một giấy khai sinh (một giấy khai sinh có thể là một hoặc nhiều trang). Mỗi phần tử này là một json định dạng như sau:
 
 ```json
 {
-“type": “price_quotation" - Thể hiện loại giấy tờ ở đây là giấy khai sinh
-“info": [xxxx]
+  "type": "birth_certificate", // Thể hiện loại giấy tờ ở đây là giấy khai sinh
+  "info": [xxxx]
 }
 ```
 
 Giấy khai sinh - `birth_certificate`
 
-- `dob` : Ngày sinh.
-- `dob_confidence` : Độ tin cậy của thông tin trích xuất ngày sinh.
-- `father_dob` : Ngày sinh cha.
-- `father_dob_confidence` : Độ tin cậy của thông tin trích xuất ngày sinh cha.
-- `father_name` : Họ tên cha.
-- `father_name_confidence` : Độ tin cậy của thông tin trích xuất họ tên cha.
-- `gender` : Giới tính.
-- `gender_confidence` : Độ tin cậy của thông tin trích xuất giới tính.
-- `mother_dob` : Ngày sinh mẹ.
-- `mother_dob_confidence` : Độ tin cậy của thông tin trích xuất ngày sinh mẹ.
-- `mother_name` : Họ tên mẹ.
-- `mother_name_confidence` : Độ tin cậy của thông tin trích xuất họ tên mẹ.
-- `name` : Họ tên.
-- `name_confidence` : Độ tin cậy của thông tin trích xuất họ tên.
-- `number` : số giấy khai sinh.
-- `number_confidence` : Độ tin cậy của thông tin trích xuất quyển số giấy khai sinh.
-- `number_book` : Quyển số giấy khai sinh.
-- `number_book_confidence` : Độ tin cậy của thông tin trích xuất quyển số giấy khai sinh.
-- `regis_date` : Ngày đăng ký.
-- `regis_date_confidence` : Độ tin cậy của thông tin trích xuất ngày đăng ký.
-- `id` : Số định danh.
-- `id_confidence` : Độ tin cậy của thông tin trích xuất số định danh.
-- `regis_place` : Nơi đăng ký.
-- `regis_place_confidence` : Độ tin cậy của thông tin trích xuất nơi đăng ký.
-- `regis_place_district` : Quận/huyện trong nơi đăng ký.
-- `regis_place_district_code` : Mã quận/huyện trong nơi đăng ký.
-- `regis_place_town` : Tỉnh/thành phố trong nơi đăng ký.
-- `regis_place_town_code` : Mã tỉnh/thành phố trong nơi đăng ký.
-- `regis_place_ward` : Phường/xã trong nơi đăng ký.
-- `regis_place_ward_code` : Phường/xã trong nơi đăng ký.
-- `image` : Ảnh đã cắt ra và căn chỉnh của giấy khai sinh.
+- `dob`: Ngày sinh.
+- `dob_confidence`: Độ tin cậy của thông tin trích xuất ngày sinh.
+- `father_dob`: Ngày sinh cha.
+- `father_dob_confidence`: Độ tin cậy của thông tin trích xuất ngày sinh cha.
+- `father_name`: Họ tên cha.
+- `father_name_confidence`: Độ tin cậy của thông tin trích xuất họ tên cha.
+- `gender`: Giới tính.
+- `gender_confidence`: Độ tin cậy của thông tin trích xuất giới tính.
+- `mother_dob`: Ngày sinh mẹ.
+- `mother_dob_confidence`: Độ tin cậy của thông tin trích xuất ngày sinh mẹ.
+- `mother_name`: Họ tên mẹ.
+- `mother_name_confidence`: Độ tin cậy của thông tin trích xuất họ tên mẹ.
+- `name`: Họ tên.
+- `name_confidence`: Độ tin cậy của thông tin trích xuất họ tên.
+- `number`: số giấy khai sinh.
+- `number_confidence`: Độ tin cậy của thông tin trích xuất quyển số giấy khai sinh.
+- `number_book`: Quyển số giấy khai sinh.
+- `number_book_confidence`: Độ tin cậy của thông tin trích xuất quyển số giấy khai sinh.
+- `regis_date`: Ngày đăng ký.
+- `regis_date_confidence`: Độ tin cậy của thông tin trích xuất ngày đăng ký.
+- `id`: Số định danh.
+- `id_confidence`: Độ tin cậy của thông tin trích xuất số định danh.
+- `regis_place`: Nơi đăng ký.
+- `regis_place_confidence`: Độ tin cậy của thông tin trích xuất nơi đăng ký.
+- `regis_place_district`: Quận/huyện trong nơi đăng ký.
+- `regis_place_district_code`: Mã quận/huyện trong nơi đăng ký.
+- `regis_place_town`: Tỉnh/thành phố trong nơi đăng ký.
+- `regis_place_town_code`: Mã tỉnh/thành phố trong nơi đăng ký.
+- `regis_place_ward`: Phường/xã trong nơi đăng ký.
+- `regis_place_ward_code`: Phường/xã trong nơi đăng ký.
+- `image`: Ảnh đã cắt ra và căn chỉnh của giấy khai sinh.

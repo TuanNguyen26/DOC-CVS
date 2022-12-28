@@ -1,7 +1,7 @@
 ---
 title: 'Đăng kiểm xe'
 metaTitle: 'Đăng kiểm xe'
-stt: 7
+stt: 5
 ---
 
 #### 1. Trích xuất thông tin đăng kiểm xe với đầu vào url ảnh
@@ -129,80 +129,78 @@ print(response.json())
 
 Phản hồi sẽ là một JSON với định dạng sau:
 
-```javascript
+```json
 {
   "data": [xxxx],
-  "errorCode": string, // mã lỗi
-  "errorMessage": string // thông báo lỗi
+  "errorCode": string, // Mã lỗi
+  "errorMessage": string // Thông báo lỗi
 }
 ```
 
-Trong đó trường data là một list, mỗi phần tử trong list tương ứng với một báo giá (một báo giá có thể là một hoặc nhiều trang). Mỗi phần tử này là một json định dạng như sau:
+Trong đó trường `data` là một list, mỗi phần tử trong list tương ứng với một đăng kiểm xe(một đăng kiểm xe có thể là một hoặc nhiều trang). Mỗi phần tử này là một json định dạng như sau:
 
 ```json
 {
-“type": “price_quotation" - Thể hiện loại giấy tờ ở đây là đăng kiểm xe
-“info": [xxxx]
+  "type": "picertificate", // Thể hiện loại giấy tờ ở đây là đăng kiểm xe
+  "info": [xxxx]
 }
 ```
 
 Đăng kiểm xe - `picertificate`
 
-Trả về một danh sách gồm:
-
-- `chassis_number` : Số khung.
-- `chassis_number_confidence` : Độ tin cậy số khung.
-- `commercial_use` : Kinh doanh vận tải.
-- `commercial_use_confidence` : Độ tin cậy kinh doanh vận tải.
-- `design_pay_load` : Khối lượng hàng.
-- `design_pay_load_confidence` : Độ tin cậy khối lượng hàng.
-- `design_towed_mass` : Khối lượng kéo theo.
-- `design_towed_mass_confidence` : Độ tin cậy khối lượng kéo theo.
-- `engine_number` : Số máy.
-- `engine_number_confidence` : Độ tin cậy số máy.
-- `inside_cargo_container_dimension` : Kích thước thùng hàng.
-- `inside_cargo_container_dimension_confidence` : Độ tin cậy kích thước thùng hàng.
-- `issued_on` : Đơn vị kiểm định.
-- `issued_on_confidence` : Độ tin cậy đơn vị kiểm định.
-- `issued_on_code` : Mã code tỉnh đơn vị kiểm định.
-- `life_time_limit` : Niên hạn sử dụng.
-- `life_time_limit_confidence` : Độ tin cậy niên hạn sử dụng.
-- `manufactured_country` : Quốc gia sản xuất.
-- `manufactured_country_confidence` : Độ tin cậy quốc gia sản xuất.
-- `manufactured_year` : Năm sản xuất.
-- `manufactured_year_confidence` : Độ tin cậy năm sản xuất.
-- `mark` : Nhãn hiệu.
+- `chassis_number`: Số khung.
+- `chassis_number_confidence`: Độ tin cậy số khung.
+- `commercial_use`: Kinh doanh vận tải.
+- `commercial_use_confidence`: Độ tin cậy kinh doanh vận tải.
+- `design_pay_load`: Khối lượng hàng.
+- `design_pay_load_confidence`: Độ tin cậy khối lượng hàng.
+- `design_towed_mass`: Khối lượng kéo theo.
+- `design_towed_mass_confidence`: Độ tin cậy khối lượng kéo theo.
+- `engine_number`: Số máy.
+- `engine_number_confidence`: Độ tin cậy số máy.
+- `inside_cargo_container_dimension`: Kích thước thùng hàng.
+- `inside_cargo_container_dimension_confidence`: Độ tin cậy kích thước thùng hàng.
+- `issued_on`: Đơn vị kiểm định.
+- `issued_on_confidence`: Độ tin cậy đơn vị kiểm định.
+- `issued_on_code`: Mã code tỉnh đơn vị kiểm định.
+- `life_time_limit`: Niên hạn sử dụng.
+- `life_time_limit_confidence`: Độ tin cậy niên hạn sử dụng.
+- `manufactured_country`: Quốc gia sản xuất.
+- `manufactured_country_confidence`: Độ tin cậy quốc gia sản xuất.
+- `manufactured_year`: Năm sản xuất.
+- `manufactured_year_confidence`: Độ tin cậy năm sản xuất.
+- `mark`: Nhãn hiệu.
 - `mark_confidence`: Độ tin cậy nhãn hiệu.
-- `model_code` : Số loại.
-- `model_code_confidence` : Độ tin cậy số loại.
-- `modification` : Cải tạo.
-- `modification_confidence` : Độ tin cậy cải tạo.
-- `permissible_no` : Số người cho phép chở.
-- `permissible_no_confidence` : Độ tin cậy số người cho phép chở.
-- `regis_date` : Ngày đăng ký.
-- `regis_date_confidence` : Độ tin cậy ngày đăng ký.
-- `registration_number` : Biển đăng ký.
-- `registration_number_confidence` : Độ tin cậy biển đăng ký.
-- `seri` : Số sê-ri.
-- `seri_confidence` : Độ tin cậy số sê-ri.
-- `tire_size` : Cỡ lốp là một list mỗi list là một dòng trên đăng kiểm.
-- `tire_size_confidence` : Độ tin cậy cỡ lốp.
-- `type` : Loại phương tiện.
-- `type_confidence` : Độ tin cậy loại phương tiện.
-- `valid_until` : Có hiệu lực đến hết ngày.
-- `valid_until_confidence` : Độ tin cậy có hiệu lực đến hết ngày.
-- `wheel_form` : Công thức bánh.
-- `wheel_form_confidence` : Độ tin cậy công thức bánh.
-- `capacity` : Dung tích.
-- `capacity_confidence` : Độ tin cậy dung tích.
-- `report_number` : Số phiếu.
-- `report_number_confidence` : Độ tin cậy số phiếu.
-- `authorized_pay_load` : Khối lượng hàng cấp phép.
-- `authorized_pay_load_confidence` : Độ tin cậy khối lượng hàng cấp phép.
-- `lying_place` : Số chỗ nằm.
-- `lying_place_confidence` : Độ tin cậy Số chỗ nằm.
-- `seat_place` : Số chỗ ngồi.
-- `seat_place_confidence` : Độ tin cậy Số chỗ ngồi.
-- `stand_place` : Số chỗ đứng.
-- `stand_place_confidence` : Độ tin cậy Số chỗ đứng.
-- `image` : Ảnh đã cắt ra và căn chỉnh của đăng kiểm xe.
+- `model_code`: Số loại.
+- `model_code_confidence`: Độ tin cậy số loại.
+- `modification`: Cải tạo.
+- `modification_confidence`: Độ tin cậy cải tạo.
+- `permissible_no`: Số người cho phép chở.
+- `permissible_no_confidence`: Độ tin cậy số người cho phép chở.
+- `regis_date`: Ngày đăng ký.
+- `regis_date_confidence`: Độ tin cậy ngày đăng ký.
+- `registration_number`: Biển đăng ký.
+- `registration_number_confidence`: Độ tin cậy biển đăng ký.
+- `seri`: Số sê-ri.
+- `seri_confidence`: Độ tin cậy số sê-ri.
+- `tire_size`: Cỡ lốp là một list mỗi list là một dòng trên đăng kiểm.
+- `tire_size_confidence`: Độ tin cậy cỡ lốp.
+- `type`: Loại phương tiện.
+- `type_confidence`: Độ tin cậy loại phương tiện.
+- `valid_until`: Có hiệu lực đến hết ngày.
+- `valid_until_confidence`: Độ tin cậy có hiệu lực đến hết ngày.
+- `wheel_form`: Công thức bánh.
+- `wheel_form_confidence`: Độ tin cậy công thức bánh.
+- `capacity`: Dung tích.
+- `capacity_confidence`: Độ tin cậy dung tích.
+- `report_number`: Số phiếu.
+- `report_number_confidence`: Độ tin cậy số phiếu.
+- `authorized_pay_load`: Khối lượng hàng cấp phép.
+- `authorized_pay_load_confidence`: Độ tin cậy khối lượng hàng cấp phép.
+- `lying_place`: Số chỗ nằm.
+- `lying_place_confidence`: Độ tin cậy Số chỗ nằm.
+- `seat_place`: Số chỗ ngồi.
+- `seat_place_confidence`: Độ tin cậy Số chỗ ngồi.
+- `stand_place`: Số chỗ đứng.
+- `stand_place_confidence`: Độ tin cậy Số chỗ đứng.
+- `image`: Ảnh đã cắt ra và căn chỉnh của đăng kiểm xe.

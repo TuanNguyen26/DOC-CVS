@@ -2,7 +2,7 @@
 title: 'Sao kê ngân hàng'
 metaTitle: 'Sao kê ngân hàng'
 metaDescription: 'This is the api v2 for this page'
-stt: 25
+stt: 20
 ---
 
 #### 1. Trích xuất thông tin Sao kê ngân hàng với đầu vào url của ảnh hoặc pdf
@@ -132,8 +132,8 @@ Thông tin trả về là một JSON với định dạng sau:
 ```json
 {
   "data": array,
-  "errorCode": string, // mã lỗi
-  "errorMessage": string // thông báo lỗi
+  "errorCode": string, // Mã lỗi
+  "errorMessage": string // Thông báo lỗi
 }
 ```
 
@@ -141,8 +141,8 @@ Mỗi phần tử trong mảng `data` (tương ứng với từng trang được
 
 ```json
 {
-  "image_table": array, // danh sách ảnh của bảng trong trang
-  "json": array, // danh sách thông tin tương ứng với từng ảnh trong image_table
+  "image_table": array, // Danh sách ảnh của bảng trong trang
+  "json": array, // Danh sách thông tin tương ứng với từng ảnh trong image_table
 }
 ```
 
@@ -150,7 +150,7 @@ Mỗi phần tử trong mảng `json` có cấu trúc như sau:
 
 ```json
 [
-  [json_0, json_1, json_2, json_3, json_4], // biểu thị từng row
+  [json_0, json_1, json_2, json_3, json_4], // Biểu thị từng row
   [...],
   ...
 ]
@@ -158,11 +158,11 @@ Mỗi phần tử trong mảng `json` có cấu trúc như sau:
 
 Trong đó:
 
-- `json_0` : Thông tin trường Ngày
-- `json_1` : Thông tin trường Mô tả
-- `json_2` : Thông tin trường Nợ
-- `json_3` : Thông tin trường Có
-- `json_4` : Thông tin trường Số dư
+- `json_0`: Thông tin trường Ngày
+- `json_1`: Thông tin trường Mô tả
+- `json_2`: Thông tin trường Nợ
+- `json_3`: Thông tin trường Có
+- `json_4`: Thông tin trường Số dư
 
 Mỗi json này có cấu trúc như sau:
 

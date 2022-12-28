@@ -1,7 +1,7 @@
 ---
 title: 'Hóa đơn'
 metaTitle: 'Hóa đơn'
-stt: 12
+stt: 9
 ---
 
 #### 1. Trích xuất thông tin hóa đơn với đầu vào url ảnh hoặc pdf
@@ -128,17 +128,17 @@ print(response.json())
 
 Phản hồi sẽ là một JSON với định dạng sau:
 
-```javascript
+```json
 {
   "data": [xxxx],
-  "errorCode": string, // mã lỗi
-  "errorMessage": string // thông báo lỗi
+  "errorCode": string, // Mã lỗi
+  "errorMessage": string // Thông báo lỗi
 }
 ```
 
-Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trường data sẽ có gồm các thông tin sau:
+Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trường `data` sẽ có gồm các thông tin sau:
 
-```javascript
+```json
 {
   "info": [xxxx],
   "valid": [xxxx],
@@ -147,33 +147,33 @@ Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trườn
 }
 ```
 
-Hóa đơn: Trả về một danh sách, mỗi phần từ trong danh sách gồm
+Hóa đơn - `invoice`
 
-- `date` : Ngày lập hóa đơn.
-- `date_box` : Tọa độ ngày lập hóa đơn là danh sách gồm [left, top, right, bottom].
-- `date_confidence` : Độ tin cậy của ngày lập hóa đơn.
-- `form` : Mẫu số.
-- `form_box` : Tọa độ mẫu số hóa đơn là danh sách gồm [left, top, right, bottom].
-- `form_confidence` : Độ tin cậy của mẫu số.
-- `invoice_no` : Số hóa đơn.
-- `invoice_no_box` : Tọa độ số hóa đơn là danh sách gồm [left, top, right, bottom].
-- `invoice_no_confidence` : Độ tin cậy của số hóa đơn.
-- `serial_no` : Số ký hiệu hóa đơn.
-- `serial_no_box` : Tọa độ số ký hiệu hóa đơn là danh sách gồm [left, top, right, bottom].
-- `serial_no_confidence` : Độ tin cậy của số ký hiệu hóa đơn.
-- `supplier` : Nhà cung cấp.
-- `supplier_box` : Tọa độ nhà cung cấp là danh sách gồm [left, top, right, bottom].
-- `supplier_confidence` : Độ tin cậy của nhà cung cấp.
-- `tax_code` : Mã số thuế nhà cung cấp.
-- `tax_code_box` : Tọa độ mã số thuế nhà cung cấp là danh sách gồm [left, top, right, bottom].
-- `tax_code_confidence` : Độ tin cậy của mã số thuế nhà cung cấp.
-- `total_amount` : Tổng tiền.
-- `total_amount_box` : Tọa độ tổng tiền là danh sách gồm [left, top, right, bottom].
-- `total_amount_confidence` : Độ tin cậy của tổng tiền.
-- `date` : Ngày lập hóa đơn.
-- `date_box` : Tọa độ ngày lập hóa đơn là danh sách gồm [left, top, right, bottom].
-- `date_confidence` : Độ tin cậy của ngày lập hóa đơn.
-- `info_goods` : Thông tin hàng hóa, dịch vụ, trường này là một danh sách, mỗi phần tử trong danh sách gồm:
-- `name` : Tên hàng hóa, dịch vụ
-- `coin` : Giá của hàng hóa, dịch vụ
-- `image` : Ảnh hóa đơn đã được xoay và căn chỉnh.
+- `date`: Ngày lập hóa đơn.
+- `date_box`: Tọa độ ngày lập hóa đơn là danh sách gồm [left, top, right, bottom].
+- `date_confidence`: Độ tin cậy của ngày lập hóa đơn.
+- `form`: Mẫu số.
+- `form_box`: Tọa độ mẫu số hóa đơn là danh sách gồm [left, top, right, bottom].
+- `form_confidence`: Độ tin cậy của mẫu số.
+- `invoice_no`: Số hóa đơn.
+- `invoice_no_box`: Tọa độ số hóa đơn là danh sách gồm [left, top, right, bottom].
+- `invoice_no_confidence`: Độ tin cậy của số hóa đơn.
+- `serial_no`: Số ký hiệu hóa đơn.
+- `serial_no_box`: Tọa độ số ký hiệu hóa đơn là danh sách gồm [left, top, right, bottom].
+- `serial_no_confidence`: Độ tin cậy của số ký hiệu hóa đơn.
+- `supplier`: Nhà cung cấp.
+- `supplier_box`: Tọa độ nhà cung cấp là danh sách gồm [left, top, right, bottom].
+- `supplier_confidence`: Độ tin cậy của nhà cung cấp.
+- `tax_code`: Mã số thuế nhà cung cấp.
+- `tax_code_box`: Tọa độ mã số thuế nhà cung cấp là danh sách gồm [left, top, right, bottom].
+- `tax_code_confidence`: Độ tin cậy của mã số thuế nhà cung cấp.
+- `total_amount`: Tổng tiền.
+- `total_amount_box`: Tọa độ tổng tiền là danh sách gồm [left, top, right, bottom].
+- `total_amount_confidence`: Độ tin cậy của tổng tiền.
+- `date`: Ngày lập hóa đơn.
+- `date_box`: Tọa độ ngày lập hóa đơn là danh sách gồm [left, top, right, bottom].
+- `date_confidence`: Độ tin cậy của ngày lập hóa đơn.
+- `info_goods`: Thông tin hàng hóa, dịch vụ, trường này là một danh sách, mỗi phần tử trong danh sách gồm:
+- `name`: Tên hàng hóa, dịch vụ
+- `coin`: Giá của hàng hóa, dịch vụ
+- `image`: Ảnh hóa đơn đã được xoay và căn chỉnh.

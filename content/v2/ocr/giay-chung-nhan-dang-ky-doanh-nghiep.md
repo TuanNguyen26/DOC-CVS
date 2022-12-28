@@ -1,7 +1,7 @@
 ---
 title: 'Giấy chứng nhận đăng kí doanh nghiệp'
 metaTitle: 'Giấy chứng nhận đăng kí doanh nghiệp'
-stt: 9
+stt: 12
 ---
 
 #### 1. Trích xuất thông tin Giấy chứng nhận đăng ký doanh nghiệp với đầu vào url ảnh hoặc pdf
@@ -128,17 +128,17 @@ print(response.json())
 
 Phản hồi sẽ là một JSON với định dạng sau:
 
-```javascript
+```json
 {
   "data": [xxxx],
-  "errorCode": string, // mã lỗi
-  "errorMessage": string // thông báo lỗi
+  "errorCode": string, // Mã lỗi
+  "errorMessage": string // Thông báo lỗi
 }
 ```
 
-Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trường data sẽ có gồm các thông tin sau:
+Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trường `data` sẽ có gồm các thông tin sau:
 
-```javascript
+```json
 {
   "info": [xxxx],
   "valid": [xxxx],
@@ -147,84 +147,84 @@ Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trườn
 }
 ```
 
-Giấy chứng nhận đăng ký doanh nghiệp:
+Giấy chứng nhận đăng ký doanh nghiệp - `business_registration`
 
-- `company_name` : Tên doanh nghiệp
-- `english_name` : Tên nước ngoài
-- `short_name` : Tên viết tắt
-- `business_code` : Mã số doanh nghiệp
-- `regis_date` : Ngày đăng ký
-- `date_of_change` : Ngày thay đổi
-- `address` : Địa chỉ
-- `company_phone` : Điện thoại
-- `fax` : Fax
-- `email` : Email
-- `website` : Website
-- `authorized_capital` : Vốn điều lệ
-- `par_value` : Mệnh giá cổ phần
-- `total_shares` : Tổng số cổ phần
-- `representative_name` : Họ tên người đại diện
-- `representative_title` : Chức danh người đại diện
-- `gender` : Giới tính
-- `dob` : Ngày sinh
-- `ethnicity` : Dân tộc
-- `nationality` : Quốc tịch
-- `document_type` : Loại giấy tờ
-- `number_of_idcard` : Số cmt
-- `issue_date` : Ngày cấp
-- `issued_at` : Nơi cấp
-- `household_address` : Địa chỉ hộ khẩu
-- `representative_address` : Nơi ở hiện tại
-- `company_name_box` : Tọa độ tên doanh nghiệp là một list gồm [left, top, right, bottom]
-- `english_name_box` : Tọa độ tên nước ngoài là một list gồm [left, top, right, bottom]
-- `short_name_box` : Tọa độ tên viết tắt là một list gồm [left, top, right, bottom]
-- `business_code_box` : Tọa độ mã số doanh nghiệp là một list gồm [left, top, right, bottom]
-- `regis_date_box` : Tọa độ ngày đăng ký là một list gồm [left, top, right, bottom]
-- `date_of_change_box` : Tọa độ ngày thay đổi là một list gồm [left, top, right, bottom]
-- `address_box` : Tọa độ địa chỉ là một list gồm [left, top, right, bottom]
-- `company_phone_box` : Tọa độ điện thoại là một list gồm [left, top, right, bottom]
-- `fax_box` : Tọa độ fax là một list gồm [left, top, right, bottom]
-- `email_box` : Tọa độ email là một list gồm [left, top, right, bottom]
-- `website_box` : Tọa độ website là một list gồm [left, top, right, bottom]
-- `authorized_capital_box` : Tọa độ vốn điều lệ là một list gồm [left, top, right, bottom]
-- `par_value_box` : Tọa độ mệnh giá cổ phần là một list gồm [left, top, right, bottom]
-- `total_shares_box` : Tọa độ tổng số cổ phần là một list gồm [left, top, right, bottom]
-- `representative_name_box` : Tọa độ họ tên người đại diện là một list gồm [left, top, right, bottom]
-- `representative_title_box` : Tọa độ chức danh người đại diện là một list gồm [left, top, right, bottom]
-- `gender_box` : Tọa độ giới tính là một list gồm [left, top, right, bottom]
-- `dob_box` : Tọa độ ngày sinh là một list gồm [left, top, right, bottom]
-- `ethnicity_box` : Tọa độ dân tộc là một list gồm [left, top, right, bottom]
-- `nationality_box` : Tọa độ quốc tịch là một list gồm [left, top, right, bottom]
-- `document_type_box` : Tọa độ loại giấy tờ là một list gồm [left, top, right, bottom]
-- `number_of_idcard_box` : Tọa độ số cmt là một list gồm [left, top, right, bottom]
-- `issue_date_box` : Tọa độ ngày cấp là một list gồm [left, top, right, bottom]
-- `issued_at_box` : Tọa độ nơi cấp là một list gồm [left, top, right, bottom]
-- `household_address_box` : Tọa độ địa chỉ hộ khẩu là một list gồm [left, top, right, bottom]
-- `representative_address_box` : Tọa độ nơi ở hiện tại là một list gồm [left, top, right, bottom]
-- `company_name_confidence` : Độ tin cậy tên doanh nghiệp
-- `english_name_confidence` : Độ tin cậy tên nước ngoài
-- `short_name_confidence` : Độ tin cậy tên viết tắt
-- `business_code_confidence` : Độ tin cậy mã số doanh nghiệp
-- `regis_date_confidence` : Độ tin cậy ngày đăng ký
-- `date_of_change_confidence` : Độ tin cậy ngày thay đổi
-- `address_confidence` : Độ tin cậy địa chỉ
-- `company_phone_confidence` : Độ tin cậy điện thoại
-- `fax_confidence` : Độ tin cậy fax
-- `email_confidence` : Độ tin cậy email
-- `website_confidence` : Độ tin cậy website
-- `authorized_capital_confidence` : Độ tin cậy vốn điều lệ
-- `par_value_confidence` : Độ tin cậy mệnh giá cổ phần
-- `total_shares_confidence` : Độ tin cậy tổng số cổ phần
-- `representative_name_confidence` : Độ tin cậy họ tên người đại diện
-- `representative_title_confidence` : Độ tin cậy chức danh người đại diện
-- `gender_confidence` : Độ tin cậy giới tính
-- `dob_confidence` : Độ tin cậy ngày sinh
-- `ethnicity_confidence` : Độ tin cậy dân tộc
-- `nationality_confidence` : Độ tin cậy quốc tịch
-- `document_type_confidence` : Độ tin cậy loại giấy tờ
-- `number_of_idcard_confidence` : Độ tin cậy số cmt
-- `issue_date_confidence` : Độ tin cậy ngày cấp
-- `issued_at_confidence` : Độ tin cậy nơi cấp
-- `household_address_confidence` : Độ tin cậy địa chỉ hộ khẩu
-- `representative_address_confidence` : Độ tin cậy nơi ở hiện tại
-- `image` : Ảnh giấy đăng ký kinh doanh đã quay và căn chỉnh
+- `company_name`: Tên doanh nghiệp
+- `english_name`: Tên nước ngoài
+- `short_name`: Tên viết tắt
+- `business_code`: Mã số doanh nghiệp
+- `regis_date`: Ngày đăng ký
+- `date_of_change`: Ngày thay đổi
+- `address`: Địa chỉ
+- `company_phone`: Điện thoại
+- `fax`: Fax
+- `email`: Email
+- `website`: Website
+- `authorized_capital`: Vốn điều lệ
+- `par_value`: Mệnh giá cổ phần
+- `total_shares`: Tổng số cổ phần
+- `representative_name`: Họ tên người đại diện
+- `representative_title`: Chức danh người đại diện
+- `gender`: Giới tính
+- `dob`: Ngày sinh
+- `ethnicity`: Dân tộc
+- `nationality`: Quốc tịch
+- `document_type`: Loại giấy tờ
+- `number_of_idcard`: Số cmt
+- `issue_date`: Ngày cấp
+- `issued_at`: Nơi cấp
+- `household_address`: Địa chỉ hộ khẩu
+- `representative_address`: Nơi ở hiện tại
+- `company_name_box`: Tọa độ tên doanh nghiệp là một list gồm [left, top, right, bottom]
+- `english_name_box`: Tọa độ tên nước ngoài là một list gồm [left, top, right, bottom]
+- `short_name_box`: Tọa độ tên viết tắt là một list gồm [left, top, right, bottom]
+- `business_code_box`: Tọa độ mã số doanh nghiệp là một list gồm [left, top, right, bottom]
+- `regis_date_box`: Tọa độ ngày đăng ký là một list gồm [left, top, right, bottom]
+- `date_of_change_box`: Tọa độ ngày thay đổi là một list gồm [left, top, right, bottom]
+- `address_box`: Tọa độ địa chỉ là một list gồm [left, top, right, bottom]
+- `company_phone_box`: Tọa độ điện thoại là một list gồm [left, top, right, bottom]
+- `fax_box`: Tọa độ fax là một list gồm [left, top, right, bottom]
+- `email_box`: Tọa độ email là một list gồm [left, top, right, bottom]
+- `website_box`: Tọa độ website là một list gồm [left, top, right, bottom]
+- `authorized_capital_box`: Tọa độ vốn điều lệ là một list gồm [left, top, right, bottom]
+- `par_value_box`: Tọa độ mệnh giá cổ phần là một list gồm [left, top, right, bottom]
+- `total_shares_box`: Tọa độ tổng số cổ phần là một list gồm [left, top, right, bottom]
+- `representative_name_box`: Tọa độ họ tên người đại diện là một list gồm [left, top, right, bottom]
+- `representative_title_box`: Tọa độ chức danh người đại diện là một list gồm [left, top, right, bottom]
+- `gender_box`: Tọa độ giới tính là một list gồm [left, top, right, bottom]
+- `dob_box`: Tọa độ ngày sinh là một list gồm [left, top, right, bottom]
+- `ethnicity_box`: Tọa độ dân tộc là một list gồm [left, top, right, bottom]
+- `nationality_box`: Tọa độ quốc tịch là một list gồm [left, top, right, bottom]
+- `document_type_box`: Tọa độ loại giấy tờ là một list gồm [left, top, right, bottom]
+- `number_of_idcard_box`: Tọa độ số cmt là một list gồm [left, top, right, bottom]
+- `issue_date_box`: Tọa độ ngày cấp là một list gồm [left, top, right, bottom]
+- `issued_at_box`: Tọa độ nơi cấp là một list gồm [left, top, right, bottom]
+- `household_address_box`: Tọa độ địa chỉ hộ khẩu là một list gồm [left, top, right, bottom]
+- `representative_address_box`: Tọa độ nơi ở hiện tại là một list gồm [left, top, right, bottom]
+- `company_name_confidence`: Độ tin cậy tên doanh nghiệp
+- `english_name_confidence`: Độ tin cậy tên nước ngoài
+- `short_name_confidence`: Độ tin cậy tên viết tắt
+- `business_code_confidence`: Độ tin cậy mã số doanh nghiệp
+- `regis_date_confidence`: Độ tin cậy ngày đăng ký
+- `date_of_change_confidence`: Độ tin cậy ngày thay đổi
+- `address_confidence`: Độ tin cậy địa chỉ
+- `company_phone_confidence`: Độ tin cậy điện thoại
+- `fax_confidence`: Độ tin cậy fax
+- `email_confidence`: Độ tin cậy email
+- `website_confidence`: Độ tin cậy website
+- `authorized_capital_confidence`: Độ tin cậy vốn điều lệ
+- `par_value_confidence`: Độ tin cậy mệnh giá cổ phần
+- `total_shares_confidence`: Độ tin cậy tổng số cổ phần
+- `representative_name_confidence`: Độ tin cậy họ tên người đại diện
+- `representative_title_confidence`: Độ tin cậy chức danh người đại diện
+- `gender_confidence`: Độ tin cậy giới tính
+- `dob_confidence`: Độ tin cậy ngày sinh
+- `ethnicity_confidence`: Độ tin cậy dân tộc
+- `nationality_confidence`: Độ tin cậy quốc tịch
+- `document_type_confidence`: Độ tin cậy loại giấy tờ
+- `number_of_idcard_confidence`: Độ tin cậy số cmt
+- `issue_date_confidence`: Độ tin cậy ngày cấp
+- `issued_at_confidence`: Độ tin cậy nơi cấp
+- `household_address_confidence`: Độ tin cậy địa chỉ hộ khẩu
+- `representative_address_confidence`: Độ tin cậy nơi ở hiện tại
+- `image`: Ảnh giấy đăng ký kinh doanh đã quay và căn chỉnh

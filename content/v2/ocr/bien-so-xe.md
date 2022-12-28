@@ -1,7 +1,7 @@
 ---
 title: 'Biển số xe'
 metaTitle: 'Biển số xe'
-stt: 5
+stt: 7
 ---
 
 #### 1. Trích xuất thông tin biển số xe với đầu vào url ảnh
@@ -128,17 +128,17 @@ print(response.json())
 
 Phản hồi sẽ là một JSON với định dạng sau:
 
-```javascript
+```json
 {
   "data": [xxxx],
-  "errorCode": string, // mã lỗi
-  "errorMessage": string // thông báo lỗi
+  "errorCode": string, // Mã lỗi
+  "errorMessage": string // Thông báo lỗi
 }
 ```
 
-Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trường data sẽ có gồm các thông tin sau:
+Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trường `data` sẽ có gồm các thông tin sau:
 
-```javascript
+```json
 {
   "info": [xxxx],
   "valid": [xxxx],
@@ -147,8 +147,7 @@ Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trườn
 }
 ```
 
-Biển số xe - `vehicle_plate` :
-Trả về một danh sách, mỗi phần từ trong danh sách gồm:
+Biển số xe - `vehicle_plate`
 
-- `plate` : Biển số xe.
-- `image` : Ảnh đã cắt ra và căn chỉnh của biển số xe.
+- `plate`: Biển số xe.
+- `image`: Ảnh đã cắt ra và căn chỉnh của biển số xe.

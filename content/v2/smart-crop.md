@@ -2,7 +2,7 @@
 title: 'Smart Crop'
 metaTitle: 'Smart Crop'
 metaDescription: 'This is the api v2 for this page'
-stt: 26
+stt: 25
 ---
 
 #### 1. Cắt ảnh thông minh với đầu vào url ảnh
@@ -171,11 +171,11 @@ Phản hồi sẽ là một JSON với định dạng sau:
 
 ```json
 {
-  "url": [xxxx], // url ảnh kết quả
-  "errorCode": int, // mã lỗi
-  "errorMessage": string, // thông báo lỗi
-  "invalidCode": int, // chỉ dùng cho crop_person, mã thông báo nếu mặt người trong ảnh bị che khuất
-  "invalidMessage": string // chỉ dùng cho crop_person, thông báo nếu mặt người trong ảnh bị che khuất
+  "url": [xxxx], // Url ảnh kết quả
+  "errorCode": int, // Mã lỗi
+  "errorMessage": string, // Thông báo lỗi
+  "invalidCode": int, // Chỉ dùng cho crop_person, mã thông báo nếu mặt người trong ảnh bị che khuất
+  "invalidMessage": string // Chỉ dùng cho crop_person, thông báo nếu mặt người trong ảnh bị che khuất
 }
 ```
 

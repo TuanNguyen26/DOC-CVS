@@ -2,7 +2,7 @@
 title: 'Phân loại giấy tờ, hồ sơ bảo hiểm sức khỏe'
 metaTitle: 'Phân loại giấy tờ, hồ sơ bảo hiểm sức khỏe'
 metaDescription: 'This is the api v2 for this page'
-stt: 24
+stt: 18
 ---
 
 #### 1. Phân loại giấy tờ hồ sơ bảo hiểm sức khỏe với đầu vào url của ảnh hoặc pdf
@@ -149,23 +149,23 @@ Mỗi phần tử trong mảng `data` (tương ứng với từng trang được
 
 Trong đó:
 
-- `id` : Thứ tự trang tương ứng với file truyền vào, bắt đầu từ 0.
-- `label` : Nhãn của trang tương ứng. Hiện tại đã hỗ trợ 17 nhãn trong hồ sơ bảo hiểm, nếu rơi vào trường hợp không thuộc 1 trong 17 nhãn đã định nghĩa thì `label` sẽ trả về `None`.
-  - `invoice` : Hóa đơn
-  - `list_expense` : Bảng kê
-  - `claim_form` : Giấy yêu cầu bồi thường
-  - `hospital_discharge_paper` : Giấy ra viện
-  - `id_doc` : Giấy tờ tùy thân. Ví dụ chứng minh nhân dân, thẻ căn cước,...
-  - `prescription` : Đơn thuốc
-  - `medical_report` : Báo cáo y tế
-  - `discharge_report` : Báo cáo ra viện
-  - `bill` : Biên lai
-  - `surgical_certificate` : Giấy chứng nhận phẫu thuật
-  - `specify_vote` : Phiếu chỉ định
-  - `test_results` : Phiếu kết quả
-  - `medical_examination` : Phiếu khám
-  - `receipts` : Phiếu thu
-  - `health_records` : Sổ khám bệnh
-  - `guarantee_confirmation` : Giấy xác nhận bảo lãnh
-  - `accident_report` : Tường trình tai nạn
-- `image` : Ảnh được căn chỉnh với trang tương ứng
+- `id`: Thứ tự trang tương ứng với file truyền vào, bắt đầu từ 0.
+- `label`: Nhãn của trang tương ứng. Hiện tại đã hỗ trợ 17 nhãn trong hồ sơ bảo hiểm, nếu rơi vào trường hợp không thuộc 1 trong 17 nhãn đã định nghĩa thì `label` sẽ trả về `None`.
+  - `invoice`: Hóa đơn
+  - `list_expense`: Bảng kê
+  - `claim_form`: Giấy yêu cầu bồi thường
+  - `hospital_discharge_paper`: Giấy ra viện
+  - `id_doc`: Giấy tờ tùy thân. Ví dụ chứng minh nhân dân, thẻ căn cước,...
+  - `prescription`: Đơn thuốc
+  - `medical_report`: Báo cáo y tế
+  - `discharge_report`: Báo cáo ra viện
+  - `bill`: Biên lai
+  - `surgical_certificate`: Giấy chứng nhận phẫu thuật
+  - `specify_vote`: Phiếu chỉ định
+  - `test_results`: Phiếu kết quả
+  - `medical_examination`: Phiếu khám
+  - `receipts`: Phiếu thu
+  - `health_records`: Sổ khám bệnh
+  - `guarantee_confirmation`: Giấy xác nhận bảo lãnh
+  - `accident_report`: Tường trình tai nạn
+- `image`: Ảnh được căn chỉnh với trang tương ứng

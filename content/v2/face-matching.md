@@ -2,7 +2,7 @@
 title: 'Face Matching'
 metaTitle: 'Face Matching'
 metaDescription: 'This is the api v21 for this page'
-stt: 16
+stt: 14
 ---
 
 Matching service là hệ thống AI cho phép so sánh độ tương đồng giữa khuôn mặt có trong chứng minh nhân dân, thẻ căn cước của người chủ sở hữu với khuôn mặt được chụp trực tiếp của cùng một người đó.
@@ -140,17 +140,17 @@ print(response.json())
 ```json
 {
   "data": {
-    "matching": string, // phần trăm giống nhau giữa hai ảnh đầu vào
-    "face1": string, // ảnh khuôn mặt chứng minh thư
-    "face2": string, // ảnh khuôn mặt chân dung
-    "face1_score": string, // độ tin cậy ảnh khuôn mặt chứng minh thư
-    "face2_score": string, //độ tin cậy ảnh khuôn mặt chân dung
-    "invalidCode": string, // mã cảnh báo
+    "matching": string, // Phần trăm giống nhau giữa hai ảnh đầu vào
+    "face1": string, // Ảnh khuôn mặt chứng minh thư
+    "face2": string, // Ảnh khuôn mặt chân dung
+    "face1_score": string, // Độ tin cậy ảnh khuôn mặt chứng minh thư
+    "face2_score": string, // Độ tin cậy ảnh khuôn mặt chân dung
+    "invalidCode": string, // Mã cảnh báo
     "invalidMessage": string, // Cảnh báo nếu ảnh chân dung hoặc ảnh giấy tờ có dấu hiệu làm ảnh hưởng đến kết quả
     "match": string // 1 nếu phần trăm matching > 75%, 0 nếu phần trăm matching trong khoảng [65%, 75%], ngược lại -1
   },
-  "errorCode": string, // mã lỗi
-  "errorMessage": string // thông báo lỗi
+  "errorCode": string, // Mã lỗi
+  "errorMessage": string // Thông báo lỗi
 }
 
 ```

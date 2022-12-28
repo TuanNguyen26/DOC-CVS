@@ -2,7 +2,7 @@
 title: 'Face Search'
 metaTitle: 'Face Search'
 metaDescription: 'This is the api v2 for this page'
-stt: 17
+stt: 16
 ---
 
 #### 1. Xem toàn bộ ảnh
@@ -217,8 +217,8 @@ Phản hồi sẽ là một JSON với định dạng sau:
 ```json
 {
   "result": [xxxx],
-  "status_code": int, // mã lỗi
-  "message": string, // thông báo lỗi
+  "status_code": int, // Mã lỗi
+  "message": string, // Thông báo lỗi
 }
 ```
 
@@ -251,3 +251,15 @@ Bảng mã lỗi:
 | 4      | Out of requests                    | Hết số lượng request                                                 |
 | 5      | Incorrect Api_key or api_secret    | Khi api_key hoặc api_secret sai                                      |
 | 6      | Incorrect format type              | Loại format khai báo trong format_type không đúng với ảnh truyền vào |
+
+Bảng mã lỗi:
+
+| invalidCode | invalidMessage                     | Mô tả                                                                |
+| ----------- | ---------------------------------- | -------------------------------------------------------------------- |
+| 0           | Successful                         | So khớp thành công                                                   |
+| 1           | The photo does not contain content | Upload ảnh bị lỗi khi dùng POST                                      |
+| 2           | Url is unavailable                 | Download ảnh bị lỗi khi dùng GET                                     |
+| 3           | Incorrect image format             | Tồn tại ảnh không có mặt người                                       |
+| 4           | Out of requests                    | Hết số lượng request                                                 |
+| 5           | Incorrect Api_key or api_secret    | Khi api_key hoặc api_secret sai                                      |
+| 6           | Incorrect format type              | Loại format khai báo trong format_type không đúng với ảnh truyền vào |

@@ -1,7 +1,7 @@
 ---
 title: 'Đăng ký xe'
 metaTitle: 'Đăng ký xe'
-stt: 8
+stt: 4
 ---
 
 #### 1. Trích xuất thông tin hai mặt đăng ký xe với đầu vào url ảnh
@@ -256,79 +256,79 @@ print(response.json())
 
 Phản hồi chung sẽ là một JSON với định dạng sau:
 
-```python
+```json
 {
   "data": [xxxx],
-  "errorCode": string, // mã lỗi
-  "errorMessage": string // thông báo lỗi
+  "errorCode": string, // Mã lỗi
+  "errorMessage": string // Thông báo lỗi
 }
 
 ```
 
-Trong đó trường data là một list, mỗi phần tử trong list tương ứng với một báo giá (một báo giá có thể là một hoặc nhiều trang). Mỗi phần tử này là một json định dạng như sau:
+Trong đó trường `data` là một list, mỗi phần tử trong list tương ứng với đăng ký xe (một đăng ký xe có thể là một hoặc nhiều trang). Mỗi phần tử này là một json định dạng như sau:
 
 ```json
 {
-“type": “price_quotation" - Thể hiện loại giấy tờ ở đây là đăng ký xe
-“info": [xxxx]
+  "type": "vehicle_registrations", // Thể hiện loại giấy tờ ở đây là đăng ký xe
+  "info": [xxxx]
 }
 ```
 
 Mặt trước đăng ký xe - `vehicle_registration_front`
 
-- `name` : Tên chủ sở hữu xe.
-- `name_confidence` : Độ tin cậy tên chủ sở hữu xe.
-- `address` : Nơi cư trú.
-- `address_confidence` : Độ tin cậy nơi cư trú
-- `id` : Id đăng ký xe.
-- `id_confidence` : Độ tin cậy id đăng ký xe.
-- `plate` : Biển số xe.
-- `plate_confidence` : Độ tin cậy biển số xe.
-- `issued_at` : Nơi cấp.
-- `issued_at_confidence` : Độ tin cậy nơi cấp.
-- `image` : Ảnh mặt trước đăng ký xe.
+- `name`: Tên chủ sở hữu xe.
+- `name_confidence`: Độ tin cậy tên chủ sở hữu xe.
+- `address`: Nơi cư trú.
+- `address_confidence`: Độ tin cậy nơi cư trú
+- `id`: Id đăng ký xe.
+- `id_confidence`: Độ tin cậy id đăng ký xe.
+- `plate`: Biển số xe.
+- `plate_confidence`: Độ tin cậy biển số xe.
+- `issued_at`: Nơi cấp.
+- `issued_at_confidence`: Độ tin cậy nơi cấp.
+- `image`: Ảnh mặt trước đăng ký xe.
 
 Mặt sau đăng ký xe - `vehicle_registration_back`
 
-- `name` : Tên chủ sở hữu xe.
-- `name_confidence` : Độ tin cậy tên chủ sở hữu xe.
-- `address` : Nơi cư trú.
-- `address_confidence` : Độ tin cậy nơi cư trú.
-- `address_town_code` : Mã tỉnh/thành phố trong địa chỉ thường trú.
-- `address_district_code` : Mã quận/huyện trong địa chỉ thường trú.
-- `Address_ward_code` : Mã phường/xã trong địa chỉ thường trú.
-- `Address_town` : Tỉnh/thành phố trong địa chỉ thường trú.
-- `Address_district` : Quận/huyện trong địa chỉ thường trú.
-- `Address_ward` : Phường/xã trong địa chỉ thường trú.
-- `engine` : Số máy.
-- `engine_confidence` : Độ tin cậy số máy.
-- `chassis` : Số khung.
-- `chassis_confidence` : Độ tin cậy số khung.
-- `brand` : Nhãn hiệu.
-- `brand_confidence` : Độ tin cậy nhãn hiệu.
-- `model` : Số loại.
-- `model_confidence` : Độ tin cậy số loại.
-- `color` : Màu sơn.
-- `color_confidence` : Độ tin cậy màu sơn.
+- `name`: Tên chủ sở hữu xe.
+- `name_confidence`: Độ tin cậy tên chủ sở hữu xe.
+- `address`: Nơi cư trú.
+- `address_confidence`: Độ tin cậy nơi cư trú.
+- `address_town_code`: Mã tỉnh/thành phố trong địa chỉ thường trú.
+- `address_district_code`: Mã quận/huyện trong địa chỉ thường trú.
+- `Address_ward_code`: Mã phường/xã trong địa chỉ thường trú.
+- `Address_town`: Tỉnh/thành phố trong địa chỉ thường trú.
+- `Address_district`: Quận/huyện trong địa chỉ thường trú.
+- `Address_ward`: Phường/xã trong địa chỉ thường trú.
+- `engine`: Số máy.
+- `engine_confidence`: Độ tin cậy số máy.
+- `chassis`: Số khung.
+- `chassis_confidence`: Độ tin cậy số khung.
+- `brand`: Nhãn hiệu.
+- `brand_confidence`: Độ tin cậy nhãn hiệu.
+- `model`: Số loại.
+- `model_confidence`: Độ tin cậy số loại.
+- `color`: Màu sơn.
+- `color_confidence`: Độ tin cậy màu sơn.
 - `capacity`: Dung tích.
-- `capacity_confidence` : Độ tin cậy dung tích.
-- `issued_at` : Nơi đăng ký.
-- `issued_at_confidence` : Độ tin cậy nơi đăng ký.
-- `issued_at_code` : Mã tỉnh nơi đăng ký.
-- `last_issue_date` : Ngày đăng ký cuối cùng.
-- `last_issue_date_confidence` : Độ tin cậy ngày đăng ký cuối cùng.
-- `first_issue_date` : Ngày đăng ký đầu tiên.
-- `first_issue_date_confidence` : Độ tin cậy ngày đăng ký đầu tiên.
-- `plate` : Biển số xe.
-- `plate_confidence` : Độ tin cậy biển số xe.
-- `pay_load` : Trọng tải.
-- `pay_load_confidence` : Độ tin cậy trọng tải.
-- `year_of_manufacture` : Năm sản xuất.
-- `year_of_manufacture_confidence` : Độ tin cậy năm sản xuất
-- `lie` : Số chỗ nằm.
-- `lie_confidence` : Độ tin cậy số chỗ nằm.
-- `sit` : Số chỗ ngồi.
-- `sit_confidence` : Độ tin cậy số chỗ ngồi.
-- `stand` : Số chỗ đứng.
-- `stand_confidence` : Độ tin cậy số chỗ đứng.
-- `image` : Ảnh mặt sau đăng ký xe.
+- `capacity_confidence`: Độ tin cậy dung tích.
+- `issued_at`: Nơi đăng ký.
+- `issued_at_confidence`: Độ tin cậy nơi đăng ký.
+- `issued_at_code`: Mã tỉnh nơi đăng ký.
+- `last_issue_date`: Ngày đăng ký cuối cùng.
+- `last_issue_date_confidence`: Độ tin cậy ngày đăng ký cuối cùng.
+- `first_issue_date`: Ngày đăng ký đầu tiên.
+- `first_issue_date_confidence`: Độ tin cậy ngày đăng ký đầu tiên.
+- `plate`: Biển số xe.
+- `plate_confidence`: Độ tin cậy biển số xe.
+- `pay_load`: Trọng tải.
+- `pay_load_confidence`: Độ tin cậy trọng tải.
+- `year_of_manufacture`: Năm sản xuất.
+- `year_of_manufacture_confidence`: Độ tin cậy năm sản xuất
+- `lie`: Số chỗ nằm.
+- `lie_confidence`: Độ tin cậy số chỗ nằm.
+- `sit`: Số chỗ ngồi.
+- `sit_confidence`: Độ tin cậy số chỗ ngồi.
+- `stand`: Số chỗ đứng.
+- `stand_confidence`: Độ tin cậy số chỗ đứng.
+- `image`: Ảnh mặt sau đăng ký xe.

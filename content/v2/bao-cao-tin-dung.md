@@ -2,7 +2,7 @@
 title: 'Báo cáo tín dụng '
 metaTitle: 'Báo cáo tín dụng'
 metaDescription: 'This is the api v2 for this page'
-stt: 14
+stt: 22
 ---
 
 #### 1. Trích xuất thông tin Báo cáo tín dụng với đầu vào url của ảnh hoặc pdf
@@ -135,52 +135,52 @@ Thông tin trả về là một JSON với định dạng sau:
     "info": [xxxx],
     "type": "credit_report"
   },
-  "errorCode": string, // mã lỗi
-  "errorMessage": string // thông báo lỗi
+  "errorCode": string, // Mã lỗi
+  "errorMessage": string // Thông báo lỗi
 }
 ```
 
 `info`: Thông tin trích xuất được, bao gồm:
 
-- `report_time` : Thời gian gửi báo cáo.
-- `report_time_box` : Tọa độ thời gian gửi báo cáo là một list gồm [left, top, right, bottom].
-- `report_time_confidence` : Độ tin cậy Thời gian gửi báo cáo.
-- `report_time_id` : Trang đi kèm với Thời gian gửi báo cáo.
-- `cic_code` : Mã số CIC.
-- `cic_code_box` : Tọa độ Mã số CIC là một list gồm [left, top, right, bottom].
-- `cic_code_confidence` : Độ tin cậy Mã số CIC
-- `cic_code_id` : Trang đi kèm với Mã số CIC
-- `id_card` : Số chứng minh nhân dân
-- `id_card_box` : Tọa độ Số chứng minh nhân dân là một list gồm [left, top, right, bottom].
-- `id_card_confidence` : Độ tin cậy Số chứng minh nhân dân
-- `id_card_id` : Trang đi kèm với Số chứng minh nhân dân
-- `address` : Địa chỉ
-- `address_box` : Tọa độ Địa chỉ là một list gồm [left, top, right, bottom].
-- `address_confidence` : Độ tin cậy Địa chỉ
-- `address_id` : Trang đi kèm với Địa chỉ
-- `credit_score` : Điểm tín dụng
-- `credit_score_box` : Tọa độ Điểm tín dụng là một list gồm [left, top, right, bottom].
-- `credit_score_confidence` : Độ tin cậy Điểm tín dụng
-- `credit_score_id` : Trang đi kèm với Điểm tín dụng
-- `credit_rank` : Hạng tín dụng
-- `credit_rank_box` : Tọa độ Hạng tín dụng là một list gồm [left, top, right, bottom].
-- `credit_rank_confidence` : Độ tin cậy Hạng tín dụng
-- `credit_rank_id` : Trang đi kèm với Hạng tín dụng
-- `credit_ranking_date` : Ngày chấm điểm
-- `credit_ranking_date_box` : Tọa độ Ngày chấm điểm là một list gồm [left, top, right, bottom].
-- `credit_ranking_date_confidence` : Độ tin cậy Ngày chấm điểm
-- `credit_ranking_date_id` : Trang đi kèm với Ngày chấm điểm
-- `debt_sold_to_vamc` : Dư nợ đã bán vamc
-- `debt_sold_to_vamc_box` : Tọa độ Dư nợ đã bán vamc là một list gồm [left, top, right, bottom].
-- `debt_sold_to_vamc_confidence` : Độ tin cậy Dư nợ đã bán vamc
-- `debt_sold_to_vamc_id` : Trang đi kèm với Dư nợ đã bán vamc
-- `imgs` : List ảnh dạng base64 chứa thông tin
-- `loan_details` : Chi tiết dư nợ vay. Là một list, mỗi phần tử trong list tương ứng với thông tin của 1 hàng có định dạng: `[json0, json1, json2, json3, json4]`. Trong đó:
-  - `json0` : Số thứ tự tổ chức tín dụng
-  - `json1` : Mã tổ chức tín dụng
-  - `json2` : Tên tổ chức tín dụng
-  - `json3` : Loại dư nợ và số tiền
-  - `json4` : Tổng cộng VND
+- `report_time`: Thời gian gửi báo cáo.
+- `report_time_box`: Tọa độ thời gian gửi báo cáo là một list gồm [left, top, right, bottom].
+- `report_time_confidence`: Độ tin cậy Thời gian gửi báo cáo.
+- `report_time_id`: Trang đi kèm với Thời gian gửi báo cáo.
+- `cic_code`: Mã số CIC.
+- `cic_code_box`: Tọa độ Mã số CIC là một list gồm [left, top, right, bottom].
+- `cic_code_confidence`: Độ tin cậy Mã số CIC
+- `cic_code_id`: Trang đi kèm với Mã số CIC
+- `id_card`: Số chứng minh nhân dân
+- `id_card_box`: Tọa độ Số chứng minh nhân dân là một list gồm [left, top, right, bottom].
+- `id_card_confidence`: Độ tin cậy Số chứng minh nhân dân
+- `id_card_id`: Trang đi kèm với Số chứng minh nhân dân
+- `address`: Địa chỉ
+- `address_box`: Tọa độ Địa chỉ là một list gồm [left, top, right, bottom].
+- `address_confidence`: Độ tin cậy Địa chỉ
+- `address_id`: Trang đi kèm với Địa chỉ
+- `credit_score`: Điểm tín dụng
+- `credit_score_box`: Tọa độ Điểm tín dụng là một list gồm [left, top, right, bottom].
+- `credit_score_confidence`: Độ tin cậy Điểm tín dụng
+- `credit_score_id`: Trang đi kèm với Điểm tín dụng
+- `credit_rank`: Hạng tín dụng
+- `credit_rank_box`: Tọa độ Hạng tín dụng là một list gồm [left, top, right, bottom].
+- `credit_rank_confidence`: Độ tin cậy Hạng tín dụng
+- `credit_rank_id`: Trang đi kèm với Hạng tín dụng
+- `credit_ranking_date`: Ngày chấm điểm
+- `credit_ranking_date_box`: Tọa độ Ngày chấm điểm là một list gồm [left, top, right, bottom].
+- `credit_ranking_date_confidence`: Độ tin cậy Ngày chấm điểm
+- `credit_ranking_date_id`: Trang đi kèm với Ngày chấm điểm
+- `debt_sold_to_vamc`: Dư nợ đã bán vamc
+- `debt_sold_to_vamc_box`: Tọa độ Dư nợ đã bán vamc là một list gồm [left, top, right, bottom].
+- `debt_sold_to_vamc_confidence`: Độ tin cậy Dư nợ đã bán vamc
+- `debt_sold_to_vamc_id`: Trang đi kèm với Dư nợ đã bán vamc
+- `imgs`: List ảnh dạng base64 chứa thông tin
+- `loan_details`: Chi tiết dư nợ vay. Là một list, mỗi phần tử trong list tương ứng với thông tin của 1 hàng có định dạng: `[json0, json1, json2, json3, json4]`. Trong đó:
+  - `json0`: Số thứ tự tổ chức tín dụng
+  - `json1`: Mã tổ chức tín dụng
+  - `json2`: Tên tổ chức tín dụng
+  - `json3`: Loại dư nợ và số tiền
+  - `json4`: Tổng cộng VND
 
 `json0`,`json1`,`json2`,`json4` đều có định dạng:
 
@@ -203,8 +203,8 @@ Thông tin trả về là một JSON với định dạng sau:
     },
     ...
   ],
-  "box": [array, ...],  // list vị trí tương ứng với mỗi value
-  "score": [float, ...], // list độ tin cậy tương ứng với mỗi value
+  "box": [array, ...],  // List vị trí tương ứng với mỗi value
+  "score": [float, ...], // List độ tin cậy tương ứng với mỗi value
 }
 ```
 
@@ -290,10 +290,10 @@ Thông tin trả về là một JSON với định dạng sau:
 }
 ```
 
-- `loan_guarantee_image` : Ảnh base64 tương ứng với thông tin về đảm bảo tiền vay
-- `credit_contract` : Thông tin về hợp đồng tín dụng. Là một list, mỗi phần tử trong list tương ứng với thông tin của 1 hàng có định dạng: `[json0, json1]`. Trong đó:
-  - `json0` : Ngày ký hợp đồng
-  - `json1` : Ngày kết thúc hợp đồng
+- `loan_guarantee_image`: Ảnh base64 tương ứng với thông tin về đảm bảo tiền vay
+- `credit_contract`: Thông tin về hợp đồng tín dụng. Là một list, mỗi phần tử trong list tương ứng với thông tin của 1 hàng có định dạng: `[json0, json1]`. Trong đó:
+  - `json0`: Ngày ký hợp đồng
+  - `json1`: Ngày kết thúc hợp đồng
 
 `json0`,`json1` đều có định dạng:
 
@@ -305,11 +305,11 @@ Thông tin trả về là một JSON với định dạng sau:
 }
 ```
 
-- `credit_contract_image` : Ảnh base64 tương ứng với thông tin về hợp đồng tín dụng
-- `customers_look_up` : Danh sách TCTD tra cứu về khách hàng trong 1 năm gần nhất. Là một list, mỗi phần tử trong list tương ứng với thông tin của 1 hàng có định dạng: `[json0, json1, json2]`. Trong đó:
-  - `json0` : Mã TCTD
-  - `json1` : Sản phẩm tra cứu
-  - `json2` : Ngày tra cứu
+- `credit_contract_image`: Ảnh base64 tương ứng với thông tin về hợp đồng tín dụng
+- `customers_look_up`: Danh sách TCTD tra cứu về khách hàng trong 1 năm gần nhất. Là một list, mỗi phần tử trong list tương ứng với thông tin của 1 hàng có định dạng: `[json0, json1, json2]`. Trong đó:
+  - `json0`: Mã TCTD
+  - `json1`: Sản phẩm tra cứu
+  - `json2`: Ngày tra cứu
 
 `json0`,`json1`,`json2` đều có định dạng:
 

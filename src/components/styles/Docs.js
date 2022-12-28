@@ -42,6 +42,10 @@ export const StyledMainWrapper = styled.div`
   max-width: 750px;
   color: ${(props) => props.theme.colors.text};
 
+  ul {
+    margin: 16px !important;
+  }
+
   ul,
   ol {
     -webkit-padding-start: 40px;
@@ -71,6 +75,10 @@ export const StyledMainWrapper = styled.div`
     color: #e63b19;
     background: rgba(233, 218, 172, 0.15);
     /* font-family: 'Roboto Mono'; */
+  }
+
+  P {
+    margin-bottom: 16px !important;
   }
 
   @media (max-width: 767px) {
