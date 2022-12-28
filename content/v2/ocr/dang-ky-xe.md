@@ -57,10 +57,10 @@ print(response.json())
 
 **Body**:
 
-| Key    | Type   | Value               | Mô tả                                                                               |
-| ------ | ------ | ------------------- | ----------------------------------------------------------------------------------- |
-| `img1` | `file` | `example_front.jpg` | File ảnh mặt trước cần trích xuất thông tin với format_type=file, phương thức POST. |
-| `img2` | `file` | `example_back.jpg`  | File ảnh mặt sau cần trích xuất thông tin với format_type=file, Phương thức POST    |
+| Key    | Type   | Value               | Mô tả                                       |
+| ------ | ------ | ------------------- | ------------------------------------------- |
+| `img1` | `file` | `example_front.jpg` | File ảnh mặt trước cần trích xuất thông tin |
+| `img2` | `file` | `example_back.jpg`  | File ảnh mặt sau cần trích xuất thông tin   |
 
 **Demo Python**:
 

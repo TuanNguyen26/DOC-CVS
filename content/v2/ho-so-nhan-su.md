@@ -413,68 +413,68 @@ Giấy xác nhận thông tin cư trú:
 
 Trường thông tin `info` là một json có các trường sau:
 
-- `address` : Thường trú
-- `address_box` : Tọa độ thường trú là một list gồm [left, top, right, bottom]
-- `address_confidence` : Độ tin cậy thường trú
-- `current_address` : Nơi ở hiện tại
-- `current_address_box` : Tọa độ nơi ở hiện tại là một list gồm [left, top, right, bottom]
-- `current_address_confidence` : Độ tin cậy nơi ở hiện tại
-- `dob` : Ngày sinh
-- `dob_box` : Tọa độ ngày sinh là một list gồm [left, top, right, bottom]
-- `dob_confidence` : Độ tin cậy ngày sinh
-- `ethnicity` : Dân tộc
-- `ethnicity_box` : Tọa độ dân tộc là một list gồm [left, top, right, bottom]
-- `ethnicity_confidence` : Độ tin cậy dân tộc
-- `gender` : Giới tính
-- `gender_box` : Tọa độ giới tính là một list gồm [left, top, right, bottom]
-- `gender_confidence` : Độ tin cậy của giới tính
-- `head_id` : Số định danh chủ hộ
-- `head_id_box` : Tọa độ số định danh chủ hộ là một list gồm [left, top, right, bottom]
-- `head_id_confidence` : Độ tin cậy của số định danh chủ hộ
-- `head_name` : Tên chủ hộ
-- `head_name_box` : Tọa độ tên chủ hộ là một list gồm [left, top, right, bottom]
-- `head_name_confidence` : Độ tin cậy của tên chủ hộ
-- `hometown` : Quê quán
-- `hometown_box` : Tọa độ quê quán là một list gồm [left, top, right, bottom]
-- `hometown_confidence` : Độ tin cậy của quê quán
-- `id` : Số định danh
-- `id_box` : Tọa độ số định danh là một list gồm [left, top, right, bottom]
-- `id_confidence` : Độ tin cậy của số định danh
-- `image` : Ảnh giấy xác nhận thông tin cư trú đã căn chỉnh, định dạng base64
-- `image_member` : Ảnh bảng các thành viên, định dạng base64
-- `member` : Là một list chứa thông tin của các thành viên. Mỗi phần tử trong list là một json có các trường sau:
+- `address`: Thường trú
+- `address_box`: Tọa độ thường trú là một list gồm [left, top, right, bottom]
+- `address_confidence`: Độ tin cậy thường trú
+- `current_address`: Nơi ở hiện tại
+- `current_address_box`: Tọa độ nơi ở hiện tại là một list gồm [left, top, right, bottom]
+- `current_address_confidence`: Độ tin cậy nơi ở hiện tại
+- `dob`: Ngày sinh
+- `dob_box`: Tọa độ ngày sinh là một list gồm [left, top, right, bottom]
+- `dob_confidence`: Độ tin cậy ngày sinh
+- `ethnicity`: Dân tộc
+- `ethnicity_box`: Tọa độ dân tộc là một list gồm [left, top, right, bottom]
+- `ethnicity_confidence`: Độ tin cậy dân tộc
+- `gender`: Giới tính
+- `gender_box`: Tọa độ giới tính là một list gồm [left, top, right, bottom]
+- `gender_confidence`: Độ tin cậy của giới tính
+- `head_id`: Số định danh chủ hộ
+- `head_id_box`: Tọa độ số định danh chủ hộ là một list gồm [left, top, right, bottom]
+- `head_id_confidence`: Độ tin cậy của số định danh chủ hộ
+- `head_name`: Tên chủ hộ
+- `head_name_box`: Tọa độ tên chủ hộ là một list gồm [left, top, right, bottom]
+- `head_name_confidence`: Độ tin cậy của tên chủ hộ
+- `hometown`: Quê quán
+- `hometown_box`: Tọa độ quê quán là một list gồm [left, top, right, bottom]
+- `hometown_confidence`: Độ tin cậy của quê quán
+- `id`: Số định danh
+- `id_box`: Tọa độ số định danh là một list gồm [left, top, right, bottom]
+- `id_confidence`: Độ tin cậy của số định danh
+- `image`: Ảnh giấy xác nhận thông tin cư trú đã căn chỉnh, định dạng base64
+- `image_member`: Ảnh bảng các thành viên, định dạng base64
+- `member`: Là một list chứa thông tin của các thành viên. Mỗi phần tử trong list là một json có các trường sau:
 
-  - `relationship_to_head` : Quan hệ với chủ hộ
-  - `relationship_to_head_box` : Tọa độ quan hệ với chủ hộ là một list gồm [left, top, right, bottom]
-  - `relationship_to_head_confidence` : Độ tin cậy quan hệ với chủ hộ
-  - `name` : Họ và tên người thân
-  - `name_box` : Tọa độ họ và tên người thân là một list gồm [left, top, right, bottom]
-  - `name_confidence` : Độ tin cậy họ và tên người thân
-  - `dob` : Ngày sinh người thân
-  - `dob_box` : Tọa độ ngày sinh người thân là một list gồm [left, top, right, bottom]
-  - `dob_confidence` : Độ tin cậy ngày sinh người thân
-  - `gender` : Giới tính người thân
-  - `gender_box` : Tọa độ giới tính người thân là một list gồm [left, top, right, bottom]
-  - `gender_confidence` : Độ tin cậy giới tính người thân
-  - `id_card` : Số định danh người thân
-  - `id_card_box` : Tọa độ số định danh người thân là một list gồm [left, top, right, bottom]
-  - `id_card_confidence` : Độ tin cậy số định danh người thân
+  - `relationship_to_head`: Quan hệ với chủ hộ
+  - `relationship_to_head_box`: Tọa độ quan hệ với chủ hộ là một list gồm [left, top, right, bottom]
+  - `relationship_to_head_confidence`: Độ tin cậy quan hệ với chủ hộ
+  - `name`: Họ và tên người thân
+  - `name_box`: Tọa độ họ và tên người thân là một list gồm [left, top, right, bottom]
+  - `name_confidence`: Độ tin cậy họ và tên người thân
+  - `dob`: Ngày sinh người thân
+  - `dob_box`: Tọa độ ngày sinh người thân là một list gồm [left, top, right, bottom]
+  - `dob_confidence`: Độ tin cậy ngày sinh người thân
+  - `gender`: Giới tính người thân
+  - `gender_box`: Tọa độ giới tính người thân là một list gồm [left, top, right, bottom]
+  - `gender_confidence`: Độ tin cậy giới tính người thân
+  - `id_card`: Số định danh người thân
+  - `id_card_box`: Tọa độ số định danh người thân là một list gồm [left, top, right, bottom]
+  - `id_card_confidence`: Độ tin cậy số định danh người thân
 
-- `name` : Họ và tên
-- `name_box` : Tọa độ họ và tên là một list gồm [left, top, right, bottom]
-- `name_confidence` : Độ tin cậy họ và tên
-- `nationality` : Quốc tịch
-- `nationality_box` : Tọa độ quốc tịch là một list gồm [left, top, right, bottom]
-- `nationality_confidence` : Độ tin cậy quốc tịch
-- `registered_address` : Tạm trú
-- `registered_address_box` : Tọa độ tạm trú là một list gồm [left, top, right, bottom]
-- `registered_address_confidence` : Độ tin cậy tạm trú
-- `relationship_to_head` : Quan hệ với chủ hộ
-- `relationship_to_head_box` : Tọa độ quan hệ với chủ hộ là một list gồm [left, top, right, bottom]
-- `relationship_to_head_confidence` : Độ tin cậy quan hệ với chủ hộ
-- `religious` : Tôn giáo
-- `religious_box` : Tọa độ tôn giáo là một list gồm [left, top, right, bottom]
-- `religious_confidence` : Độ tin cậy tôn giáo
+- `name`: Họ và tên
+- `name_box`: Tọa độ họ và tên là một list gồm [left, top, right, bottom]
+- `name_confidence`: Độ tin cậy họ và tên
+- `nationality`: Quốc tịch
+- `nationality_box`: Tọa độ quốc tịch là một list gồm [left, top, right, bottom]
+- `nationality_confidence`: Độ tin cậy quốc tịch
+- `registered_address`: Tạm trú
+- `registered_address_box`: Tọa độ tạm trú là một list gồm [left, top, right, bottom]
+- `registered_address_confidence`: Độ tin cậy tạm trú
+- `relationship_to_head`: Quan hệ với chủ hộ
+- `relationship_to_head_box`: Tọa độ quan hệ với chủ hộ là một list gồm [left, top, right, bottom]
+- `relationship_to_head_confidence`: Độ tin cậy quan hệ với chủ hộ
+- `religious`: Tôn giáo
+- `religious_box`: Tọa độ tôn giáo là một list gồm [left, top, right, bottom]
+- `religious_confidence`: Độ tin cậy tôn giáo
 
 Giấy khám sức khỏe:
 
@@ -490,36 +490,36 @@ Giấy khám sức khỏe:
 
 Trường thông tin `info` là một json có các trường sau:
 
-- `name` : Họ và tên
-- `name_box` : Tọa độ họ và tên là một list gồm [left, top, right, bottom]
-- `name_confidence` : Độ tin cậy họ và tên
-- `name_id` : Thể hiện họ và tên ở trang thứ bao nhiêu trong giấy khám
-- `dob` : Ngày sinh
-- `dob_box` : Tọa độ ngày sinh là một list gồm [left, top, right, bottom]
-- `dob_confidence` : Độ tin cậy ngày sinh
-- `dob_id` : Thể hiện ngày sinh ở trang thứ bao nhiêu rong giấy khám
-- `health_condition` : Điều kiện sức khỏe
-- `health_condition_box` : Tọa độ điều kiện sức khỏe là một list gồm [left, top, right, bottom]
-- `health_condition_confidence` : Độ tin cậy điều kiện sức khỏe
-- `health_condition_id` : Thể hiện điều kiện sức khỏe ở trang thứ bao nhiêu trong giấy khám
-- `height` : Chiều cao
-- `height_box` : Tọa độ chiều cao là một list gồm [left, top, right, bottom]
-- `height_confidence` : Độ tin cậy chiều cao
-- `height_id` : Thể hiện chiều cao ở trang thứ bao nhiêu trong giấy khám
-- `weight` : Cân nặng
-- `weight_box` : Tọa độ cân nặng là một list gồm [left, top, right, bottom]
-- `weight_confidence` : Độ tin cậy cân nặng
-- `weight_id` : Thể hiện cân nặng ở trang thứ bao nhiêu trong giấy khám
-- `image_0` : Ảnh trang đầu của giấy khám sức khỏe, định dạng base64
-- `image_1` : Ảnh trang chứa thông tin chiều cao cân nặng, định dạng base64
-- `image_2` : Ảnh trang chứa thông tin điều kiện sức khoẻ, định dạng base64
+- `name`: Họ và tên
+- `name_box`: Tọa độ họ và tên là một list gồm [left, top, right, bottom]
+- `name_confidence`: Độ tin cậy họ và tên
+- `name_id`: Thể hiện họ và tên ở trang thứ bao nhiêu trong giấy khám
+- `dob`: Ngày sinh
+- `dob_box`: Tọa độ ngày sinh là một list gồm [left, top, right, bottom]
+- `dob_confidence`: Độ tin cậy ngày sinh
+- `dob_id`: Thể hiện ngày sinh ở trang thứ bao nhiêu rong giấy khám
+- `health_condition`: Điều kiện sức khỏe
+- `health_condition_box`: Tọa độ điều kiện sức khỏe là một list gồm [left, top, right, bottom]
+- `health_condition_confidence`: Độ tin cậy điều kiện sức khỏe
+- `health_condition_id`: Thể hiện điều kiện sức khỏe ở trang thứ bao nhiêu trong giấy khám
+- `height`: Chiều cao
+- `height_box`: Tọa độ chiều cao là một list gồm [left, top, right, bottom]
+- `height_confidence`: Độ tin cậy chiều cao
+- `height_id`: Thể hiện chiều cao ở trang thứ bao nhiêu trong giấy khám
+- `weight`: Cân nặng
+- `weight_box`: Tọa độ cân nặng là một list gồm [left, top, right, bottom]
+- `weight_confidence`: Độ tin cậy cân nặng
+- `weight_id`: Thể hiện cân nặng ở trang thứ bao nhiêu trong giấy khám
+- `image_0`: Ảnh trang đầu của giấy khám sức khỏe, định dạng base64
+- `image_1`: Ảnh trang chứa thông tin chiều cao cân nặng, định dạng base64
+- `image_2`: Ảnh trang chứa thông tin điều kiện sức khoẻ, định dạng base64
 
 Những trang không trích xuất được thông tin
 
 Đối với những trang không trích xuất được thông tin tương ứng với 2 trường là `image_negative` và `id_negative` trong `data`. Trong đó:
 
-- `image_negative` : Là một list ảnh định dạng `base64` của những trang không trích xuất được thông tin
-- `id_negative` : Là một list `index` thể hiện trang không trích xuất được thông tin là trang thứ bao nhiêu trong bộ hồ sơ
+- `image_negative`: Là một list ảnh định dạng `base64` của những trang không trích xuất được thông tin
+- `id_negative`: Là một list `index` thể hiện trang không trích xuất được thông tin là trang thứ bao nhiêu trong bộ hồ sơ
 
 Lưu ý: các trường thông tin (trừ trường `image`) sẽ có `_box` và `_confidence` đi kèm
 
