@@ -147,7 +147,7 @@ Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trườn
 }
 ```
 
-Trường hợp trích xuất thông tin từ giấy khai sinh không có trường valid, invalidCode và trường invalidMessage.
+Trường hợp trích xuất thông tin từ giấy khai sinh không có trường valid,invalidCode và trường invalidMessage.
 
 Giấy khai sinh - `birth_certificate`
 

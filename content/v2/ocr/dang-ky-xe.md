@@ -272,7 +272,6 @@ Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trườn
   "info": [xxxx],
   "valid": [xxxx],
   "invalidMessage": [xxxx],
-  "invalidCode": [xxxx],
   "type": [xxxx]
 }
 
