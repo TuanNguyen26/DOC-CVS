@@ -607,6 +607,12 @@ Chú ý: Nếu là passport Việt Nam sẽ ưu tiên đọc các trường ti�
 - `image` : Ảnh passport.
 - `confidence` : Độ tin cậy của thông tin phát hiện được trong passport.
 
+Các API do bên CVS cung cấp JSON phản hồi đều có 2 trường để thông báo lỗi cơ bản
+
+`errorCode` : Mã lỗi
+
+`errorMessage` : Thông báo lỗi
+
 Bảng mã lỗi:
 
 | Mã lỗi | Message                            | Mô tả                                                                |
@@ -619,14 +625,20 @@ Bảng mã lỗi:
 | 5      | Incorrect Api_key or api_secret    | Khi api_key hoặc api_secret sai                                      |
 | 6      | ncorrect format type               | Loại format khai báo trong format_type không đúng với ảnh truyền vào |
 
+`valid` : True/False Giấy tờ có hợp lệ hay không.
+
+`invalidMessage` : Thông báo cảnh báo.
+
+`invalidCode` : Mã cảnh báo.
+
 Bảng mã cảnh báo:
 
-| Mã lỗi | Message                                                         | Mô tả                                             |
-| ------ | --------------------------------------------------------------- | ------------------------------------------------- |
-| 0      | Successful                                                      | Thành công                                        |
-| 1      | Photo contains sign of being taken through an electronic screen | Ảnh giấy tờ tùy thân có dấu hiệu giả mạo          |
-| 2      | The picture is a photocopy version of the id card               | Ảnh giấy tờ tùy thân là bản photocopy             |
-| 3      | The id field on the document is incorrectly formatted           | Trường id trên giấy tờ tùy thân không đúng format |
-| 4      | The mrzcode on the passport is incorrectly formatted            | MRZ code trên passport không đúng format          |
-| 5      | The id card's corner has been clipped                           | Giấy tờ tùy thân bị cắt góc                       |
-| 6      | The id card's corner has been missing                           | Giấy tờ tùy thân bị chụp sát góc                  |
+| InvalidCode | Message                                                         | Mô tả                                             |
+| ----------- | --------------------------------------------------------------- | ------------------------------------------------- |
+| 0           | Successful                                                      | Thành công                                        |
+| 1           | Photo contains sign of being taken through an electronic screen | Ảnh giấy tờ tùy thân có dấu hiệu giả mạo          |
+| 2           | The picture is a photocopy version of the id card               | Ảnh giấy tờ tùy thân là bản photocopy             |
+| 3           | The id field on the document is incorrectly formatted           | Trường id trên giấy tờ tùy thân không đúng format |
+| 4           | The mrzcode on the passport is incorrectly formatted            | MRZ code trên passport không đúng format          |
+| 5           | The id card's corner has been clipped                           | Giấy tờ tùy thân bị cắt góc                       |
+| 6           | The id card's corner has been missing                           | Giấy tờ tùy thân bị chụp sát góc                  |

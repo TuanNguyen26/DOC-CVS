@@ -265,19 +265,14 @@ Phản hồi chung sẽ là một JSON với định dạng sau:
 
 ```
 
-Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trường data sẽ có gồm các thông tin sau:
+Trong đó trường data là một list, mỗi phần tử trong list tương ứng với một báo giá (một báo giá có thể là một hoặc nhiều trang). Mỗi phần tử này là một json định dạng như sau:
 
-```javascript
+```json
 {
-  "info": [xxxx],
-  "valid": [xxxx],
-  "invalidMessage": [xxxx],
-  "type": [xxxx]
+“type": “price_quotation" - Thể hiện loại giấy tờ ở đây là đăng ký xe
+“info": [xxxx]
 }
-
 ```
-
-Chú ý: Trường hợp trích xuất thông tin từ đăng ký xe không có trường valid, invalidCode, invalidMessage.
 
 Mặt trước đăng ký xe - `vehicle_registration_front`
 

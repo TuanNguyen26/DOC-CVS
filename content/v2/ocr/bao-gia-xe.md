@@ -136,17 +136,6 @@ Phản hồi sẽ là một JSON với định dạng sau:
 }
 ```
 
-Trong trường hợp nhận dạng 1 giấy tờ tùy thân bất kì, trường data sẽ có gồm các thông tin sau:
-
-```javascript
-{
-  "info": [xxxx],
-  "valid": [xxxx],
-  "invalidMessage": [xxxx],
-  "type": [xxxx]
-}
-```
-
 Trong đó trường data là một list, mỗi phần tử trong list tương ứng với một báo giá (một báo giá có thể là một hoặc nhiều trang). Mỗi phần tử này là một json định dạng như sau:
 
 ```json
