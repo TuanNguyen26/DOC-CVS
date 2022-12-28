@@ -54,7 +54,7 @@ print(response.json())
 ```json
 {
   "image": {
-    "base64": string
+    "base64": string // mã hóa base64 của hình ảnh
   }
 }
 ```
@@ -96,8 +96,8 @@ print(response.json())
 ```json
 {
   "image": {
-    "base64": string,
-    "metadata": json
+    "base64": string // mã hóa base64 của hình ảnh,
+    "metadata": json //bất kỳ metadata key-value nào để lưu cùng với ảnh, trừ những key "user", "encoding", "_id" đã được hệ thống sử dụng
   }
 }
 ```
@@ -242,13 +242,12 @@ Xoá nhiều ảnh:
 
 Bảng mã lỗi:
 
-| Mã lỗi | Message                            |
-| ------ | ---------------------------------- |
-| 0      | Success                            |
-| 1      | Incorrect image format             |
-| 2      | Url is unavailable                 |
-| 3      | The photo does not contain content |
-| 4      | Incorrect Api_key or api_secret    |
-| 5      | Out of requests                    |
-| 6      | Error when processing the request  |
-| 7      | Incorrect Id                       |
+| Mã lỗi | Message                            | Mô tả                                                                |
+| ------ | ---------------------------------- | -------------------------------------------------------------------- |
+| 0      | Success                            | So khớp thành công                                                   |
+| 1      | The photo does not contain content | Upload ảnh bị lỗi khi dùng POST                                      |
+| 2      | Url is unavailable                 | Download ảnh bị lỗi khi dùng GET                                     |
+| 3      | Incorrect image formatt            | Tồn tại ảnh không có mặt người                                       |
+| 4      | Out of requests                    | Hết số lượng request                                                 |
+| 5      | Incorrect Api_key or api_secret    | Khi api_key hoặc api_secret sai                                      |
+| 6      | Incorrect format type              | Loại format khai báo trong format_type không đúng với ảnh truyền vào |

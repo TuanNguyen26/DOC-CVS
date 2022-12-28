@@ -21,6 +21,15 @@ stt: 23
 | `portrait_mid`   | `file` | `example_2.jpg` | File ảnh chụp chính diện của người dùng |
 | `portrait_right` | `file` | `example_3.jpg` | File ảnh quay phải của người dùng       |
 
+```json
+Body:
+{
+  "portrait_right": "iVBORw0KGgoAAAANSU...", // string base64 của ảnh quay phải.
+  "portrait_mid": "iVBORw0KGgoAAAANSU..." // string base64 của ảnh chính diện.
+  "portrait_left": "iVBORw0KGgoAAAANSU..." // string base64 của ảnh quay trái.
+} // với trường hợp format_type=base64 với phương thức POST.
+```
+
 **Demo Python**:
 
 ```python

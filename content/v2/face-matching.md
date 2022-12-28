@@ -143,6 +143,8 @@ print(response.json())
     "matching": string, // phần trăm giống nhau giữa hai ảnh đầu vào
     "face1": string, // ảnh khuôn mặt chứng minh thư
     "face2": string, // ảnh khuôn mặt chân dung
+    "face1_score": string, // độ tin cậy ảnh khuôn mặt chứng minh thư
+    "face2_score": string, //độ tin cậy ảnh khuôn mặt chân dung
     "invalidCode": string, // mã cảnh báo
     "invalidMessage": string, // Cảnh báo nếu ảnh chân dung hoặc ảnh giấy tờ có dấu hiệu làm ảnh hưởng đến kết quả
     "match": string // 1 nếu phần trăm matching > 75%, 0 nếu phần trăm matching trong khoảng [65%, 75%], ngược lại -1
@@ -150,19 +152,26 @@ print(response.json())
   "errorCode": string, // mã lỗi
   "errorMessage": string // thông báo lỗi
 }
+
 ```
 
 Bảng mã lỗi:
 
-| Mã lỗi | Message                            | Mô tả                                                                |
-| ------ | ---------------------------------- | -------------------------------------------------------------------- |
-| 0      | Success                            | So khớp thành công                                                   |
-| 1      | The photo does not contain content | Upload ảnh bị lỗi khi dùng POST                                      |
-| 2      | Url is unavailable                 | Download ảnh bị lỗi khi dùng GET                                     |
-| 3      | Incorrect image format             | Tồn tại ảnh không có mặt người                                       |
-| 4      | Out of requests                    | Hết số lượng request                                                 |
-| 5      | Incorrect Api_key or api_secret    | Khi api_key hoặc api_secret sai                                      |
-| 6      | Incorrect format type              | Loại format khai báo trong format_type không đúng với ảnh truyền vào |
+| Mã lỗi | Message                                                          | Mô tả                                                                              |
+| ------ | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| 0      | Successful                                                       | Thành công công                                                                    |
+| 1      | The ID card photo is not existed                                 | Ảnh đầu vào không có giấy tờ tùy thân                                              |
+| 2      | The picture is a photocopy version of the id card                | Ảnh giấy tờ tùy thân là bản photocopy                                              |
+| 3      | The ID card photo is suspected of tampering                      | Ảnh giấy tờ tùy thân có dấu hiệu giả mạo                                           |
+| 4      | The ID card photo does not contain a face                        | Ảnh giấy tờ tùy thân không có mặt request                                          |
+| 5      | The portrait photo does not contain a face                       | Ảnh chân dung không có mặt                                                         |
+| 6      | Photo contains more than one face                                | Ảnh chứa nhiều hơn một mặt người                                                   |
+| 7      | Wearing sunglasses                                               | Đeo kính đen                                                                       |
+| 8      | Wearing a hat                                                    | Đội mũ                                                                             |
+| 9      | Wearing a mask                                                   | Đeo khẩu trang                                                                     |
+| 10     | Photo taken from picture, screen, blurred noise or sign of fraud | Ảnh chụp từ bức ảnh khác, màn hình thiết bị, bị mờ nhiễu hoặc có dấu hiệu gian lận |
+| 11     | The face in the picture is too small                             | Mặt người trong ảnh quá nhỏ                                                        |
+| 12     | The face in the portrait photo is too close to the margin        | Mặt người trong ảnh quá gần với lề                                                 |
 
 Bảng mã lỗi cảnh báo:
 
