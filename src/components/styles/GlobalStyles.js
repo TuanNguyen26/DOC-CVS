@@ -433,7 +433,7 @@ export const baseStyles = css`
   .sideBarUL li a {
     /* color: #fff; */
     font-size: 14px;
-    /* font-weight: 100; */
+    font-weight: 500;
     line-height: 1.5;
     padding: 7px 24px 7px 16px;
     padding-left: 10px;

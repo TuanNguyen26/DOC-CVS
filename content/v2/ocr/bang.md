@@ -136,32 +136,10 @@ Phản hồi sẽ là một JSON với định dạng sau:
 }
 ```
 
-Trong trường hợp trích xuất thông tin dạng bảng, trường `data` sẽ là một list, mỗi phần tử trong list sẽ tương ứng với thông tin của một bảng. Mỗi phần tử gồm các trường:
+Trường `data` là một list, mỗi phần tử trong list tương ứng với một hàng trong bảng. Trong mỗi phần tử này sẽ là một list các json biểu thị cho một cell, gồm các trường sau đây:
 
-- `image`: ảnh bảng đã được cắt và căn chỉnh
-- `info`: thông tin bảng, trường này là một list, mỗi phần tử trong list tương ứng thông tin của một hàng
-
-Ví dụ:
-
-```json
-{
-  "data": [
-    {
-      "info": [
-        ["3", "Liti", "Li"],
-        ["4", "Beri", "Be"],
-        ["5", "Bo", "B"]
-      ],
-      "image": "<base64_img1>"
-    },
-    {
-      "info": [
-        ["Column1", "column2"],
-        ["1", "2"],
-        ["1", "1"]
-      ],
-      "image": "<base64_img2>"
-    }
-  ]
-}
-```
+- `image`: Ảnh bảng đã được cắt và căn chỉnh
+- `json`: Thông tin bảng, trường này là một list, mỗi phần tử trong list tương ứng với một cell gồm các trường sau:
+  - `value`: Nội dung của cell
+  - `score`: Độ tin cậy nội dung cell
+  - `box`: Box của vùng nội dung cell

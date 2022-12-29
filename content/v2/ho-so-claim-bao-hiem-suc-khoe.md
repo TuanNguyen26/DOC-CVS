@@ -177,7 +177,6 @@ Trong trường hợp trích xuất thông tin bộ hồ sơ trường `data` s�
 - `12_id_card_back`: Mặt sau của thẻ căn cước.
 - `chip_id_card_back`: Mặt sau thẻ căn cước công dân gán chip.
 - `passport`: Hộ chiếu.
-- `bvcard`: Thẻ bên Bảo Việt.
 
 `pages`: Là list chứa index các page của loại giấy tờ
 
@@ -189,7 +188,7 @@ Trong trường hợp trích xuất thông tin 1 loại giấy tờ thì `data` 
 }
 ```
 
-`info` : Thông tin loại giấy tờ trích xuất được, là một `json` chứa các trường ứng với từng loại giấy tờ được mô tả dưới đây:
+`info` : Thông tin loại giấy tờ trích xuất được, là một json chứa các trường ứng với từng loại giấy tờ được mô tả dưới đây:
 
 Mặt trước chứng minh nhân dân - `9_id_card_front`
 
@@ -365,37 +364,6 @@ Passport - `Hộ chiếu`
 - `image`: Ảnh passport đã được cắt và căn chỉnh
 - `confidence`: Độ tin cậy của mrz code
 
-Giấy yêu cầu bồi thường - `claim_form`
-
-- `insure_name`: Họ tên người được bảo hiểm
-- `insure_name_box`: Tọa độ của họ tên người được bảo hiểm là mảng gồm [left, top, right, bottom]
-- `insure_name_confidence`: Độ tin cậy của họ tên người được bảo hiểm
-- `dob`: Ngày sinh người được bảo hiểm
-- `dob_box`: Tọa độ của ngày sinh người được bảo hiểm là mảng gồm [left, top, right, bottom]
-- `dob_confidence`: Độ tin cậy của ngày sinh người được bảo hiểm
-- `gender`: Giới tính người được bảo hiểm
-- `gender_box`: Tọa độ của giới tính người được bảo hiểm là mảng gồm [left, top, right, bottom]
-- `gender_confidence`: Độ tin cậy của giới tính người được bảo hiểm
-- `certificate_no`: Số thẻ bảo hiểm của người được bảo hiểm
-- `certificate_no_box`: Tọa độ của số thẻ bảo hiểm người được bảo hiểm là mảng gồm [left, top, right, bottom]
-- `certificate_no_confidence`: Độ tin cậy của số thẻ bảo hiểm người được bảo hiểm
-- `id_card_no`: Số CMND người được bảo hiểm
-- `id_card_no_box`: Tọa độ của số CMND người được bảo hiểm là mảng gồm [left, top, right, bottom]
-- `id_card_no_confidence`: Độ tin cậy của số CMND người được bảo hiểm
-- `family_member`: Tên người thân của người được bảo hiểm
-- `family_member_box`: Tọa độ của tên người thân người được bảo hiểm là mảng gồm [left, top, right, bottom]
-- `family_member_confidence`: Độ tin cậy của tên người thân người được bảo hiểm
-- `policy_holder`: Tên bên mua bảo hiểm
-- `policy_holder_box`: Tọa độ của tên bên mua bảo hiểm là mảng gồm [left, top, right, bottom]
-- `policy_holder_confidence`: Độ tin cậy của tên bên mua bảo hiểm
-- `cellphone_no`: Số điện thoại người được bảo hiểm
-- `cellphone_no_box`: Tọa độ của số điện thoại người được bảo hiểm là mảng gồm [left, top, right, bottom]
-- `cellphone_no_confidence`: Độ tin cậy của số điện thoại người được bảo hiểm
-- `email` Email người được bảo hiểm
-- `email_box`: Tọa độ của email người được bảo hiểm là mảng gồm [left, top, right, bottom]
-- `email_confidence`: Độ tin cậy của email người được bảo hiểm
-- `image`: Ảnh của giấy yêu cầu đã được cắt và căn chỉnh
-
 Hóa đơn - `invoice`
 
 - `account_bank`: Số tài khoản và ngân hàng đi kèm của nhà cung cấp. Trường này là một list. Mỗi phần tử trong list là một JSON biểu thị một số tài khoản và ngân hàng đi kèm. Phần tử này gồm các trường sau đây:
@@ -517,6 +485,9 @@ Giấy ra viện - `hospital_discharge_paper`
 - `year_of_birth`: Năm sinh/tuổi
 - `year_of_birth_box`: Tọa độ năm sinh/tuổi là một list gồm [left, top, right, bottom]
 - `year_of_birth_confidence`: Độ tin cậy năm sinh/tuổi
+
+Giấy yêu cầu bồi thường - `claim_form`
+
 - `account_number`: Số tài khoản
 - `account_number_box`: Tọa độ của số tài khoản là list gồm [left, top, right, bottom]
 - `account_number_confidence`: Độ tin cậy của số tài khoản
