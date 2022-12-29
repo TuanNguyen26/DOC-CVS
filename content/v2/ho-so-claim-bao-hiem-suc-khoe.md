@@ -398,8 +398,7 @@ Giấy yêu cầu bồi thường - `claim_form`
 
 Hóa đơn - `invoice`
 
-- `account_bank`: Số tài khoản và ngân hàng đi kèm của nhà cung cấp. Trường này là một list. Mỗi phần tử trong list là một JSON biểu thị một số tài khoản và ngân hàng đi kèm. Phần
-  tử này gồm các trường sau đây:
+- `account_bank`: Số tài khoản và ngân hàng đi kèm của nhà cung cấp. Trường này là một list. Mỗi phần tử trong list là một JSON biểu thị một số tài khoản và ngân hàng đi kèm. Phần tử này gồm các trường sau đây:
   - `account_no`: Số tài khoản
   - `account_no_box`: Tọa độ số tài khoản là một list gồm [left, top, right, bottom]
   - `account_no_confidence`: Độ tin cậy số tài khoản

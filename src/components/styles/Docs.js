@@ -58,6 +58,13 @@ export const StyledMainWrapper = styled.div`
       font-size: 16px;
       line-height: 1.8;
       font-weight: 400;
+
+      ul {
+        margin: 0 !important;
+      }
+      p {
+        margin: 0 !important;
+      }
     }
   }
 
