@@ -282,16 +282,13 @@ export const baseStyles = css`
     justify-content: space-between;
   }
   .navBarBrand {
-    width: 240px;
-    height: 40px;
     padding: 0px 0px;
     display: flex;
     align-items: center;
   }
 
   .navBarBrand img {
-    width: 240px !important;
-    height: 40px;
+    width: 120px;
     margin-right: 6px;
     display: inline-block;
   }

@@ -116,8 +116,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                     src="https://www.docs.computervision.com.vn/static/logo-cvs-8d7e167d315ede0146bebe3e494a5898.svg"
                   />
                 )} */}
-
-                <LogoCvsSvg></LogoCvsSvg>
+                <LogoCvsSvg />
               </Link>
             </div>
 
