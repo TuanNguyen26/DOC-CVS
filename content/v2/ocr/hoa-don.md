@@ -174,6 +174,6 @@ Hóa đơn - `invoice`
 - `date_box`: Tọa độ ngày lập hóa đơn là danh sách gồm [left, top, right, bottom].
 - `date_confidence`: Độ tin cậy của ngày lập hóa đơn.
 - `info_goods`: Thông tin hàng hóa, dịch vụ, trường này là một danh sách, mỗi phần tử trong danh sách gồm:
-- `name`: Tên hàng hóa, dịch vụ
-- `coin`: Giá của hàng hóa, dịch vụ
+  - `name`: Tên hàng hóa, dịch vụ
+  - `coin`: Giá của hàng hóa, dịch vụ
 - `image`: Ảnh hóa đơn đã được xoay và căn chỉnh.

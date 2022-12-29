@@ -445,7 +445,7 @@ Hóa đơn - `invoice`
 - `supplier_address`: Địa chỉ nhà cung cấp
 - `supplier_address_box`: Tọa độ địa chỉ nhà cung cấp là một list gồm [left, top, right, bottom]
 - `supplier_address_confidence`: Độ tin cậy của địa chỉ nhà cung cấp
-- `table`: Chứa thông tin trích xuất từ bảng. Là một list chứa thông tin của các hàng. Mỗi -phần tử trong list này là một list chứa thông tin của một hàng. Mỗi phần tử trong hàng là một dictionary chứa các thông tin sau:
+- `table`: Chứa thông tin trích xuất từ bảng. Là một list chứa thông tin của các hàng. Mỗi phần tử trong list này là một list chứa thông tin của một hàng. Mỗi phần tử trong hàng là một dictionary chứa các thông tin sau:
 
   - `value`: Giá trị
   - `box`: Tọa độ là một list gồm [left, top, right, bottom]
