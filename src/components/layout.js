@@ -18,7 +18,7 @@ const Wrapper = styled('div')`
   }
 
   .sideBarUL .item > a:hover {
-    /* background-color: ${({ theme }) => theme.bgColors.backgroundColor}; */
+    background-color: ${({ theme }) => theme.bgColors.backgroundColor};
     color: ${({ theme }) => theme.bgActive.color};
   }
 
