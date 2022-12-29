@@ -569,8 +569,6 @@ Mặt sau căn cước công dân gán chip - `chip_id_card_back`
 
 Passport - `passport`
 
-Chú ý: Nếu là passport Việt Nam sẽ ưu tiên đọc các trường tiếng việt phía trên. Còn với passport quốc tế sẽ đọc phần `mrzcode`. Với các trường trích xuất từ tiếng Việt sẽ có `confidence` và `box` đi theo. Còn đọc theo `mrz code` sẽ có `mrz_confindence`.
-
 - `id`: Passport id.
 - `id_confidence`: Độ tin cậy passport id.
 - `id_box`: Box trường passport id format [xmin, ymin, xmax, ymax].

@@ -406,8 +406,8 @@ Hóa đơn - `invoice`
   - `bank`: Tên ngân hàng
   - `bank_box`: Tọa độ tên ngân hàng là một list gồm [left, top, right, bottom]
   - `bank_confidence`: Độ tin cậy tên ngân hàng
-  - `buyer_name`: Họ tên người mua hàng
-  - `buyer_name_box`: Tọa độ họ tên người mua hàng là một list gồm [left, top, right, bottom]
+- `buyer_name`: Họ tên người mua hàng
+- `buyer_name_box`: Tọa độ họ tên người mua hàng là một list gồm [left, top, right, bottom]
 - `buyer_name_confidence`: Độ tin cậy của họ tên người mua hàng
 - `date`: Ngày lập hóa đơn
 - `date_box`: Tọa độ ngày lập hóa đơn là một list gồm [left, top, right, bottom]
@@ -446,10 +446,11 @@ Hóa đơn - `invoice`
 - `supplier_address_box`: Tọa độ địa chỉ nhà cung cấp là một list gồm [left, top, right, bottom]
 - `supplier_address_confidence`: Độ tin cậy của địa chỉ nhà cung cấp
 - `table`: Chứa thông tin trích xuất từ bảng. Là một list chứa thông tin của các hàng. Mỗi -phần tử trong list này là một list chứa thông tin của một hàng. Mỗi phần tử trong hàng là một dictionary chứa các thông tin sau:
+
   - `value`: Giá trị
   - `box`: Tọa độ là một list gồm [left, top, right, bottom]
   - `score`: Độ tin cậy
-  - `label`: Nhãn của cột tương ứng
+  - `label`: Nhãn của cột tương ứng.
     Lưu ý: Phần label có thể là:
   - `number`: Số thứ tự
   - `description`: Tên hàng hóa dịch vụ
@@ -460,6 +461,7 @@ Hóa đơn - `invoice`
   - `tax`: Thuế suất
   - `tax_amount`: Tiền thuế
   - `amount_total`: Tổng tiền sau thuế
+
 - `tax_code`: Mã số thuế nhà cung cấp
 - `tax_code_box`: Tọa độ mã số thuế nhà cung cấp là một list gồm [left, top, right, bottom]
 - `tax_code_confidence`: Độ tin cậy của mã số thuế nhà cung cấp
