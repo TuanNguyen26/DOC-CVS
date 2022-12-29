@@ -451,15 +451,15 @@ Hóa đơn - `invoice`
   - `score`: Độ tin cậy
   - `label`: Nhãn của cột tương ứng.
     Lưu ý: Phần label có thể là:
-  - `number`: Số thứ tự
-  - `description`: Tên hàng hóa dịch vụ
-  - `unit`: Đơn vị tính
-  - `quantity`: Số lượng
-  - `unit_price`: Đơn giá
-  - `amount_before_tax`: Tổng tiền trước thuế
-  - `tax`: Thuế suất
-  - `tax_amount`: Tiền thuế
-  - `amount_total`: Tổng tiền sau thuế
+    - `number`: Số thứ tự
+    - `description`: Tên hàng hóa dịch vụ
+    - `unit`: Đơn vị tính
+    - `quantity`: Số lượng
+    - `unit_price`: Đơn giá
+    - `amount_before_tax`: Tổng tiền trước thuế
+    - `tax`: Thuế suất
+    - `tax_amount`: Tiền thuế
+    - `amount_total`: Tổng tiền sau thuế
 
 - `tax_code`: Mã số thuế nhà cung cấp
 - `tax_code_box`: Tọa độ mã số thuế nhà cung cấp là một list gồm [left, top, right, bottom]
